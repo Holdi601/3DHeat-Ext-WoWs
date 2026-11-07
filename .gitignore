@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Replays and recordings are test data; conversations and their logs never belong here.
+*.replay
+*.wrpl
+*.wotreplay
+*.wowsreplay
+.pytest_cache/
+.claude/
+*.jsonl
