@@ -37,7 +37,9 @@ here rather than typed in.
 
 from __future__ import annotations
 
+import io
 import json
+import pickle  # read with a stand-in for every class: see `unpickle`
 import struct
 import zlib
 from dataclasses import dataclass
@@ -360,6 +362,103 @@ def calls(stream: bytes, kinds: list[int], idx: np.ndarray | None = None) -> lis
             continue
         out.append(Call(int(r["type"]), float(r["time"]), entity, method, stream[at + 12 : at + size]))
     return out
+
+
+def bw_string(buf: bytes, at: int) -> tuple[bytes, int]:
+    """
+    A BigWorld string or blob at `at`: one length byte, or 0xFF and a 3-byte
+    length when it is 255 or longer; returns the bytes and where they end.
+    """
+    if at >= len(buf):
+        raise ValueError("no string here")
+    n = buf[at]
+    at += 1
+    if n == 0xFF:
+        n = int.from_bytes(buf[at : at + 3], "little")
+        at += 3
+    if at + n > len(buf):
+        raise ValueError("a string runs past the end")
+    return buf[at : at + n], at + n
+
+
+class Global:
+    """
+    What a pickled reference to a game class becomes: its name and the state it
+    was pickled with, never the class itself - nothing in a replay is run.
+    """
+
+    args: list = []
+    state: Any = None
+
+    def __new__(cls, *args: Any, **kw: Any) -> "Global":
+        self = object.__new__(cls)
+        self.args = list(args)
+        return self
+
+    def __init__(self, *args: Any, **kw: Any) -> None:
+        self.args = list(args)
+
+    def __setstate__(self, state: Any) -> None:
+        self.state = state
+
+    def __reduce__(self):  # pragma: no cover - never pickled again
+        raise TypeError("not picklable")
+
+
+class _SafeUnpickler(pickle.Unpickler):
+    def find_class(self, module: str, name: str) -> Any:
+        # Every class the stream names becomes an inert stand-in that records its name.
+        return type(name, (Global,), {"module": module})
+
+
+def unpickle(data: bytes) -> Any:
+    """
+    A Python pickle the game wrote (zlib-compressed or not), read without
+    running anything: classes it names become `Global` stand-ins.
+    """
+    if data[:1] == b"\x78":
+        try:
+            data = zlib.decompress(data)
+        except zlib.error:
+            pass
+    return _SafeUnpickler(io.BytesIO(data), encoding="bytes").load()
+
+
+def plain(value: Any, depth: int = 0) -> Any:
+    """Something unpickled as JSON: bytes as text (or hex when not text), stand-ins as {class, state}."""
+    if depth > 40:
+        return None
+    if isinstance(value, bytes):
+        try:
+            text = value.decode("utf-8")
+            if text.isprintable():
+                return text
+        except UnicodeDecodeError:
+            pass
+        return value.hex()
+    if isinstance(value, (list, tuple, set, frozenset)):
+        return [plain(v, depth + 1) for v in value]
+    if isinstance(value, dict):
+        return {str(plain(k, depth + 1)): plain(v, depth + 1) for k, v in value.items()}
+    if isinstance(value, float) and not np.isfinite(value):
+        return None
+    if value is None or isinstance(value, (bool, int, float, str)):
+        return value
+    # A stand-in for a class the pickle named (this module's `Global`, or a reader's own): its name, its data.
+    out = {"class": type(value).__name__}
+    if getattr(value, "args", None):
+        out["args"] = plain(list(value.args), depth + 1)
+    if getattr(value, "state", None) is not None:
+        out["state"] = plain(value.state, depth + 1)
+    return out
+
+
+def vec3(buf: bytes, at: int) -> tuple[float, float, float] | None:
+    """Three float32 at `at` when they make a plausible place in the world, else None."""
+    if at + 12 > len(buf):
+        return None
+    x, y, z = struct.unpack_from("<3f", buf, at)
+    return (x, y, z) if _plausible(x, y, z) else None
 
 
 def battle_start(tracks: dict[int, Track], threshold: float = 1.0) -> float | None:

@@ -37,6 +37,9 @@ Ships sunk come from the server's call announcing a death to the client,
 first two entity ids of ships, each victim once. Its time is exact; its place
 is where the victim was last seen, when that was within five seconds. The
 cause is the game's own number, not named here.
+
+Damage, health, shells, torpedoes, where shells ended, the chat and the
+pickled calls to the recording player are read by `stream`, also by shape.
 """
 
 from __future__ import annotations
@@ -45,11 +48,15 @@ import io
 import math
 import pickle
 import struct
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+import numpy as np
+
 from . import bigworld as bw
+from . import stream as st
 
 #: The key World of Warships enciphers its replays' packet streams with, as the
 #: community tools that read them have published.
@@ -76,7 +83,8 @@ HINTS = {
         "dirX": "dirX",
         "dirY": "dirY",
         "dirZ": "dirZ",
-        "extra": ["event", "vehicle", "type", "own", "battleTime", "other", "reason", "map"],
+        "extra": ["event", "vehicle", "type", "own", "battleTime", "other", "reason", "map", "value", "health",
+                  "text", "shot", "params"],
     },
 }
 
@@ -85,6 +93,7 @@ COLUMNS = {
     "player": "s", "team": "s", "vehicle": "s", "type": "s", "own": "i",
     "x": "f", "y": "f", "z": "f", "dirX": "f", "dirY": "f", "dirZ": "f",
     "other": "s", "reason": "s", "entity": "l",
+    "value": "f", "health": "f", "text": "s", "shot": "l", "params": "l",
 }  # fmt: skip
 
 #: The class letter in a ship's index name (`PASB018`: P, nation A, S, class B).
@@ -214,7 +223,7 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
             d = dict(rec)
             n, e = d.get(name_key), d.get(entity_key)
             if isinstance(n, str) and isinstance(e, int) and not isinstance(e, bool):
-                by_entity[e] = {"name": n}
+                by_entity[e] = {"name": n, "record": {str(k): bw.plain(x) for k, x in rec}}
     by_name = {str(v.get("name")): v for v in roster}
     avatar = states_call.entity if states_call else None
     match_id = name
@@ -284,6 +293,63 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
             m.add(match=match_id, map=map_id, time=float(tt), battleTime=_bt(tt, start), event="position",
                   x=x, y=y, z=z, dirX=math.sin(yaw), dirY=0.0, dirZ=math.cos(yaw), **w)
 
+    # Everything else in the stream: damage, health, shells, torpedoes, where shells ended, chat, pickles.
+    dec = st.decode(rep.stream, idx, set(by_entity), avatar)
+
+    def where(e: int | None, t: float) -> tuple[float, float, float] | None:
+        i = _fresh(tracks.get(e), t) if e is not None else None
+        if i is None:
+            return None
+        tr = tracks[e]
+        return float(tr.x[i]), float(tr.y[i]), float(tr.z[i])
+
+    def label(e: int | None) -> str | None:
+        return who(e)["player"] if e is not None and e in by_entity else None
+
+    def add(event: str, t: float, e: int | None, pos: tuple[float, float, float] | None, **kw: Any) -> None:
+        if pos is None:
+            return
+        w = who(e) if e is not None and e in by_entity else {"player": "", "team": "", "vehicle": "", "type": "",
+                                                              "own": 0}
+        m.add(match=match_id, map=map_id, time=t, battleTime=_bt(t, start), event=event, x=pos[0], y=pos[1],
+              z=pos[2], **{**w, **kw})
+
+    def health_at(e: int, t: float) -> float | None:
+        if e not in dec.health:
+            return None
+        ht, hv = dec.health[e]
+        i = int(np.searchsorted(ht, t + 0.2, side="right")) - 1
+        return float(hv[i]) if i >= 0 else None
+
+    for t, victim, attacker, dmg in dec.damage:
+        about = dict(value=dmg, health=health_at(victim, t))
+        add("hurt", t, victim, where(victim, t), other=label(attacker), **about)
+        if attacker != victim:
+            add("damage", t, attacker, where(attacker, t), other=label(victim), **about)
+    for sv in dec.salvoes:
+        for pos, d in sv.items:
+            speed = math.sqrt(sum(x * x for x in d))
+            dirs = dict(dirX=d[0] / speed, dirY=d[1] / speed, dirZ=d[2] / speed) if speed > 0 else {}
+            add("shot" if sv.kind == "shell" else "torpedo", sv.time, sv.owner, pos, value=speed, shot=sv.salvo,
+                params=sv.params, **dirs)
+    for e in dec.ended:
+        for p in e.points:
+            add("impact", e.time, e.owner, p, reason=str(e.hit_type))
+    account = {v.get("id"): str(v.get("name")) for v in roster}
+    entity_of_name = {d["name"]: e for e, d in by_entity.items()}
+    chat = []
+    # The sender is a ship, an account, or (older clients) another of the ids in the player's record.
+    in_record = {}
+    for e, d in by_entity.items():
+        for v in d["record"].values():
+            if isinstance(v, int) and not isinstance(v, bool) and v > 1000:
+                in_record.setdefault(v, e)
+    for t, sender, channel, line, extra in dec.chat:
+        e = sender if sender in by_entity else entity_of_name.get(account.get(sender, "")) or in_record.get(sender)
+        chat.append({"time": round(t, 2), "sender": label(e) or account.get(sender) or sender, "channel": channel,
+                     "text": line, "extra": extra or None})
+        add("chat", t, e, where(e, t), text=line, reason=channel)
+
     kills = []
     for victim, (t, killer, cause) in sorted(deaths.items(), key=lambda kv: kv[1][0]):
         vw = who(victim)
@@ -320,10 +386,20 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
             "samples": int(len(t.time)) if t is not None else 0,
             "kills": sum(1 for _, k, _ in deaths.values() if k == e) if e is not None and deaths else None,
             "survived": (e not in deaths) if e is not None and death_method is not None else None,
+            # What the recording client saw: its own team throughout, enemies while in range.
+            "seen": None if e is None else {
+                "damageDealt": round(sum(x for _, _, a, x in dec.damage if a == e), 1),
+                "damageReceived": round(sum(x for _, vv, _, x in dec.damage if vv == e), 1),
+                "shells": sum(len(sv.items) for sv in dec.salvoes if sv.owner == e and sv.kind == "shell"),
+                "torpedoes": sum(len(sv.items) for sv in dec.salvoes if sv.owner == e and sv.kind == "torpedo"),
+                "lastHealth": float(dec.health[e][1][-1]) if e in dec.health else None,
+            },
+            "header": v,
+            "record": by_entity.get(e, {}).get("record") if e is not None else None,
         })  # fmt: skip
     m.summary = {
         "format": "heat3d-wows-match",
-        "version": 1,
+        "version": 2,
         "game": "World of Warships",
         "match": match_id,
         "map": map_id,
@@ -348,6 +424,15 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
         "x east, y up (sea level 0), z north",
         "players": players,
         "kills": kills,
+        "events": dict(sorted(Counter(e for e in m.rows["event"] if e != "position").items())),
+        "decoded": dec.found,
+        "chat": chat,
+        "damageStats": [{"weapon": k[0], "kind": k[1], "count": v[0], "amount": v[1]}
+                        for k, v in sorted((st.damage_stats(dec) or {}).items())],
+        "avatarPickles": [{"time": round(t, 2), "method": mm, "value": bw.plain(v)} for t, mm, v in dec.pickles],
+        # The header as the file has it, but for the roster (in each player's line), and the blocks after it.
+        "header": {k: v for k, v in head.items() if k != "vehicles"},
+        "moreBlocks": [bw.plain(b) for b in rep.blocks[1:]],
     }
     return m
 
