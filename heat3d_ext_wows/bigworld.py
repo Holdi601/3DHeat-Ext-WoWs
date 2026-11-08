@@ -42,7 +42,7 @@ import json
 import pickle  # read with a stand-in for every class: see `unpickle`
 import struct
 import zlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from functools import lru_cache
 from typing import Any
 
@@ -152,6 +152,14 @@ class Replay:
     stream: bytes
     #: True when the stream ended before its end (a recording cut off by a crash).
     truncated: bool = False
+    #: Each block's bytes as the file has them (a block that is not JSON is None in `blocks`, whole here).
+    raw_blocks: list[bytes] = field(default_factory=list)
+    #: The 8 bytes after the blocks (two uint32 sizes), as they are.
+    sizes: bytes = b""
+    #: Enciphered bytes after the last whole 8-byte block, which cannot be deciphered alone.
+    leftover: bytes = b""
+    #: Deciphered bytes after the end of the compressed stream (padding to the block size).
+    unused: bytes = b""
 
     @property
     def header(self) -> dict[str, Any]:
@@ -160,6 +168,12 @@ class Replay:
 
 def read_blocks(buf: bytes) -> tuple[list[Any], int]:
     """The JSON blocks at the head of a replay, and where they end."""
+    blocks, _raw, at = read_raw_blocks(buf)
+    return blocks, at
+
+
+def read_raw_blocks(buf: bytes) -> tuple[list[Any], list[bytes], int]:
+    """The JSON blocks at the head of a replay, each block's bytes, and where they end."""
     if len(buf) < 12:
         raise ValueError("too short for a replay")
     magic, count = struct.unpack_from("<II", buf, 0)
@@ -169,27 +183,31 @@ def read_blocks(buf: bytes) -> tuple[list[Any], int]:
         raise ValueError(f"a replay with {count} blocks")
     at = 8
     blocks: list[Any] = []
+    raws: list[bytes] = []
     for _ in range(count):
         (n,) = struct.unpack_from("<I", buf, at)
         at += 4
         if at + n > len(buf):
             raise ValueError("a block runs past the end of the file")
         raw = buf[at : at + n]
+        raws.append(bytes(raw))
         at += n
         try:
             blocks.append(json.loads(raw.decode("utf-8", errors="replace")))
         except ValueError:
             blocks.append(None)  # a block that is not JSON is kept as a gap, not a failure
-    return blocks, at
+    return blocks, raws, at
 
 
 def read_replay(buf: bytes, key: bytes) -> Replay:
     """A whole replay: the blocks, and the stream deciphered and inflated."""
-    blocks, at = read_blocks(buf)
+    blocks, raws, at = read_raw_blocks(buf)
+    sizes = bytes(buf[at : at + 8])
     body = buf[at + 8 :]
+    leftover = bytes(body[len(body) - len(body) % 8 :])
     body = body[: len(body) - len(body) % 8]
     if not body:
-        return Replay(blocks, b"")
+        return Replay(blocks, b"", raw_blocks=raws, sizes=sizes, leftover=leftover)
     plain = Blowfish(key).decrypt(body)
     # Each block was XORed with the plain text before it: undo it with a running XOR.
     chained = np.bitwise_xor.accumulate(plain.view(np.uint64)).view(np.uint8).tobytes()
@@ -198,7 +216,8 @@ def read_replay(buf: bytes, key: bytes) -> Replay:
         stream = z.decompress(chained)
     except zlib.error as e:
         raise ValueError(f"the packet stream does not inflate ({e}); not a replay this reader knows") from e
-    return Replay(blocks, stream, truncated=not z.eof)
+    return Replay(blocks, stream, truncated=not z.eof, raw_blocks=raws, sizes=sizes, leftover=leftover,
+                  unused=bytes(z.unused_data))
 
 
 # ---------------------------------------------------------------------- packets
@@ -231,6 +250,11 @@ class Track:
     z: np.ndarray
     #: Heading in radians, 0 facing +z (north), growing towards +x (east).
     yaw: np.ndarray
+    #: Pitch and roll in radians as the packet has them (pitch positive nose down), where read.
+    pitch: np.ndarray | None = None
+    roll: np.ndarray | None = None
+    #: Each sample's packet: its payload's offset in the stream (for the completeness count).
+    offset: np.ndarray | None = None
 
     def at(self, t: float) -> int | None:
         """The index of the last sample at or before `t`, or None before the first."""
@@ -268,10 +292,11 @@ def find_position_type(stream: bytes, idx: np.ndarray | None = None) -> int | No
     return best
 
 
-def _track(rows: list[tuple[float, float, float, float, float]]) -> Track:
-    a = np.array(rows, dtype=np.float64).reshape(-1, 5)
+def _track(rows: list[tuple[float, ...]]) -> Track:
+    """A track from rows of time, x, y, z, yaw, pitch, roll and the packet's offset."""
+    a = np.array(rows, dtype=np.float64).reshape(-1, 8)
     a = a[np.argsort(a[:, 0], kind="stable")]
-    return Track(a[:, 0], a[:, 1], a[:, 2], a[:, 3], a[:, 4])
+    return Track(a[:, 0], a[:, 1], a[:, 2], a[:, 3], a[:, 4], a[:, 5], a[:, 6], a[:, 7].astype(np.int64))
 
 
 def tracks(stream: bytes, kind: int, idx: np.ndarray | None = None) -> dict[int, Track]:
@@ -286,7 +311,7 @@ def tracks(stream: bytes, kind: int, idx: np.ndarray | None = None) -> dict[int,
         x, y, z = v[2:5]
         if not _plausible(x, y, z) or (x == 0 and y == 0 and z == 0):
             continue
-        rows.setdefault(v[0], []).append((float(r["time"]), x, y, z, v[8]))
+        rows.setdefault(v[0], []).append((float(r["time"]), x, y, z, v[8], v[9], v[10], int(r["at"])))
     return {e: _track(r) for e, r in rows.items()}
 
 
@@ -308,7 +333,7 @@ def own_track(stream: bytes, entity: int, idx: np.ndarray | None = None) -> tupl
         for r in idx[(idx["type"] == kind) & (idx["size"] == PLAYER_POSITION.size)]:
             v = PLAYER_POSITION.unpack_from(stream, int(r["at"]))
             if v[0] == entity and v[1] == 0 and _plausible(*v[2:5]) and v[2:5] != (0.0, 0.0, 0.0):
-                rows.append((float(r["time"]), v[2], v[3], v[4], v[5]))
+                rows.append((float(r["time"]), v[2], v[3], v[4], v[5], v[6], v[7], int(r["at"])))
         if len(rows) > len(best[1]):
             best = (int(kind), rows)
     return (best[0], _track(best[1])) if best[1] else (None, None)
@@ -327,6 +352,8 @@ class Call:
     entity: int
     method: int
     args: bytes
+    #: The packet's payload offset in the stream (for the completeness count).
+    at: int = -1
 
 
 def call_types(stream: bytes, idx: np.ndarray | None = None) -> list[int]:
@@ -360,7 +387,7 @@ def calls(stream: bytes, kinds: list[int], idx: np.ndarray | None = None) -> lis
         entity, method, n = struct.unpack_from("<III", stream, at)
         if n != size - 12:
             continue
-        out.append(Call(int(r["type"]), float(r["time"]), entity, method, stream[at + 12 : at + size]))
+        out.append(Call(int(r["type"]), float(r["time"]), entity, method, stream[at + 12 : at + size], at))
     return out
 
 

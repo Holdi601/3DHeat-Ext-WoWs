@@ -9,8 +9,9 @@ What the file holds (see `bigworld` for the container):
   `PASB018-Iowa-1944`) and the roster - `vehicles`, a list of `name`, `id`
   (the player's account), `shipId` (the ship's number in the game's own
   parameters, not its name) and `relation` (0 the recording player, 1 an ally,
-  2 an enemy). There are no results; newer clients add two blocks that are not
-  read.
+  2 an enemy). There are no results in the JSON; newer clients (15.x) add two
+  blocks, an empty one and the account and battle ids as text
+  (`kept.block_ids`), and keep the results in the stream (`kept.results`).
 - The packet stream. The ships' positions are engine position updates, as in
   World of Tanks, with the heading, in the game's world units (x east, y up -
   sea level 0 - z north). A world unit is not a metre: a battleship at speed
@@ -56,7 +57,10 @@ from typing import Any
 import numpy as np
 
 from . import bigworld as bw
+from . import kept
+from . import sidecar as sc
 from . import stream as st
+from .table import slug
 
 #: The key World of Warships enciphers its replays' packet streams with, as the
 #: community tools that read them have published.
@@ -84,7 +88,7 @@ HINTS = {
         "dirY": "dirY",
         "dirZ": "dirZ",
         "extra": ["event", "vehicle", "type", "own", "battleTime", "other", "reason", "map", "value", "health",
-                  "text", "shot", "params"],
+                  "text", "shot", "params", "otherVehicle", "otherType", "hitLocalX", "hitLocalY", "hitLocalZ"],
     },
 }
 
@@ -94,7 +98,14 @@ COLUMNS = {
     "x": "f", "y": "f", "z": "f", "dirX": "f", "dirY": "f", "dirZ": "f",
     "other": "s", "reason": "s", "entity": "l",
     "value": "f", "health": "f", "text": "s", "shot": "l", "params": "l",
+    "otherVehicle": "s", "otherType": "s", "hitLocalX": "f", "hitLocalY": "f", "hitLocalZ": "f",
 }  # fmt: skip
+
+#: A position's pitch and roll as the packet has them, radians. Checked on the four replays read (see the README):
+#: the pitch is 0 throughout (ships do not pitch in the game); the roll goes with the rate of turn (a ship heels in a
+#: turn), correlation 0.6 on the 15.10 replay.
+COLUMNS.update(pitch="f", roll="f")
+HINTS["columns"]["extra"] += ["pitch", "roll"]
 
 #: The class letter in a ship's index name (`PASB018`: P, nation A, S, class B).
 CLASSES = {"A": "aircraft carrier", "B": "battleship", "C": "cruiser", "D": "destroyer", "S": "submarine"}
@@ -108,6 +119,8 @@ class Match:
     map: str
     rows: dict[str, list] = field(default_factory=lambda: {c: [] for c in COLUMNS})
     summary: dict[str, Any] = field(default_factory=dict)
+    #: The sidecar `<match>.messages.parquet`: everything not held whole by the table and the summary (Arrow).
+    messages: Any = None
 
     def add(self, **row: Any) -> None:
         for c in COLUMNS:
@@ -285,13 +298,16 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
     for victim, (t, k, r) in zip(best_victims, best):
         deaths[victim] = (t, k, r)
 
+    in_table: set[int] = set()  # the position packets that are rows (by offset), for the completeness count
     for e, t in sorted(tracks.items()):
         w = who(e)
         end = deaths[e][0] if e in deaths else math.inf
         keep = t.time <= end
-        for tt, x, y, z, yaw in zip(t.time[keep], t.x[keep], t.y[keep], t.z[keep], t.yaw[keep]):
+        in_table.update(t.offset[keep].tolist())
+        for tt, x, y, z, yaw, pitch, roll in zip(t.time[keep], t.x[keep], t.y[keep], t.z[keep], t.yaw[keep],
+                                                 t.pitch[keep], t.roll[keep]):
             m.add(match=match_id, map=map_id, time=float(tt), battleTime=_bt(tt, start), event="position",
-                  x=x, y=y, z=z, dirX=math.sin(yaw), dirY=0.0, dirZ=math.cos(yaw), **w)
+                  x=x, y=y, z=z, dirX=math.sin(yaw), dirY=0.0, dirZ=math.cos(yaw), pitch=pitch, roll=roll, **w)
 
     # Everything else in the stream: damage, health, shells, torpedoes, where shells ended, chat, pickles.
     dec = st.decode(rep.stream, idx, set(by_entity), avatar)
@@ -334,7 +350,14 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
                 params=sv.params, **dirs)
     for e in dec.ended:
         for p in e.points:
-            add("impact", e.time, e.owner, p, reason=str(e.hit_type))
+            struck = ship_struck(e, p, tracks, by_entity)
+            if struck is None:
+                add("impact", e.time, e.owner, p, reason=str(e.hit_type))
+                continue
+            ship, local = struck
+            add("impact", e.time, e.owner, p, reason=str(e.hit_type), other=label(ship),
+                otherVehicle=who(ship)["vehicle"], otherType=who(ship)["type"], hitLocalX=local[0], hitLocalY=local[1],
+                hitLocalZ=local[2])
     account = {v.get("id"): str(v.get("name")) for v in roster}
     entity_of_name = {d["name"]: e for e, d in by_entity.items()}
     chat = []
@@ -434,7 +457,79 @@ def read(buf: bytes, name: str = "replay", ship_names: dict[str, str] | None = N
         "header": {k: v for k, v in head.items() if k != "vehicles"},
         "moreBlocks": [bw.plain(b) for b in rep.blocks[1:]],
     }
+    # Everything else, whole, in the sidecar; what became of each kind of item in `selfCheck.completeness`.
+    led, entities, entity_check = kept.ledger(rep, idx, calls, dec, set(by_entity), avatar, pos_kind, in_table,
+                                              death_method, states_call)
+    check: dict[str, Any] = {"entities": entity_check}
+    results = kept.results(led)
+    m.summary["results"] = results
+    if results is not None:
+        # The results' own battle and players against the stream's and the header's.
+        names = {str(v.get("name")) for v in roster}
+        public = results.get("playersPublicInfo") if isinstance(results.get("playersPublicInfo"), dict) else {}
+        check["results"] = {"arenaUniqueID": str(results.get("arenaUniqueID")) == match_id,
+                            "playersInRoster": sum(isinstance(p, list) and len(p) > 1 and p[1] in names
+                                                   for p in public.values()), "players": len(public)}
+    ids = None
+    for i, raw in enumerate(rep.raw_blocks):
+        if i and raw:
+            ids = kept.block_ids(raw.decode("utf-8", "replace")) or ids
+        if i == 0 or raw:
+            led.block(i, False, "header" if i == 0 else "ids" if ids else "")
+    if ids:
+        # The last block's numbers as text: as JSON (moreBlocks) the battle's id loses its last digits.
+        m.summary["blockIds"] = ids
+        check["blockIds"] = {"arenaUniqueID": str(ids["arenaUniqueID"]) == match_id,
+                             "account": ids["account"] == (results or {}).get("accountDBID") if results else None}
+    version = sc.version(led)
+    m.summary["streamVersion"] = version
+    if version is not None:
+        check["streamVersionAgrees"] = version.split(",")[:3] == m.summary["clientVersion"].split(".")[:3]
+    m.summary["entities"] = entities
+    m.messages, completeness = led.build(f"{slug(match_id)}.{sc.WHAT}.parquet")
+    m.summary.setdefault("selfCheck", {}).update(completeness=completeness, **check)
     return m
+
+
+#: Hit types of a shell that ended in the water (0), on land or an island (8, 32, 64): every other ended on a ship.
+NOT_A_SHIP = {0, 8, 32, 64}
+#: How far from a ship's track point (world units) a shell's end still counts as on it: half a long ship and some.
+SHIP_REACH = 6.0
+#: Metres in a world unit, for a point on a ship (see the module's note on units).
+SHIP_METRES = 15.0
+
+
+def ship_struck(e: st.Ended, p: tuple[float, float, float], tracks: dict, by_entity: dict) -> tuple[int, tuple[float, float, float]] | None:
+    """
+    The ship a shell ended on, and the point in that ship's own frame in
+    metres (x forward along its heading, y up from sea level, z to its
+    right): the nearest ship but the shooter's, at most `SHIP_REACH` from
+    the point, for a hit type that is not water or land. None otherwise.
+    Checked on the four test replays: shells of the other hit types end 1-5
+    units from a ship's track point (median 2-3), water and land 70-270.
+    """
+    if e.hit_type in NOT_A_SHIP:
+        return None
+    best: tuple[float, int, int] | None = None
+    for ent, tr in tracks.items():
+        if ent == e.owner or ent not in by_entity:
+            continue
+        i = tr.at(e.time)
+        if i is None or e.time - float(tr.time[i]) > 3.0:
+            continue
+        d = math.hypot(float(tr.x[i]) - p[0], float(tr.z[i]) - p[2])
+        if d <= SHIP_REACH and (best is None or d < best[0]):
+            best = (d, ent, i)
+    if best is None:
+        return None
+    _, ent, i = best
+    tr = tracks[ent]
+    yaw = float(tr.yaw[i])
+    # Heading 0 faces +z (north) and grows towards +x (east): forward (sin, cos), right (cos, -sin) in x, z.
+    dx, dz = p[0] - float(tr.x[i]), p[2] - float(tr.z[i])
+    fwd = dx * math.sin(yaw) + dz * math.cos(yaw)
+    right = dx * math.cos(yaw) - dz * math.sin(yaw)
+    return ent, (fwd * SHIP_METRES, p[1] * SHIP_METRES, right * SHIP_METRES)
 
 
 def _fresh(track: bw.Track | None, t: float | None) -> int | None:

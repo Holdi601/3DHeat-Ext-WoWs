@@ -62,3 +62,16 @@ def write(out: str | Path, map_id: str, match: str, rows: dict[str, list], kinds
     pq.write_table(table(rows, kinds, hints), data, compression="snappy", row_group_size=256_000)
     doc.write_text(json.dumps(summary, indent=1, ensure_ascii=False), encoding="utf-8")
     return data, doc
+
+
+def write_sidecar(out: str | Path, map_id: str, match: str, what: str, sidecar: pa.Table) -> Path:
+    """A sidecar beside the table, `<match>.<what>.parquet`, zstd-compressed (see docs/converters.md of 3DHeat)."""
+    data, _doc = paths(out, map_id, match)
+    path = data.with_name(f"{slug(match)}.{what}.parquet")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    # Payloads and times are not worth a dictionary; times (float32 clocks in float64) shrink by half split by byte.
+    small = [c for c in ("type", "name", "entity", "entityType", "packet", "method") if c in sidecar.column_names]
+    split = [c for c in ("time",) if c in sidecar.column_names]
+    pq.write_table(sidecar, path, compression="zstd", compression_level=9, row_group_size=256_000,
+                   use_dictionary=small, use_byte_stream_split=split)
+    return path

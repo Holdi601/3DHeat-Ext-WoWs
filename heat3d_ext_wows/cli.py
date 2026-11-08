@@ -1,8 +1,9 @@
 """
 heat3d-wows-replay <replays or folders> -o <out>
 
-Each World of Warships replay into `<out>/<map>/<match>.parquet` and
-`<match>.match.json`. A match already written is skipped unless `--force`.
+Each World of Warships replay into `<out>/<map>/<match>.parquet`,
+`<match>.match.json` and the sidecar `<match>.messages.parquet` (everything
+the two do not hold whole; see docs/converters.md of 3DHeat). A match already written is skipped unless `--force`.
 Exit status: 0 when every replay was converted (or skipped), 1 when any
 failed, 2 when no replay was found.
 """
@@ -16,7 +17,8 @@ from pathlib import Path
 
 from . import __version__
 from .replay import COLUMNS, HINTS, read_file
-from .table import paths, write
+from .sidecar import WHAT
+from .table import paths, write, write_sidecar
 
 SUFFIX = ".wowsreplay"
 
@@ -62,6 +64,8 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"{f.name}: already written, {data}")
                 continue
             data, _doc = write(args.out, m.map, m.name, m.rows, COLUMNS, HINTS, m.summary)
+            if m.messages is not None:
+                write_sidecar(args.out, m.map, m.name, WHAT, m.messages)
             s = m.summary
             print(f"{f.name}: {s['positions']} positions of {len(s['players'])} ships at {s['hz']} Hz (own {s['ownHz']} Hz), "
                   f"{len(s['kills'])} sunk, {s['map']} ({s['clientVersion']}) -> {data}")

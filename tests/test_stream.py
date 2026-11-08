@@ -100,3 +100,20 @@ def test_chat_and_the_damage_statistics():
     (chat,) = rows(m, "chat")
     assert chat["player"] == "friend" and chat["text"] == "go B" and chat["reason"] == "battle_team"
     assert m.summary["damageStats"] == [{"weapon": 1, "kind": 0, "count": 21, "amount": 6300.0}]
+
+
+def test_a_shell_ending_on_a_ship_is_placed_in_its_frame():
+    """A shell's end near a ship (not water or land) is that ship's hit, in its own frame in metres."""
+    import numpy as np
+    from heat3d_ext_wows import bigworld as bw
+    from heat3d_ext_wows.replay import SHIP_METRES, ship_struck
+
+    # The ship sails east (heading 90 degrees), at x 100, z 50; the shell ends 2 units ahead of it, 0.5 to its right.
+    track = bw.Track(np.array([4.0, 10.0]), np.array([100.0, 100.0]), np.array([0.0, 0.0]), np.array([50.0, 50.0]), np.full(2, np.pi / 2))
+    ended = st.Ended(5.0, 7, 96, [(102.0, 0.4, 49.5)])
+    ship, local = ship_struck(ended, ended.points[0], {9: track}, {9: {}})
+    assert ship == 9
+    assert local == pytest.approx((2 * SHIP_METRES, 0.4 * SHIP_METRES, 0.5 * SHIP_METRES))
+    # Water, or the shooter's own ship, is no hit.
+    assert ship_struck(st.Ended(5.0, 7, 0, [(102.0, 0.0, 49.5)]), (102.0, 0.0, 49.5), {9: track}, {9: {}}) is None
+    assert ship_struck(st.Ended(5.0, 9, 96, [(102.0, 0.0, 49.5)]), (102.0, 0.0, 49.5), {9: track}, {9: {}}) is None
