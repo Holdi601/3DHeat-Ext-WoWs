@@ -11,6 +11,11 @@ enciphered, and Wargaming's terms (below) are broad. If the converter ever has
 to go, nothing else goes with it. The Watcher runs it as a command when it is
 installed, and works without it.
 
+Part of [3DHeat](https://github.com/Holdi601/3DHeat), the realtime 3D telemetry and replay viewer
+([documentation](https://holdi601.github.io/3DHeat/)). **Documentation of this converter, step by step
+with pictures: <https://holdi601.github.io/3DHeat-Ext-WoWs/>.** The viewer opens the table (Heatmap tab) and the match document (Match tab) as they are; how it packs
+a match into one file is [One file a match](https://holdi601.github.io/3DHeat/container.html).
+
 ```bash
 pip install -e .                                   # installs the heat3d-wows-replay command
 heat3d-wows-replay <replays or folders> -o out     # or: python -m heat3d_ext_wows ...
@@ -36,6 +41,22 @@ none was found.
 Replays are where the game saves them when replay recording is on
 (`isReplayEnabled` in the game's `preferences.xml`, or the game's own setting
 where it has one): `<World of Warships>/replays/`.
+
+## Options
+
+![heat3d-wows-replay on a synthetic replay](docs/assets/img/convert.svg)
+
+| Option | Default | Does |
+|---|---|---|
+| `replays` (one or more) | - | `.wowsreplay` files, or folders searched for them |
+| `-o`, `--out` | required | the folder to write into (a folder per map inside) |
+| `--force` | off | convert again what is already written |
+| `--ship-names JSON` | - | a JSON file `{"<shipId>": "<name>", ...}`: replays name only the recording player's ship, the others by number |
+| `--version` | - | print the version and exit |
+| `-h`, `--help` | - | print the options and exit |
+
+Every start first checks the project's GitHub releases for a newer version and
+asks before installing it; `HEAT3D_NO_UPDATE=1` switches that off.
 
 ## The table
 

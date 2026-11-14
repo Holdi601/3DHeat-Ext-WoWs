@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="428" viewBox="0 0 812 428" role="img" aria-label="the match document">
+<rect width="812" height="428" rx="8" fill="#1e1f24"/>
+<rect width="812" height="26" rx="8" fill="#2c2e35"/><rect y="18" width="812" height="8" fill="#2c2e35"/>
+<circle cx="16" cy="13" r="5" fill="#ff5f57"/><circle cx="32" cy="13" r="5" fill="#febc2e"/><circle cx="48" cy="13" r="5" fill="#28c840"/>
+<text x="406.0" y="17" fill="#9aa0aa" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" text-anchor="middle">the match document</text>
+<g font-family="Consolas,Menlo,DejaVu Sans Mono,monospace" font-size="13" xml:space="preserve" style="white-space:pre">
+<text x="16" y="46" fill="#7ee787" xml:space="preserve" style="white-space:pre">$&#160;head&#160;2630531823886288.match.json</text>
+<text x="16" y="64" fill="#d6d9df" xml:space="preserve" style="white-space:pre">{</text>
+<text x="16" y="82" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;format&quot;:&#160;&quot;heat3d-wows-match&quot;,</text>
+<text x="16" y="100" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;version&quot;:&#160;2,</text>
+<text x="16" y="118" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;game&quot;:&#160;&quot;World&#160;of&#160;Warships&quot;,</text>
+<text x="16" y="136" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;match&quot;:&#160;&quot;2630531823886288&quot;,</text>
+<text x="16" y="154" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;map&quot;:&#160;&quot;spaces/99_Test&quot;,</text>
+<text x="16" y="172" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;mapName&quot;:&#160;&quot;99_Test&quot;,</text>
+<text x="16" y="190" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;clientVersion&quot;:&#160;&quot;15.10.0.13533378&quot;,</text>
+<text x="16" y="208" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;player&quot;:&#160;&quot;me&quot;,</text>
+<text x="16" y="226" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;vehicle&quot;:&#160;&quot;PASB018-Iowa-1944&quot;,</text>
+<text x="16" y="244" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;gameType&quot;:&#160;&quot;RandomBattle&quot;,</text>
+<text x="16" y="262" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&quot;duration&quot;:&#160;1200,</text>
+<text x="16" y="280" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;...</text>
+<text x="16" y="298" fill="#d6d9df" xml:space="preserve" style="white-space:pre">}</text>
+<text x="16" y="316" fill="#d6d9df" xml:space="preserve" style="white-space:pre"></text>
+<text x="16" y="334" fill="#d6d9df" xml:space="preserve" style="white-space:pre">keys:&#160;format,&#160;version,&#160;game,&#160;match,&#160;map,&#160;mapName,&#160;clientVersion,&#160;recorded,&#160;player,&#160;vehicle,&#160;</text>
+<text x="16" y="352" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&#160;&#160;&#160;&#160;gameType,&#160;scenario,&#160;duration,&#160;truncated,&#160;battleStart,&#160;recordingSeconds,&#160;positionPacket,&#160;</text>
+<text x="16" y="370" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&#160;&#160;&#160;&#160;ownPositionPacket,&#160;deathMethod,&#160;hz,&#160;ownHz,&#160;positions,&#160;units,&#160;players,&#160;kills,&#160;events,&#160;decoded,&#160;</text>
+<text x="16" y="388" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&#160;&#160;&#160;&#160;chat,&#160;damageStats,&#160;avatarPickles,&#160;header,&#160;moreBlocks,&#160;results,&#160;streamVersion,&#160;entities,&#160;</text>
+<text x="16" y="406" fill="#d6d9df" xml:space="preserve" style="white-space:pre">&#160;&#160;&#160;&#160;&#160;&#160;selfCheck&#160;</text>
+</g></svg>
