@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # An cháipéis chluiche {#the-match-document}
 
-Coinníonn `<match>.match.json` gach rud a deir an athsheinm nach sraith den tábla é. Léann cluaisín Cluiche na faire é. (Glaonn an cód an achoimre air.)
+Coinníonn `<match>.match.json` gach rud a deir an athsheinm nach sraith den tábla é. Léann cluaisín Cluiche an amharcáin é. (Glaonn an cód an achoimre air.)
 
 ![Tús cáipéise cluiche sintéisigh, agus a heochracha](../assets/img/match-document.svg)
 

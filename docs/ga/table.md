@@ -24,7 +24,7 @@ Sraith amháin do gach sampla nó imeacht, i `<match>.parquet`: 31 colún ([Lios
 | `player`, `team`, `own` | ainm an imreora; `ally` nó `enemy` don imreoir taifeadta; `1` ar shraitheanna an imreora taifeadta |
 | `vehicle`, `type` | long an imreora taifeadta de réir ainm (`PASB018-Iowa-1944`), na cinn eile de réir uimhir loinge an chluiche (`4253956080`) mura n-ainmníonn `--ship-names` iad; `battleship`, `cruiser`, `destroyer`, `aircraft carrier`, `submarine` nuair a deir an t-ainm, `ship` ar shlí eile |
 | `x`, `y`, `z` | aonaid shaol an chluiche: x soir, y suas (leibhéal na farraige 0), z ó thuaidh |
-| `dirX`, `dirY`, `dirZ` | an áit a dtreoraíonn an tosach, veicteoir aonaid sa fhráma céanna (`dirY` 0: heading amháin); ar shliogán nó torpéido, an bealach ar imigh sé |
+| `dirX`, `dirY`, `dirZ` | an áit a dtreoraíonn an tosach, veicteoir aonaid sa fhráma céanna (`dirY` 0: treo cothrománach amháin); ar shliogán nó torpéido, an bealach ar imigh sé |
 | `other`, `reason` | long eile imeachta (marfóir, íobartach, ionsaitheoir); uimhir chúise an chluiche do bháthadh (gan ainmniú), an cineál buille d'impact, an cainéal do chomhrá |
 | `value`, `health` | uimhir an imeachta (damáiste, luas sligéin nó torpéido in aonaid shaoil sa soicind); sláinte na loinge tar éis buille |
 | `text` | líne chomhrá |

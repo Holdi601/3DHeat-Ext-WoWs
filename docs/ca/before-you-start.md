@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Abans de començar {#before-you-start}
 
-No n'has fet mai servir la línia d'ordres? Aquesta pàgina et porta de no tenir res a tenir
+No n'has fet mai servir la línia d'ordres? Aquesta pàgina et porta des de no tenir res fins a tenir
 `heat3d-wows-replay` a punt en uns deu minuts. Si ja fas servir Python, ves directament a
 [Instal·lació](installing.md).
 

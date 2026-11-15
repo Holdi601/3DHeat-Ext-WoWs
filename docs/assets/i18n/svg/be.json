@@ -1,6 +1,6 @@
 {
- "(folders are searched, subfolders too)": "(тэчкі шукаюцца разам з падтэчкамі)",
- ".wowsreplay files, or folders that hold them": "файлы .wowsreplay або тэчкі з імі",
+ "(folders are searched, subfolders too)": "(папкі шукаюцца разам з падпапкамі)",
+ ".wowsreplay files, or folders that hold them": "файлы .wowsreplay або папкі з імі",
  "1. Your replays": "1. Вашы запісы",
  "2. heat3d-wows-replay": "2. heat3d-wows-replay",
  "3. The 3DHeat viewer": "3. Праглядальнік 3DHeat",
@@ -20,7 +20,7 @@
  "positions and events": "пазіцыі і падзеі",
  "reads every part of each replay": "чытае кожную частку кожнага запісу",
  "the match document:": "дакумент матча:",
- "the sidecar: everything": "дадатковы файл: усё",
+ "the sidecar: everything": "дапаможны файл: усё",
  "the table:": "табліца:",
  "x and z lie flat on the sea": "x і z ляжаць роўна на моры",
  "x east, y up (sea level is 0), z north.": "x усход, y уверх (узровень мора 0), z поўнач.",

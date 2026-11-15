@@ -22,7 +22,7 @@ search_exclude: true
 
    Déantar `out` sa fhillteán a bhfuil do theirminéal ann.
 4. **Léigh an méid a deir sé.** Ba cheart duit líne amháin a fheiceáil do gach athsheinm, ag críochnú leis an tábla a scríobh sé.
-5. **Oscail an toradh** i bhfaire 3DHeat: `out/<map>/<match>.parquet` sa chluaisín Léarscáil teasa, `<match>.match.json` sa chluaisín Cluiche. Nó léigh iad le léitheoir Parquet nó JSON ar bith.
+5. **Oscail an toradh** in amharcán 3DHeat: `out/<map>/<match>.parquet` sa chluaisín Léarscáil teasa, `<match>.match.json` sa chluaisín Cluiche. Nó léigh iad le léitheoir Parquet nó JSON ar bith.
 
 ![Rith ar athsheinm shintéiseach: tiontú, rith arís, comhad briste, fillteán folamh](../assets/img/convert.svg)
 
@@ -48,7 +48,7 @@ Na roghanna mar a phriontálann an clár iad: [Tagairt orduithe](../cli-referenc
 
 ## Cad a scríobhtar {#what-is-written}
 
-Comhaid scaoilte amháin: ní scríobhann an tiontaire seo aon chomhad `.3dheat` (is féidir leis an bhfaire iad a phacáil i gcomhad amháin: [Comhad amháin an cluiche](https://holdi601.github.io/3DHeat/container.html)). In aghaidh an athsheinm, isteach i `out/<map>/` (ainm na léarscáile gan a `spaces/`):
+Comhaid scaoilte amháin: ní scríobhann an tiontaire seo aon chomhad `.3dheat` (is féidir leis an amharcán iad a phacáil i gcomhad amháin: [Comhad amháin an cluiche](https://holdi601.github.io/3DHeat/container.html)). In aghaidh an athsheinm, isteach i `out/<map>/` (ainm na léarscáile gan a `spaces/`):
 
 | Comhad | Cad é |
 |---|---|

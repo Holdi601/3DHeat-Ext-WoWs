@@ -10,7 +10,7 @@ search_exclude: true
 # A meccsdokumentum {#the-match-document}
 
 A `<match>.match.json` mindent tartalmaz, amit a visszajátszás elmond, és ami nem a táblázat egy
-sora. A nézegető Meccs fülje ezt olvassa. (A kód összefoglalónak nevezi.)
+sora. A megjelenítő Meccs fülje ezt olvassa. (A kód összefoglalónak nevezi.)
 
 ![Egy szintetikus meccsdokumentum eleje és kulcsai](../assets/img/match-document.svg)
 

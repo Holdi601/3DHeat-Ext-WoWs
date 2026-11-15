@@ -22,15 +22,15 @@ search_exclude: true
   - 砲彈的落點：射手、命中類型，以及每發的位置（15.x 的客戶端上還有砲彈擊中處的更多資料，會被略過）；
   - 聊天：發送者、頻道、一行內容；
   - 送給錄製玩家的 pickle 呼叫：其傷害統計、玩家紀錄的更新，以及戰鬥狀態；
-  - 在 15.x 的客戶端上，戰鬥結束時的結算：一個自己的封包，是一個含有戰鬥 id 的 JSON 物件，完整讀入對應文件的 `results`（遊戲自己的清單，未命名：`commonList`、`privateDataList`、每個帳號的 `playersPublicInfo`……）。
+  - 在 15.x 的客戶端上，戰鬥結束時的結算：一個自己的封包，是一個含有戰鬥 id 的 JSON 物件，完整讀入對戰文件的 `results`（遊戲自己的清單，未命名：`commonList`、`privateDataList`、每個帳號的 `playersPublicInfo`……）。
 
-不同版本之間不同的封包與方法編號（自己的船的封包為 43 或 44、沉沒呼叫為 76 或 83、砲彈為 101、102、126 或 127）都是依形狀找到的——見 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py)——因此改編號的更新不會讓表格變空。找到的編號記錄在對應文件的 `decoded` 中。
+不同版本之間不同的封包與方法編號（自己的船的封包為 43 或 44、沉沒呼叫為 76 或 83、砲彈為 101、102、126 或 127）都是依形狀找到的——見 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py)——因此改編號的更新不會讓表格變空。找到的編號記錄在對戰文件的 `decoded` 中。
 
 **pickle 是不可信的資料。**回放是來自任何地方的檔案，而 pickle 可以指定要執行的程式碼。它是以一個解pickle器載入的，該解析器會把 pickle 所指定的每個類別或函式都換成無害的替身，因此只會建立純粹的資料，不會有其他結果。測試中會餵給它一個會呼叫 `os.system` 的 pickle。
 
 **沉沒**的時間是呼叫發生的精確時刻。其地點是受害者最後被看到的位置，前提是該時間在五秒之內。**戰鬥的開始**是任何船第一次移動的時刻（船在倒數時是靜止的）。
 
-凡不是表格列的內容，都在[對應文件](match-document.md)中。
+凡不是表格列的內容，都在[對戰文件](match-document.md)中。
 
 **客戶端被告知的內容**，對自己的隊伍是完整的，對敵人則是部分的：他們的射擊、命中與血量，只在範圍內時才會出現。
 

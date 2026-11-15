@@ -1,7 +1,7 @@
 {
  "(folders are searched, subfolders too)": "(Dossieren ginn duerchsicht, Ënnerdossieren och)",
  ".wowsreplay files, or folders that hold them": ".wowsreplay-Dateien oder Dossieren domat",
- "1. Your replays": "1. Deng Replays",
+ "1. Your replays": "1. Är Replays",
  "2. heat3d-wows-replay": "2. heat3d-wows-replay",
  "3. The 3DHeat viewer": "3. Den 3DHeat-Viewer",
  "<match>.match.json": "<match>.match.json",
@@ -20,7 +20,7 @@
  "positions and events": "Positiounen an Evenementer",
  "reads every part of each replay": "liest all Deel vun all Replay",
  "the match document:": "d'Match-Dokument:",
- "the sidecar: everything": "de Sidecar: alles",
+ "the sidecar: everything": "d'Niewendatei: alles",
  "the table:": "d'Tabell:",
  "x and z lie flat on the sea": "x an z leien flaach um Mier",
  "x east, y up (sea level is 0), z north.": "x Ouschten, y erop (Mieresniveau ass 0), z Norden.",

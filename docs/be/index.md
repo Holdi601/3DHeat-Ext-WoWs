@@ -26,7 +26,7 @@ permalink: /be/
 
 ## Хуткі старт {#quick-start}
 
-Вы новічок у каманднай радку? Спачатку прачытайце [Перад пачаткам](before-you-start.md).
+Вы новічок у камандным радку? Спачатку прачытайце [Перад пачаткам](before-you-start.md).
 
 ```bash
 git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git
@@ -46,12 +46,12 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 | [Перад пачаткам](before-you-start.md) | Python, тэрмінал і як выглядае поспех |
 | [Усталёўка](installing.md) | усталёўка, праверка, абнаўленні |
 | [Канвертаванне запісаў](converting.md) | крок за крокам, кожны параметр, паведамленні, статус выхаду |
-| [Табліца](table.md) | кожная калонка і падзея `<match>.parquet` |
+| [Табліца](table.md) | кожны слупок і падзея `<match>.parquet` |
 | [Дакумент матча](match-document.md) | кожны ключ `<match>.match.json` |
 | [Як чытаецца запіс](how-it-reads.md) | фармат і як правярана чытанне |
-| [Паўната](completeness.md) | дадатковы файл і самаправерка |
+| [Паўната](completeness.md) | дапаможны файл і самаправерка |
 | [Умовы і ліцэнзія](terms.md) | умовы Wargaming, ліцэнзія, крыніцы |
-| [Даведнік каманд](../cli-reference.md), [Спіс калонак](../columns.md) | ствараюцца з кода |
+| [Даведнік каманд](../cli-reference.md), [Спіс слупкоў](../columns.md) | ствараюцца з кода |
 
 ## Частка 3DHeat {#part-of-3dheat}
 
@@ -75,9 +75,9 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 | Unreal Exporter | убудова Unreal Editor, якая экспартуе ўзровень | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [сайт](https://holdi601.github.io/3DHeat-UnrealExporter/) |
 | CS2 | дэмо і карты Counter-Strike 2 | [3DHeat-CS2](https://github.com/Holdi601/3DHeat-CS2) | [сайт](https://holdi601.github.io/3DHeat-CS2/) |
 | Watcher | запісвае тое, што гульні публікуюць, пакуль вы гуляеце | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [сайт](https://holdi601.github.io/3DHeat-Watcher/) |
-| Запісы War Thunder | запісы `.wrpl` і ўзроўні War Thunder | [3DHeat-Ext-WarThunder](https://github.com/Holdi601/3DHeat-Ext-WarThunder) | [сайт](https://holdi601.github.io/3DHeat-Ext-WarThunder/) |
-| Запісы World of Tanks | запісы `.wotreplay` | [3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT) | [сайт](https://holdi601.github.io/3DHeat-Ext-WoT/) |
-| Запісы World of Warships | запісы `.wowsreplay` | [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs) | [сайт](https://holdi601.github.io/3DHeat-Ext-WoWs/) |
+| Рэплеі War Thunder | рэплеі `.wrpl` і ўзроўні War Thunder | [3DHeat-Ext-WarThunder](https://github.com/Holdi601/3DHeat-Ext-WarThunder) | [сайт](https://holdi601.github.io/3DHeat-Ext-WarThunder/) |
+| Рэплеі World of Tanks | рэплеі `.wotreplay` | [3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT) | [сайт](https://holdi601.github.io/3DHeat-Ext-WoT/) |
+| Рэплеі World of Warships | рэплеі `.wowsreplay` | [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs) | [сайт](https://holdi601.github.io/3DHeat-Ext-WoWs/) |
 | Дэмо Squad | дэмо сервера Squad | [3DHeat-Ext-Squad](https://github.com/Holdi601/3DHeat-Ext-Squad) | [сайт](https://holdi601.github.io/3DHeat-Ext-Squad/) |
 | Карты DCS | карты DCS World як 3D-узроўні | [3DHeat-Ext-DCS](https://github.com/Holdi601/3DHeat-Ext-DCS) | [сайт](https://holdi601.github.io/3DHeat-Ext-DCS/) |
 | Карты IL-2 | карты IL-2 Great Battles як 3D-узроўні | [3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2) | [сайт](https://holdi601.github.io/3DHeat-Ext-IL2/) |

@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # 完整性 {#completeness}
 
-回放中沒有任何東西會被丟棄。轉換器讀取的內容會放入表格與對應文件；其他每個項目都會完整保存在附屬檔案 `<match>.messages.parquet` 中；而對應文件中的 `selfCheck.completeness` 會計算每一類項目的去向。這是所有 3DHeat 轉換器共同遵守的規則：[轉換器保留一切](https://holdi601.github.io/3DHeat/converters.html)。
+回放中沒有任何東西會被丟棄。轉換器讀取的內容會放入表格與對戰文件；其他每個項目都會完整保存在附屬檔案 `<match>.messages.parquet` 中；而對戰文件中的 `selfCheck.completeness` 會計算每一類項目的去向。這是所有 3DHeat 轉換器共同遵守的規則：[轉換器保留一切](https://holdi601.github.io/3DHeat/converters.html)。
 
 ![合成回放的自我檢查：每個看到、讀取、保留或遺失的項目](../assets/img/completeness.svg)
 
@@ -38,7 +38,7 @@ search_exclude: true
 | `payload`、`text` | 其位元組，完整保存；JSON 區塊，完整保存 |
 | `entityType`、`packet`、`method` | 編號 |
 
-列依封包、方法、實體與時間排序。哪個實體是哪位玩家：見對應文件中的 `entities` 與 `players`。
+列依封包、方法、實體與時間排序。哪個實體是哪位玩家：見對戰文件中的 `entities` 與 `players`。
 
 ## 讀取了什麼，以及如何核對 {#what-is-read-and-how-it-was-checked}
 
@@ -48,7 +48,7 @@ search_exclude: true
 - **實體**（`entities`）：每個實體何時進入客戶端的視野、何時離開。船艦在離開與再次出現之間，沒有任何位置。
 - **串流中的版本**（`streamVersion`）：與標頭的版本相同。
 
-其餘讀取到的內容（沉沒、傷害、血量、砲彈、魚雷、砲彈的落點、聊天、以 pickle 保存的呼叫、玩家紀錄、位置）都是 `partial`：會出現在表格或對應文件中，並完整保存在附屬檔案中。
+其餘讀取到的內容（沉沒、傷害、血量、砲彈、魚雷、砲彈的落點、聊天、以 pickle 保存的呼叫、玩家紀錄、位置）都是 `partial`：會出現在表格或對戰文件中，並完整保存在附屬檔案中。
 
 **保留但未讀取**（`raw`）的主要類別：不在表格中的位置更新（船艦沉沒後的、沒有玩家的實體）、沒有讀取器的頻繁屬性與方法、實體建立的屬性，以及其他沒有讀取器的封包。
 

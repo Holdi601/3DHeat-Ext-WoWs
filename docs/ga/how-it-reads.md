@@ -46,7 +46,7 @@ Tá gach rud nach sraith tábla é sa [cháipéis chluiche](match-document.md).
 
 Seiceáladh an léamh ar athsheinmeanna poiblí de chliaint ó 0.9 go 15.x, gach luach i gcoinne ruda a thugann an athsheinm an dara huair:
 
-- **Suíomhanna:** mheaitseáil eintiteas gach loinge ainm rolla; aontaíonn headings le treo an taistil laistigh de 0.1 rad; tar éis a báite, bogann long níos lú ná 0.1 aonad. Nuashonraítear long socair níos annamha.
+- **Suíomhanna:** mheaitseáil eintiteas gach loinge ainm rolla; aontaíonn treo gach loinge le treo an taistil laistigh de 0.1 rad; tar éis a báite, bogann long níos lú ná 0.1 aonad. Nuashonraítear long socair níos annamha.
 - **Sláinte:** críochnaíonn gach long a báitear laistigh de radharc an chliaint le sláinte 0. Meaitseálann thart ar leath de na buillí go léir titim sláinte sa soicind roimhe sin; titeann an chuid eile le deisiúcháin nó buillí eile.
 - **Damáiste i gcoinne staitisticí an chluiche féin:** ar an gcliant is nuaí tá damáiste an imreora taifeadta a léadh laistigh de 0.1% de na staitisticí. Ar chliaint níos sine tá na staitisticí níos airde: ní sheoltar gach buille chuig an gcliant, nó comhairíonn na staitisticí níos mó ná buillí (gan réiteach).
 - **Sliogáin:** tosaíonn sliogán cúpla aonad ó shuíomh aitheanta deireanach a loinge (tá na gunnaí scaipthe feadh an choirp); leanann deireadh beagnach gach sligéin, laistigh de nóiméad, lámhaigh a chonaic an cliant.

@@ -27,7 +27,7 @@ search_exclude: true
    Az `out` a terminálod mappájában jön létre.
 4. **Olvasd el, mit ír ki.** Visszajátszásonként egy sort kell látnod, a végén a táblázattal,
    amelyet írt.
-5. **Nyisd meg az eredményt** a 3DHeat nézegetőben: az `out/<map>/<match>.parquet` a Hőtérkép
+5. **Nyisd meg az eredményt** a 3DHeat megjelenítőben: az `out/<map>/<match>.parquet` a Hőtérkép
    fülön, a `<match>.match.json` a Meccs fülön. Vagy olvasd be bármely Parquet- vagy JSON-olvasóval.
 
 ![Futtatás szintetikus visszajátszáson: konvertálás, újrafuttatás, egy sérült fájl, egy üres mappa](../assets/img/convert.svg)
@@ -56,7 +56,7 @@ A kapcsolók ahogy a program kiírja: [Parancsreferencia](../cli-reference.md).
 
 ## Mi íródik ki {#what-is-written}
 
-Csak külön fájlok: ez a konverter nem ír `.3dheat` fájlt (a nézegető egybe csomagolhatja:
+Csak külön fájlok: ez a konverter nem ír `.3dheat` fájlt (a megjelenítő egybe csomagolhatja:
 [Egy fájl egy meccshez](https://holdi601.github.io/3DHeat/container.html)).
 Visszajátszásonként, az `out/<map>/` mappába (a térkép nevéből a `spaces/` nélkül):
 

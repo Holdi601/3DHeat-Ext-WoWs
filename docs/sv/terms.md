@@ -15,7 +15,7 @@ Lästa 2026-11-07, Wargaming EULA version 14 (gäller från 10 april 2024, lista
 gällande); dess avsnitt 12.3 hänvisar till en modpolicy för World of Warships, vars
 sida inte visades utanför en webbläsare och inte lästes:
 
-- 5.3 (b): om inte skriftligt godkänt av er får ni inte "... decompile,
+- 5.3 (b): om inte skriftligt godkänt får du inte "... decompile,
   disassemble, reverse engineer or otherwise make unauthorized use of the
   Content".
 - 12.1 (k): förbjudet är "Creating, using, making available, or distributing

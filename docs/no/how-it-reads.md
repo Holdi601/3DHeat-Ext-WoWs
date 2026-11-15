@@ -21,7 +21,7 @@ En replay er en header av JSON-blokker og spillets pakkestrøm (formatnotater i
   - motorens posisjonsoppdateringer for hvert skip klienten kunne se (sitt eget lag hele tiden, fiender mens de er
     spottet eller i nærheten), flere ganger i sekundet mens de beveger seg og sjeldnere mens de ikke gjør det;
   - opptakspilotens eget skip i en pakke for seg selv, ca. sju ganger i sekundet;
-  - én gang, i starten, spillernes poster som en pickle-et Python-liste. Disse sier hvilken entitet i strømmen som er
+  - én gang, i starten, spillernes poster som en pickle, en Python-liste. Disse sier hvilken entitet i strømmen som er
     hvilken spiller. Nøklene deres er nummerert, og nummerene endres med oppdateringer, så leseren finner nøklene
     etter verdiene deres: nøkkelen som holder deltakernes navn, og nøkkelen som holder entitetene som har
     posisjonsoppdateringer;

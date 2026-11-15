@@ -11,7 +11,7 @@ search_exclude: true
 
 ## Žingsnis po žingsnio {#step-by-step}
 
-1. **Įjunkite įrašymą:** `isReplayEnabled` žaidimo `preferences.xml` faile arba žaidimo paties nustatymas, kur jis yra.
+1. **Įjunkite įrašymą:** `isReplayEnabled` žaidimo `preferences.xml` faile arba pats žaidimo nustatymas, jei jis yra.
    Nuo tada žaidimas išsaugo kiekvieną mūšį World of Warships diegimo aplanke `replays`, pavyzdžiui
    `C:\Games\World_of_Warships_EU\replays`.
 2. **Atidarykite terminalą** aplanke, kuriame gali būti įrašomi rezultatai

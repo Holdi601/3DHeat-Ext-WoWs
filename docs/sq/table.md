@@ -25,7 +25,7 @@ Një rresht për çdo mostër ose ngjarje, te `<match>.parquet`: 31 kolona
 | `player`, `team`, `own` | emri i lojtarit; `ally` ose `enemy` i lojtarit që regjistron; `1` në rreshtat e lojtarit që regjistron |
 | `vehicle`, `type` | anija e lojtarit që regjistron me emër (`PASB018-Iowa-1944`), të tjerat sipas numrit të anijes në lojë (`4253956080`) përveç nëse `--ship-names` i emërton; `battleship`, `cruiser`, `destroyer`, `aircraft carrier`, `submarine` aty ku e thotë emri, përndryshe `ship` |
 | `x`, `y`, `z` | njësitë botërore të lojës: x lindje, y lart (niveli i detit 0), z veri |
-| `dirX`, `dirY`, `dirZ` | ku tregon bolli, një vektor njësi në të njëjtin kuadër (`dirY` 0: vetëm heading); në një predhë ose silur, drejtimi ku shkoi |
+| `dirX`, `dirY`, `dirZ` | ku tregon maja e përparme e anijes, një vektor njësi në të njëjtin kuadër (`dirY` 0: vetëm heading); në një predhë ose silur, drejtimi ku shkoi |
 | `other`, `reason` | anija tjetër e një ngjarjeje (vrasësi, viktima, sulmuesi); numri i shkakut të lojës për një fundosje (i paemërtuar), lloji i goditjes për një impact, kanali për bisedën |
 | `value`, `health` | numri i ngjarjes (dëmi, shpejtësia e një predhe ose silurit në njësi botërore në sekondë); shëndeti i anijes pas një goditjeje |
 | `text` | një rresht bisede |

@@ -33,7 +33,7 @@ Viena eilutė kiekvienam pavyzdžiui ar įvykiui `<match>.parquet` faile: 31 stu
 | `entity` | laivo id įraše |
 | `otherVehicle`, `otherType` | `impact` ant laivo: tas laivas ir jo klasė |
 | `hitLocalX`, `hitLocalY`, `hitLocalZ` | `impact` ant laivo: kur sviedinys baigėsi to laivo paties rėmelyje, metrais (pasaulio vienetai, padauginti iš 15): x - pirmyn, y - aukštyn nuo jūros, z - dešinėn |
-| `pitch`, `roll` | pozicijoje - laivo kėlimas ir ritimas (radianais), kaip juos siunčia žaidimas: laivas pasvyra posūkyje |
+| `pitch`, `roll` | pozicijoje - laivo kėlimas ir posūkis (radianais), kaip juos siunčia žaidimas: laivas posūkyje pasvyra |
 
 | `event` | Kurios eilutės | Ką reiškia |
 |---|---|---|

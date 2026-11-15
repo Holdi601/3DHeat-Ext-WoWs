@@ -47,7 +47,7 @@ generada a partir del codi).
 
 **Unitats.** Una unitat de món no és un metre. Un cuirassat a velocitat recorre unes 2,4 d'elles per segon, i un
 mapa fa uns 1.200 d'extensió. Comparada amb la geometria dels cascos dels vaixells, una unitat fa 15 m; les xifres
-de abast del joc la fan de 30 m (landaire/wows-toolkit, `crates/wows-core/src/units.rs`, MIT, que deixa les dues
+d'abast del joc la fan de 30 m (landaire/wows-toolkit, `crates/wows-core/src/units.rs`, MIT, que deixa les dues
 sense conciliar). La taula guarda les unitats de món a escala 1, com totes les fonts de 3DHeat guarden les unitats
 del seu propi joc, de manera que un nivell exportat en les mateixes unitats quadra. Les indicacions del peu,
 `heat3d`: Y amunt, Z invertida (de manera que el mapa no es reflecteix), un vaixell de 12 unitats de llarg,

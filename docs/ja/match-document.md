@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # マッチドキュメント {#the-match-document}
 
-`<match>.match.json` には、テーブルの行にはならない、リプレイが伝えるすべてのことが入っています。ビューアの Match タブがこれを読みます。（コードではこれを要約（summary）と呼んでいます。）
+`<match>.match.json` には、テーブルの行にはならない、リプレイが伝えるすべてのことが入っています。ビューアの マッチ タブがこれを読みます。（コードではこれを要約（summary）と呼んでいます。）
 
 ![合成したマッチドキュメントの冒頭と、そのキー](../assets/img/match-document.svg)
 

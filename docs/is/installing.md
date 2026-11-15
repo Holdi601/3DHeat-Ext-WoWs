@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Uppsetning {#installing}
 
-Nýr í skipanalínunni? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
+Hefurðu aldrei notað skipanalínu? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
 Þarf Python 3.10 eða nýrra; numpy og pyarrow eru sett upp með því.
 
 ## Skref fyrir skref {#step-by-step}
@@ -17,7 +17,7 @@ Nýr í skipanalínunni? Lestu fyrst [Áður en þú byrjar](before-you-start.md
 1. Náðu í kóðann: `git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git`,
    eða sæktu zip úr [Releases](https://github.com/Holdi601/3DHeat-Ext-WoWs/releases)
    og pakkaðu því upp.
-2. Opnaðu skipanaglugga í þeirri möppu og skrifaðu `pip install -e .`. Þetta setur
+2. Opnaðu skipanalínu í þeirri möppu og skrifaðu `pip install -e .`. Þetta setur
    skipunina `heat3d-wows-replay` í slóðina þína.
 3. Athugaðu það: `heat3d-wows-replay --version`. Þú ættir að sjá
    `heat3d-wows-replay 0.1.0`. `heat3d-wows-replay --help` sýnir valkostina:

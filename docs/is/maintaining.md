@@ -32,7 +32,7 @@ Fyrir þann sem gefur út nýja útgáfu. Gerðu skrefin í þessari röð.
    [CHANGELOG.md](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/CHANGELOG.md).
 3. **Óháð yfirferð.** Einhver sem skrifaði ekki síðurnar (manneskja eða
    agent) les README, hverja síðu og hverja mynd sem þrír lesendur: byrjandi sem hefur aldrei notað
-   skipanaglugga, átta ára barn, og atvinnumaður sem ber hvern valkost, dálk og einingu saman við kóðann.
+   skipanalínu, átta ára barn, og atvinnumaður sem ber hvern valkost, dálk og einingu saman við kóðann.
    Þeir athuga líka skýringarmyndirnar gegn kóðanum, og að engin síða nefni
    raunverulegt kort, borð, spilara eða leik, né gefi tölur úr raunverulegum upptökum.
 4. **Lagaðu það sem yfirferðin fann.** Keyrðu svo skref 1 aftur og teiknaðu
@@ -62,7 +62,7 @@ python tools/docs_i18n.py check              # exit 1 when hashes or labels are 
 
 Þýddu aðeins það sem `todo` telur upp: haltu Markdown, tenglum, kóða, skráar- og dálkanöfnum eins og þau eru,
 þýddu titla og myndlýsingar, og notaðu eigin orð 3DHeat-skoðarans fyrir hnappa hans
-og spjöld (`src/i18n/locales/<lang>/`). Búnar til tilvísunarsíður og skipanagluggamyndir haldast
+og spjöld (`src/i18n/locales/<lang>/`). Búnar til tilvísunarsíður og skipanalínumyndir haldast
 á ensku. Á vefnum segir úrelt þýðing frá því og tengir á ensku síðuna; vantandi þýðing
 fellur aftur á ensku. Tungumálavalmynd hausins og tilvísun heimasíðunnar eftir tungumáli vafrans
 koma úr `docs/_includes/`.

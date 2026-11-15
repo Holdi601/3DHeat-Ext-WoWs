@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Il-konverżjoni tar-ripetizzjonijiet {#converting-replays}
 
-## Pass pass {#step-by-step}
+## Pass b'pass {#step-by-step}
 
 1. **Ixgħel ir-reġistrazzjoni**: `isReplayEnabled` fil-`preferences.xml` tal-logħba,
    jew is-setting proprju tal-logħba fejn ikun hemm waħda. Minn hemm 'il quddiem
@@ -43,7 +43,7 @@ L-istampa hija tħaddim fuq ripetizzjoni li t-testijiet jibnu fil-kodiċi (mhux 
 
 ## Għażliet {#options}
 
-| Għażla | Default | Tagħmel |
+| Għażla | Default | X'jagħmel |
 |---|---|---|
 | `replays` (waħda jew aktar) | - | fajls `.wowsreplay`, jew folders fejn jinstabu (subfolders ukoll) |
 | `-o`, `--out` | meħtieġa | il-folder fejn jinkiteb: folder għal kull mappa ġewwa |

@@ -58,7 +58,7 @@ ottelun asiakirjan `entities` ja `players`.
   sijainnissa poistumisen ja paluun välillä.
 - **Version virrassa** (`streamVersion`): sama kuin otsikon.
 
-Kaikki muu luettu (upotukset, vahinko, terveys, kuoret, torpedot, kuorten päättymispaikat, chat, dekapitoidut kutsut,
+Kaikki muu luettu (upotukset, vahinko, terveys, kuoret, torpedot, kuorten päättymispaikat, chat, pickle-muotoiset kutsut,
 pelaajien tietueet, sijainnit) on `partial`: taulukossa tai ottelun asiakirjassa, ja säilytettynä kokonaisena
 sivutiedostossa.
 

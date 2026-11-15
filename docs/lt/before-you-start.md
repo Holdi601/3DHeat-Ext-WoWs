@@ -46,7 +46,7 @@ python --version
 Turėtumėte matyti `Python 3.` ir skaičių 10 ar didesnį, pavyzdžiui
 `Python 3.12.4`.
 
-## 4. Įsidiekite ir įdiekite įrankį {#get-the-tool-and-install-it}
+## 4. Atsisiųskite ir įdiekite įrankį {#get-the-tool-and-install-it}
 
 1. Ant [įrankio GitHub puslapio](https://github.com/Holdi601/3DHeat-Ext-WoWs) spustelėkite
    žalią mygtuką **Code**, tada **Download ZIP**, ir išskleiskite zip failą.

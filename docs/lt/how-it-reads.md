@@ -43,7 +43,7 @@ iškvietimas 76 ar 83, sviediniai 101, 102, 126 ar 127), visi randami pagal form
 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py) - todėl
 pataisa, perrikiuojanti numerius, nepaverčia lentelės tuščia. Rasti numeriai yra rungtynių dokumento `decoded` skiltyje.
 
-**Užšifruotas įrašas yra nepatikimi duomenys.** Įrašas yra failas iš bet kur, o Python pickle gali įvardyti kodą, kurį
+**Pickle yra nepatikimi duomenys.** Įrašas yra failas iš bet kur, o Python pickle gali įvardyti kodą, kurį
 reikia vykdyti. Jis įkeliamas su unpickler'iu, kuris kiekvienai klasei ar funkcijai, kurią pickle įvardija, duoda inertišką
 vietos laikiklį, todėl sukuria tik paprastus duomenis ir nieko daugiau. Testas paduoda jam pickle, kuris kviečia
 `os.system`.

@@ -9,12 +9,12 @@ search_exclude: true
 ---
 # Heilleiki {#completeness}
 
-Ekkert í upptöku er hent. Það sem breytirinn les fer í töfluna og
+Ekkert í upptöku er hent. Það sem umbreytirinn les fer í töfluna og
 leikjaskjalið; hvert annað atriði er varðveitt í heild í hliðarskránni
 `<match>.messages.parquet`; og `selfCheck.completeness` í leikjaskjalinu
 telur hvað varð um hverja tegund atriða. Þetta er reglan sem allir 3DHeat
-breytar deila:
-[Breytar varðveita allt](https://holdi601.github.io/3DHeat/converters.html).
+umbreytar deila:
+[Umbreytar varðveita allt](https://holdi601.github.io/3DHeat/converters.html).
 
 ![Sjálfsathugun tilbúinnar upptöku: hvert atriði séð, lesið, varðveitt eða tapað](../assets/img/completeness.svg)
 
@@ -42,7 +42,7 @@ talningu sinni.
 | Dálkur | Hvað |
 |---|---|
 | `time` | klukka upptökunnar, eins og í töflunni |
-| `type`, `name` | tegund atriðisins; hvað breytirinn kallar það, þar sem hann les það |
+| `type`, `name` | tegund atriðisins; hvað umbreytirinn kallar það, þar sem hann les það |
 | `entity` | skipið eða avatarinn sem það tilheyrir, eins og `entity` í töflunni |
 | `decoded` | það sem var lesið úr því, sem JSON |
 | `payload`, `text` | bæti þess, í heild; JSON-blokkirnar, í heild |

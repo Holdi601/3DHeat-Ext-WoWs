@@ -44,7 +44,7 @@ apie kurią niekas nežinojo, pasirodo su savo skaičiumi.
 | `payload`, `text` | jo baitai, pilnai; JSON blokai, pilnai |
 | `entityType`, `packet`, `method` | skaičiai |
 
-Eilutės surūšiuotos pagal paketą, metodą, esybę ir laiką. Kuris esybė yra kuris žaidėjas: rungtynių dokumento
+Eilutės surūšiuotos pagal paketą, metodą, esybę ir laiką. Kuri esybė yra kuris žaidėjas: rungtynių dokumento
 `entities` ir `players` skiltys.
 
 ## Ką skaitome ir kaip tai patikrinta {#what-is-read-and-how-it-was-checked}
@@ -52,8 +52,8 @@ Eilutės surūšiuotos pagal paketą, metodą, esybę ir laiką. Kuris esybė yr
 - **Rezultatai** (15.x, `results`): jų mūšio id sutampa su srauto id, o kiekvienas juose esantis žaidėjas yra
   antraštės sąraše.
 - **Id blokas** (15.x, `blockIds`): paskyra ir mūšis, perskaityti kaip tekstas, kad neprarastų nė vieno skaitmens.
-- **Posūkis ir ritimas** kiekvienos pozicijos: ritimas eina kartu su posūkio greičiu, nes laivas pasvyra posūkyje;
-  kėlimas beveik visada 0.
+- **Kėlimas ir posūkis** kiekvienos pozicijos: posūkis eina kartu su laivo sukimosi greičiu, nes laivas posūkyje
+  pasvyra; kėlimas beveik visada 0.
 - **Esybės** (`entities`): kada kiekviena pateko į kliento matymo lauką ir kada iš jo išėjo. Joks laivas nėra
   pozicijoje tarp išėjimo ir grįžimo.
 - **Versija srautuose** (`streamVersion`): tokia pati kaip antraštės.

@@ -16,10 +16,10 @@ search_exclude: true
 
 1. Πάρτε τον κώδικα: `git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git`,
    ή κατεβάστε ένα zip από τις [Κυκλοφορίες](https://github.com/Holdi601/3DHeat-Ext-WoWs/releases)
-   και αποσυμπίεσέ το.
+   και αποσυμπιέστε το.
 2. Ανοίξτε ένα τερματικό σε αυτόν τον φάκελο και γράψτε `pip install -e .`. Αυτό βάζει την
    εντολή `heat3d-wows-replay` στη διαδρομή σας.
-3. Έλεγξέ το: `heat3d-wows-replay --version`. Πρέπει να δείτε
+3. Ελέγξτε το: `heat3d-wows-replay --version`. Πρέπει να δείτε
    `heat3d-wows-replay 0.1.0`. Το `heat3d-wows-replay --help` δείχνει τις επιλογές:
 
 ![heat3d-wows-replay --help](../assets/img/help.svg)

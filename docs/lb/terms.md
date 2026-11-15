@@ -15,7 +15,7 @@ Gelies de 2026-11-07, Wargaming EULA Versioun 14 (gëlteg vum 10. Abrëll 2024 u
 aktuell opgelëscht); säin Abschnitt 12.3 verweist op eng World-of-Warships-Mod-Politik, där hir
 Säit ausserhalb vun engem Browser net gerendert gouf a net gelies gouf:
 
-- 5.3 (b): wann et net schrëftlech erlaabt ass, däerfs du net "... decompile,
+- 5.3 (b): wann et net schrëftlech erlaabt ass, dierft Dir net "... decompile,
   disassemble, reverse engineer or otherwise make unauthorized use of the
   Content".
 - 12.1 (k): verbueden ass "Creating, using, making available, or distributing

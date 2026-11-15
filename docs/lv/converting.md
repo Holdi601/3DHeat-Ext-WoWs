@@ -11,18 +11,18 @@ search_exclude: true
 
 ## Soli pa solim {#step-by-step}
 
-1. **Ieslēdz ierakstīšanu:** `isReplayEnabled` spēles failā `preferences.xml`, vai spēles pašu iestatījumu, ja tam ir. No tā brīža spēle saglabā katru kauju World of Warships instalācijas mapē `replays`, piemēram `C:\Games\World_of_Warships_EU\replays`.
-2. **Atver termināli** mapē, kurā rezultāti drīkst tikt rakstīti ([Pirms sākat](before-you-start.md)).
-3. **Palaid konvertētāju** atkārtojumu failiem vai mapēm, kurās tie ir:
+1. **Ieslēdziet ierakstīšanu:** `isReplayEnabled` spēles failā `preferences.xml`, vai spēles pašu iestatījumu, ja tam ir. No tā brīža spēle saglabā katru kauju World of Warships instalācijas mapē `replays`, piemēram `C:\Games\World_of_Warships_EU\replays`.
+2. **Atveriet termināli** mapē, kurā rezultāti drīkst tikt rakstīti ([Pirms sākat](before-you-start.md)).
+3. **Palaidiet konvertētāju** atkārtojumu failiem vai mapēm, kurās tie ir:
 
    ```bash
    heat3d-wows-replay "C:\Games\World_of_Warships_EU\replays" -o out
    heat3d-wows-replay a.wowsreplay b.wowsreplay -o out
    ```
 
-   `out` tiek izveidota mapē, kurā atrodas tavs termināls.
-4. **Izlasi, ko tas saka.** Vajadzētu redzēt vienu rindu katram atkārtojumam, kas beidzas ar tabulu, ko tas uzrakstīja.
-5. **Atver rezultātu** 3DHeat skatītājā: `out/<map>/<match>.parquet` Siltumkartes cilnē, `<match>.match.json` Mača cilnē. Vai arī lasi tos ar jebkuru Parquet vai JSON lasītāju.
+   `out` tiek izveidota mapē, kurā atrodas jūsu termināls.
+4. **Izlasiet, ko tas saka.** Vajadzētu redzēt vienu rindu katram atkārtojumam, kas beidzas ar tabulu, ko tas uzrakstīja.
+5. **Atveriet rezultātu** 3DHeat skatītājā: `out/<map>/<match>.parquet` Siltumkartes cilnē, `<match>.match.json` Mača cilnē. Vai arī lasiet tos ar jebkuru Parquet vai JSON lasītāju.
 
 ![Izpilde ar sintētisku atkārtojumu: konvertēšana, atkārtota palaišana, bojāts fails, tukša mape](../assets/img/convert.svg)
 

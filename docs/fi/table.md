@@ -35,7 +35,7 @@ Yksi rivi näytettä tai tapahtumaa kohden tiedostossa `<match>.parquet`: 31 sar
 | `hitLocalX`, `hitLocalY`, `hitLocalZ` | `impact`-rivillä aluksen kohdalla: missä kuori päättyi kyseisen aluksen omassa koordinaatistossa, metreinä (maailman yksiköt kertaa 15): x eteen, y ylös merenpinnasta, z oikealle |
 | `pitch`, `roll` | sijainnissa aluksen kallistus ja roll (radiaaneina), sellaisina kuin peli ne lähettää: alus kallistuu käännöksessä |
 
-| `event` | Millä rivillä | Mitä |
+| `event` | Kenen rivi | Mitä |
 |---|---|---|
 | `position` | jokainen alus | kun asiakas näki sen |
 | `death`, `kill` | uhri, tappaja | jokainen upotus kahdesti: missä alus upposi ja missä sen tappaja oli |

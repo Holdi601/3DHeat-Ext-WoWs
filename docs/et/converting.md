@@ -60,7 +60,7 @@ Ainult lahtised failid: see konverter ei kirjuta `.3dheat` faili (vaaturi saab n
 |---|---|
 | `<match>.parquet` | tabel: iga laeva asukoht ajas ja iga sündmus seal, kus see juhtus ([Tabel](table.md)) |
 | `<match>.match.json` | mängu dokument: kaart, kliendi versioon, mängijad, uppumised, vestlus ja kõik muu ([Mängu dokument](match-document.md)) |
-| `<match>.messages.parquet` | lisafail: iga kordusa üksus, mida kaks ülaltoodud faili ei hoia tervena ([Täielikkus](completeness.md)) |
+| `<match>.messages.parquet` | lisafail: iga korduse üksus, mida kaks ülaltoodud faili ei hoia tervena ([Täielikkus](completeness.md)) |
 
 `<match>` on lahingu enda ID või faili nimi, kui salvestus katkes enne tulemusi.
 

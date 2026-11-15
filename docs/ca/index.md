@@ -59,7 +59,7 @@ Aquest convertidor és una de les eines de [3DHeat](https://github.com/Holdi601/
 un visualitzador en 3D, en temps real, de telemetria i repeticions
 ([documentació](https://holdi601.github.io/3DHeat/)). El visualitzador obre la taula a la seva pestanya
 Mapa de calor i el document de partida a la seva pestanya Partida. Pot empaquetar els fitxers d'una partida
-en un de sol: [Un fitxer per partida](https://holdi601.github.io/3DHeat/container.html). Què ha de conservar
+en un de sol: [Un fitxer per partida](https://holdi601.github.io/3DHeat/container.html). La regla que ha de complir
 tot convertidor: [Els convertidors ho guarden tot](https://holdi601.github.io/3DHeat/converters.html).
 
 El convertidor es manté apart del Watcher de 3DHeat a propòsit: les repeticions estan xifrades, i les

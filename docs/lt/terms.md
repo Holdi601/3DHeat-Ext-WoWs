@@ -38,7 +38,7 @@ atskiras paketas.
 
 MIT ([`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/LICENSE)). Reikia numpy (BSD-3-Clause) ir pyarrow
 (Apache-2.0). Parašyta šiam projektui: čia esantis Blowfish šifras yra jo paties, o jo lentelės apskaičiuotos iš
-skaitmenų, kuriuos šifras apibrėžia pagal skaičių pi. Fakti apie formatą žino bendrai įrankiai, skaitantys įrašus;
+skaitmenų, kuriuos šifras apibrėžia pagal skaičių pi. Faktai apie formatą žino bendrai įrankiai, skaitantys įrašus;
 vieneto mastelio pastaba yra iš landaire/wows-toolkit (MIT). Joks kodas nepaimtas iš kito projekto.
 
 `bigworld.py` ir `table.py` yra tie patys failai, kaip ir World of Tanks konverteryje

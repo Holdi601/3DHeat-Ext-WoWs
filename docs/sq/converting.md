@@ -43,7 +43,7 @@ Pamja është një ekzekutim mbi një riluajtje që testet e ndërtojnë në kod
 
 ## Opsionet {#options}
 
-| Opsioni | I paracaktuar | Çfarë bën |
+| Opsioni | Parazgjedhja | Çfarë bën |
 |---|---|---|
 | `replays` (një ose më shumë) | - | skedarë `.wowsreplay`, ose dosje ku kërkohen ata (edhe nëndosjet) |
 | `-o`, `--out` | i detyrueshëm | dosja ku të shkruhet: brenda saj një dosje për çdo hartë |

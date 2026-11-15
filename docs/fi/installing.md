@@ -32,8 +32,8 @@ Ilman asennusta `python -m heat3d_ext_wows ...` työkalun kansiossa tekee saman.
 Jokainen käynnistys tarkistaa ensin projektin GitHub-julkaisut (enintään yksi pyyntö muutaman tunnin
 välein; se ei koskaan pysäytä muunnosta, verkossa tai ilman verkkoa). Kun uudempi julkaisu on
 ilmestynyt, komento kysyy ennen sen asentamista: `git clone` -kopio päivitetään komennolla
-`git pull --ff-only` (hylätään, jos sinulla on paikallisia muutoksia), ladattu kopio julkaisun
-arkistosta. `HEAT3D_NO_UPDATE=1` kytkee tarkistuksen ja päivityksen pois.
+`git pull --ff-only` (hylätään, jos sinulla on paikallisia muutoksia), ladattu kopio pÃ¤ivitetÃ¤Ã¤n
+julkaisun arkistosta. `HEAT3D_NO_UPDATE=1` kytkee tarkistuksen ja päivityksen pois.
 
 ---
 

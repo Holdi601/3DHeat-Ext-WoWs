@@ -11,13 +11,13 @@ search_exclude: true
 
 Είστε νέος στη γραμμή εντολών; Αυτή η σελίδα σε πάει από το μηδέν σε ένα
 λειτουργικό `heat3d-wows-replay` σε περίπου δέκα λεπτά. Αν ήδη χρησιμοποιείτε Python,
-πήγαινε κατευθείαν στο [Εγκατάσταση](installing.md).
+πηγαίνετε κατευθείαν στο [Εγκατάσταση](installing.md).
 
-## 1. Εγκατάστασε την Python {#install-python}
+## 1. Εγκαταστήστε την Python {#install-python}
 
 1. Κατεβάστε την Python **3.10 ή νεότερη** από το
    [python.org/downloads](https://www.python.org/downloads/).
-2. Στα Windows, τικάρετε **Add python.exe to PATH** στο πρώτο παράθυρο του
+2. Στα Windows, επιλέξτε **Add python.exe to PATH** στο πρώτο παράθυρο του
    εγκαταστάτη, και μετά πατήστε **Install Now**.
 3. Σε macOS και Linux, η Python 3 είναι συχνά ήδη εκεί. Γράψτε `python3` όπου
    αυτές οι σελίδες λένε `python`, και `pip3` αντί για `pip`.
@@ -32,13 +32,13 @@ search_exclude: true
 - **macOS:** ανοίξτε την εφαρμογή **Terminal**. **Linux:** κάντε δεξί κλικ μέσα
   στον φάκελο και διαλέξτε **Open in Terminal**.
 
-Για να πας σε άλλο φάκελο, γράψτε `cd` και τον φάκελο:
+Για να πάτε σε άλλο φάκελο, γράψτε `cd` και τον φάκελο:
 
 ```bash
 cd "C:\Users\you\Downloads\3DHeat-Ext-WoWs-main"
 ```
 
-## 3. Έλεγξε ότι η Python δουλεύει {#check-that-python-works}
+## 3. Ελέγξτε ότι η Python δουλεύει {#check-that-python-works}
 
 ```bash
 python --version
@@ -47,7 +47,7 @@ python --version
 Πρέπει να δείτε `Python 3.` και έναν αριθμό 10 ή μεγαλύτερο, για παράδειγμα
 `Python 3.12.4`.
 
-## 4. Πάρτε το εργαλείο και εγκατάστησέ το {#get-the-tool-and-install-it}
+## 4. Πάρτε το εργαλείο και εγκαταστήστε το {#get-the-tool-and-install-it}
 
 1. Στη [σελίδα GitHub του εργαλείου](https://github.com/Holdi601/3DHeat-Ext-WoWs), πατήστε
    το πράσινο κουμπί **Code**, και μετά **Download ZIP**, και αποσυμπιέστε το zip.
@@ -60,7 +60,7 @@ python --version
 
    Στο τέλος πρέπει να δείτε: `Successfully installed heat3d-ext-wows-0.1.0`
    (ίσως με περισσότερα ονόματα).
-4. Έλεγξέ το:
+4. Ελέγξτε το:
 
    ```bash
    heat3d-wows-replay --version
@@ -91,7 +91,7 @@ example.wowsreplay: 904 θέσεις από 3 πλοία στα 6,99 Hz, ... -> 
 
 | Βλέπετε | Τι να κάνετε |
 |---|---|
-| `'python' is not recognized ...` ή `command not found` | Η Python δεν είναι στο PATH: εγκατάστησέ την ξανά με το **Add python.exe to PATH** τικαρισμένο, ή γράψτε `py` αντί για `python` (Windows) |
+| `'python' is not recognized ...` ή `command not found` | Η Python δεν είναι στο PATH: εγκαταστήστε την ξανά με το **Add python.exe to PATH** επιλεγμένο, ή γράψτε `py` αντί για `python` (Windows) |
 | `'pip' is not recognized ...` | γράψτε `python -m pip install -e .` αντί γι' αυτό |
 | `'heat3d-wows-replay' is not recognized ...` | γράψτε `python -m heat3d_ext_wows` αντί για `heat3d-wows-replay`· κάνει το ίδιο |
 | `No module named heat3d_ext_wows` | δεν είστε στον φάκελο του εργαλείου, ή δεν είναι εγκατεστημένο: `cd` εκεί και τρέξτε `pip install -e .` |

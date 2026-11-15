@@ -53,7 +53,7 @@ search_exclude: true
 | 檔案 | 內容 |
 |---|---|
 | `<match>.parquet` | 表格：每艘船隨時間的位置，以及每個事件發生的地點（[表格](table.md)） |
-| `<match>.match.json` | 對應文件：地圖、客戶端版本、玩家、沉沒、聊天與其他一切（[對應文件](match-document.md)） |
+| `<match>.match.json` | 對戰文件：地圖、客戶端版本、玩家、沉沒、聊天與其他一切（[對戰文件](match-document.md)） |
 | `<match>.messages.parquet` | 附屬檔案：回放中上述兩個檔案未完整保存的每個項目（[完整性](completeness.md)） |
 
 `<match>` 是戰鬥本身的 id；若錄製在結算出現前就停止，則為檔案名稱。

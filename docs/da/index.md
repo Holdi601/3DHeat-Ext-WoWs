@@ -62,7 +62,7 @@ filer i én fil: [En fil pr. kamp](https://holdi601.github.io/3DHeat/container.h
 konverter skal bevare: [Konvertere bevarer alt](https://holdi601.github.io/3DHeat/converters.html).
 
 Konverteren holdes adskilt fra 3DHeat Watcher med vilje: replays er krypteret, og Wargamings vilkår
-er brede ([Vilkår og licens](terms.md)). Skulle den nogensinde forsvinde, går intet andet med den.
+er brede ([Vilkår og licens](terms.md)). Skulle den nogensinde udgå, går intet andet med den.
 Watcheren kører den, når den er installeret, og fungerer uden den.
 
 | Værktøj | Hvad det gør | Kilde | Dokumentation |

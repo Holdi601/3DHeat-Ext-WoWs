@@ -10,13 +10,13 @@ permalink: /ga/
 ---
 # Athsheinmeanna 3DHeat World of Warships {#dheat-world-of-warships-replays}
 
-**Céard é?** Is féidir le World of Warships gach cath a imríonn tú a shábháil mar chomhad athsheinm. Tiontaíonn an uirlis seo na comhaid sin ina dtábla agus ina gcáipéis chluiche (achoimre an chatha) a thaispeánann [faire 3DHeat](https://holdi601.github.io/3DHeat/) i 3T: an áit ar sheol, ar lámhaigh agus ar bualadh gach long.
+**Céard é?** Is féidir le World of Warships gach cath a imríonn tú a shábháil mar chomhad athsheinm. Tiontaíonn an uirlis seo na comhaid sin ina dtábla agus ina gcáipéis chluiche (achoimre an chatha) a thaispeánann [amharcán 3DHeat](https://holdi601.github.io/3DHeat/) i 3T: an áit ar sheol, ar lámhaigh agus ar bualadh gach long.
 
 **Cén fáth a n-úsáidfinn é?** Chun cath a fheiceáil arís ó thuas, gach long ag an am céanna; chun léarscáileanna teasa a fheiceáil den áit a seolann, a gcathaíonn agus a mbáitear tú féin agus daoine eile thar na céadta cath; chun a fheiceáil cá ndeachaigh sliogáin agus torpéidí; nó chun athsheinm a léamh le do scripteanna féin, mar is Parquet agus JSON simplí an t-aschur.
 
 **Sampla:** comhad athsheinm amháin isteach, tábla agus cáipéis chluiche amach:
 
-![Ó athsheinm go faire 3DHeat](../assets/img/ga/pipeline.svg)
+![Ó athsheinm go dtí an t-amharcán 3DHeat](../assets/img/ga/pipeline.svg)
 
 ## Tús tapa {#quick-start}
 
@@ -29,7 +29,7 @@ pip install -e .
 heat3d-wows-replay "<World of Warships>/replays" -o out
 ```
 
-Ba cheart duit líne amháin a fheiceáil do gach athsheinm, ag críochnú leis an gcomhad a scríobh sé: `... -> out/<map>/<match>.parquet`. Oscail an comhad sin agus an `<match>.match.json` lena thaobh i bhfaire 3DHeat.
+Ba cheart duit líne amháin a fheiceáil do gach athsheinm, ag críochnú leis an gcomhad a scríobh sé: `... -> out/<map>/<match>.parquet`. Oscail an comhad sin agus an `<match>.match.json` lena thaobh in amharcán 3DHeat.
 
 ## An doiciméadúchán seo {#this-documentation}
 
@@ -47,13 +47,13 @@ Ba cheart duit líne amháin a fheiceáil do gach athsheinm, ag críochnú leis 
 
 ## Cuid de 3DHeat {#part-of-3dheat}
 
-Is ceann d'uirlisí [3DHeat](https://github.com/Holdi601/3DHeat) an tiontaire seo, faire telemetrie agus athsheinm 3T fíor-ama ([doiciméadúchán](https://holdi601.github.io/3DHeat/)). Osclaíonn an fhaire an tábla ina cluaisín Léarscáil teasa agus an cháipéis chluiche ina cluaisín Cluiche. Is féidir léi comhaid cluiche a phacáil i gcomhad amháin: [Comhad amháin an cluiche](https://holdi601.github.io/3DHeat/container.html). An rud a chaithfidh gach tiontaire a choimeád: [Coimeádann tiontairí gach rud](https://holdi601.github.io/3DHeat/converters.html).
+Is ceann d'uirlisí [3DHeat](https://github.com/Holdi601/3DHeat) an tiontaire seo, amharcán teiliméadrachta agus athsheinm 3T fíor-ama ([doiciméadúchán](https://holdi601.github.io/3DHeat/)). Osclaíonn an t-amharcán an tábla ina cluaisín Léarscáil teasa agus an cháipéis chluiche ina cluaisín Cluiche. Is féidir léi comhaid cluiche a phacáil i gcomhad amháin: [Comhad amháin an cluiche](https://holdi601.github.io/3DHeat/container.html). An rud a chaithfidh gach tiontaire a choimeád: [Coimeádann tiontairí gach rud](https://holdi601.github.io/3DHeat/converters.html).
 
 Tá an tiontaire scartha ó 3DHeat Watcher d'aon turas: tá na hathsheinmeanna criptithe, agus tá téarmaí Wargaming leathan ([Téarmaí agus ceadúnas](terms.md)). Má chaithfear é a bhaint, ní imíonn aon rud eile leis. Ritheann an Watcher é nuair atá sé suiteáilte agus oibríonn sé gan é.
 
 | Uirlis | Cad a dhéanann sí | Foinse | Doiciméadúchán |
 |---|---|---|---|
-| Faire 3DHeat | taispeánann sí na sonraí i 3T: léarscáileanna teasa, athsheinmeanna, anailís rása | [3DHeat](https://github.com/Holdi601/3DHeat) | [suíomh](https://holdi601.github.io/3DHeat/) |
+| Amharcán 3DHeat | taispeánann sí na sonraí i 3T: léarscáileanna teasa, athsheinmeanna, anailís rása | [3DHeat](https://github.com/Holdi601/3DHeat) | [suíomh](https://holdi601.github.io/3DHeat/) |
 | GameFiles | cúrsaí agus leibhéil as comhaid a seoltar le cluichí | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [suíomh](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetria lap, agus leibhéil atógtha ó fhístéip chluiche | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [suíomh](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | breiseán d'Unreal Editor a onnmhairíonn leibhéal | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [suíomh](https://holdi601.github.io/3DHeat-UnrealExporter/) |

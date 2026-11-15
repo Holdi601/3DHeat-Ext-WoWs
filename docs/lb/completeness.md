@@ -10,7 +10,7 @@ search_exclude: true
 # Vollstännegkeet {#completeness}
 
 Näischt an engem Replay gëtt ewechgeheit. Wat de Konverter liest, kënnt an d'
-Tabell an d'Match-Dokument; all anert Stéck gëtt ganz am Sidecar
+Tabell an d'Match-Dokument; all anert Stéck gëtt ganz an der Niewendatei
 `<match>.messages.parquet` behalen; an dem Match-Dokument säin
 `selfCheck.completeness` zielt, wat aus all Aart Stéck ginn ass. Dat ass
 d'Regel, déi all 3DHeat-Konverter deelen:
@@ -26,8 +26,8 @@ Fir all Aart Stéck gëtt `selfCheck.completeness.types`:
 |---|---|
 | `seen` | wéi vill de Replay hält |
 | `decoded` | ganz gelies |
-| `partial` | zum Deel gelies, a ganz am Sidecar behalen |
-| `raw` | nëmmen ganz am Sidecar behalen, net gelies |
+| `partial` | zum Deel gelies, a ganz an der Niewendatei behalen |
+| `raw` | nëmmen ganz an der Niewendatei behalen, net gelies |
 | `lost` | verluer: émmer `0` |
 
 D'Aarte sinn déi vum Replay selwer: `block <n>` (d'JSON-Blöck), d'eege Bytes
@@ -36,7 +36,7 @@ vum Container, `packet <type>`, a fir Opruffer op Entitéite
 `selfCheck.entities.roles` seet, wéi eng Entitéitstyp dem opuelende Spiller säin
 Avatar ass a wéi eng d'Schëffer. Eng Aart, déi keen kannt huet, erschéngt mat hirer Zuel.
 
-## De Sidecar {#the-sidecar}
+## D'Niewendatei {#the-sidecar}
 
 | Kolonn | Wat |
 |---|---|
@@ -64,8 +64,8 @@ Spiller ass: dem Match-Dokument seng `entities` an `players`.
 
 Alles anescht, wat gelies gëtt (Versenkungen, Schued, Liewen, Granaten, Torpedoen, wou
 Granaten opgehalen hunn, Chat, gepickelt Opruffer, d'Enregistremente vun de Spiller, Positiounen), ass
-`partial`: an der Tabell oder dem Match-Dokument, a ganz am
-Sidecar behalen.
+`partial`: an der Tabell oder dem Match-Dokument, a ganz an der
+Niewendatei behalen.
 
 **Behalen, awer net gelies** (`raw`), déi gréissten Aarten: Positiouns-Updates, déi net an
 der Tabell sinn (nodeems e Schëff versonk ass, Entitéiten ouni Spiller), déi heefeg

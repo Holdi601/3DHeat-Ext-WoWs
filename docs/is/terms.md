@@ -29,7 +29,7 @@ síða birtist ekki utan vafra og var ekki lesin:
 - 12.1 (p): "Circumventing or bypassing enforcement and security measures
   implemented by Wargaming".
 
-Það sem þessi breytir gerir: hann les skrá sem leikurinn skrifaði, eftir bardagann,
+Það sem þessi umbreytir gerir: hann les skrá sem leikurinn skrifaði, eftir bardagann,
 utan leiksins. Hann breytir engu í leiknum, talar við engan þjón og
 sýnir ekkert meðan á bardaga stendur. Hann afkóðar strauminn með lykli leiksins,
 sem hægt er að lesa 5.3 (b) og 12.1 (p) þannig að nái yfir. Notkun hans er ákvörðun
@@ -45,7 +45,7 @@ einingakvarðann er frá landaire/wows-toolkit (MIT). Enginn kóði var tekinn �
 öðru verkefni.
 
 `bigworld.py` og `table.py` eru sömu skrár og í World of Tanks
-breytinum ([3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT)); breyttu báðum saman.
+umbreytinum ([3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT)); breyttu báðum saman.
 
 ---
 

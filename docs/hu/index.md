@@ -12,7 +12,7 @@ permalink: /hu/
 
 **Mi ez?** A World of Warships minden csatát el tud menteni visszajátszás-fájlként. Ez az eszköz
 ezeket a fájlokat táblázattá és meccsdokumentummá (a csata összefoglalójává) alakítja, amelyet a
-[3DHeat nézegető](https://holdi601.github.io/3DHeat/) 3D-ben mutat meg: hol hajózott, lőtt és
+[3DHeat megjelenítő](https://holdi601.github.io/3DHeat/) 3D-ben mutat meg: hol hajózott, lőtt és
 találtak el minden hajót.
 
 **Mire jó?** Hogy egy csatát újra megnézz felülről, minden hajót egyszerre; hőtérképekhez, hogy lásd,
@@ -21,7 +21,7 @@ hol hajózol, harcolsz és süllyedsz te és mások több száz csatában; hogy 
 
 **Példa:** egy visszajátszás-fájl be, egy táblázat és egy meccsdokumentum ki:
 
-![A visszajátszástól a 3DHeat nézegetőig](../assets/img/hu/pipeline.svg)
+![A visszajátszástól a 3DHeat megjelenítőig](../assets/img/hu/pipeline.svg)
 
 ## Gyors kezdés {#quick-start}
 
@@ -36,7 +36,7 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 
 Visszajátszásonként egy sort kell látnod, a végén a fájllal, amelyet írt:
 `... -> out/<map>/<match>.parquet`. Nyisd meg ezt a fájlt, és mellette a
-`<match>.match.json`-t a 3DHeat nézegetőben.
+`<match>.match.json`-t a 3DHeat megjelenítőben.
 
 ## Ez a dokumentáció {#this-documentation}
 
@@ -55,8 +55,8 @@ Visszajátszásonként egy sort kell látnod, a végén a fájllal, amelyet írt
 ## A 3DHeat része {#part-of-3dheat}
 
 Ez a konverter a [3DHeat](https://github.com/Holdi601/3DHeat) eszközeinek egyike, egy valós
-idejű 3D telemetria- és visszajátszás-nézegető ([dokumentáció](https://holdi601.github.io/3DHeat/)).
-A nézegető a táblázatot a Hőtérkép fülön, a meccsdokumentumot a Meccs fülön nyitja meg. Egy meccs
+idejű 3D telemetria- és visszajátszás-megjelenítő ([dokumentáció](https://holdi601.github.io/3DHeat/)).
+A megjelenítő a táblázatot a Hőtérkép fülön, a meccsdokumentumot a Meccs fülön nyitja meg. Egy meccs
 fájljait egybe is csomagolhatja: [Egy fájl egy meccshez](https://holdi601.github.io/3DHeat/container.html).
 Amit minden konverternek meg kell őriznie: [A konverterek mindent megtartanak](https://holdi601.github.io/3DHeat/converters.html).
 
@@ -66,7 +66,7 @@ távolítani, semmi más nem megy vele együtt. A Watcher telepítve futtatja, �
 
 | Eszköz | Mit csinál | Forrás | Dokumentáció |
 |---|---|---|---|
-| 3DHeat nézegető | 3D-ben mutatja az adatokat: hőtérképek, visszajátszások, versenyelemzés | [3DHeat](https://github.com/Holdi601/3DHeat) | [oldal](https://holdi601.github.io/3DHeat/) |
+| 3DHeat megjelenítő | 3D-ben mutatja az adatokat: hőtérképek, visszajátszások, versenyelemzés | [3DHeat](https://github.com/Holdi601/3DHeat) | [oldal](https://holdi601.github.io/3DHeat/) |
 | GameFiles | pályák és versenypályák a játékok fájljaiból | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [oldal](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | körtelemetria, és játékvideóból újjáépített pályák | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [oldal](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | egy Unreal Editor-bővítmény, amely egy pályát exportál | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [oldal](https://holdi601.github.io/3DHeat-UnrealExporter/) |

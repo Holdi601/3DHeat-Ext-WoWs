@@ -25,7 +25,7 @@ Do gach cineál míre, tugann `selfCheck.completeness.types`:
 | `raw` | coinnithe iomlán sa chomhad cliatháin amháin, gan léamh |
 | `lost` | caillte: i gcónaí `0` |
 
-Is iad cineálacha na hathsheinme féin iad na cineálacha: `block <n>` (na bloic JSON), beartanna féin an choimeádáin, `packet <type>`, agus do ghlaonna ar eintitis `method <entity type>.<number>` agus `property <entity type>.<number>`. Deir `selfCheck.entities.roles` cén cineál eintitis avatar an imreora taifeadta agus cé acu na longa. Taispeánann cineál nach raibh a fhios ag aon duine faoi lena chomhaireamh.
+Is iad cineálacha na hathsheinme féin iad na cineálacha: `block <n>` (na bloic JSON), beartanna féin an choimeádáin, `packet <type>`, agus do ghlaonna ar eintitis `method <entity type>.<number>` agus `property <entity type>.<number>`. Deir `selfCheck.entities.roles` cén cineál eintitis avatar an imreora taifeadta agus cé acu na longa. Taispeántar cineál nach raibh ar eolas ag aon duine lena chomhaireamh.
 
 ## An comhad cliatháin {#the-sidecar}
 

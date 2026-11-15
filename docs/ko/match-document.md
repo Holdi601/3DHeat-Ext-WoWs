@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # 매치 문서 {#the-match-document}
 
-`<match>.match.json`에는 리플레이가 테이블의 행이 아닌 것으로 말하는 모든 것이 들어 있어요. 뷰어의 매치 탭이 이 파일을 읽어요. (코드에서는 이것을 요약이라고 불러요.)
+`<match>.match.json`에는 리플레이가 테이블의 행이 아닌 것으로 말하는 모든 것이 들어 있습니다. 뷰어의 매치 탭이 이 파일을 읽습니다. (코드에서는 이것을 요약(summary)이라고 부릅니다.)
 
 ![합성 매치 문서의 시작 부분과 그 키들](../assets/img/match-document.svg)
 
@@ -50,7 +50,7 @@ search_exclude: true
 | `header` | 첫 JSON 블록 전체(명단은 뺌): 게임 모드, 날씨, 맵 경계, 팀 크기 등 |
 | `moreBlocks` | 첫 블록 뒤의 JSON 블록들, 그대로 |
 | `blockIds` | 15.x: 녹화한 플레이어의 계정과 전투 ID, 문자로 읽은 것 |
-| `results` | 15.x: 결과. 이 클라이언트들은 결과를 스트림에 보관해요 |
+| `results` | 15.x: 결과. 이 클라이언트들은 결과를 스트림에 보관합니다 |
 | `entities` | 스트림이 만드는 모든 엔티티: 타입 번호와 역할, 클라이언트 시야에 들어온 때와 나간 때 |
 | `selfCheck` | 완전성 셈([완전성](completeness.md))과 엔티티, 결과, ID, 버전의 확인 |
 

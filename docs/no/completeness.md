@@ -13,7 +13,7 @@ Ingenting i en replay kastes. Det konverteren leser, går inn i tabellen og
 kampdokumentet; alt annet beholdes helt i sidefilen
 `<kamp>.messages.parquet`; og kampdokumentets
 `selfCheck.completeness` teller hva som ble av hver type post. Dette er regelen alle
-3DHeat-konverterere deler: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
+3DHeat-konvertere deler: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
 
 ![Selvkontrollen til en syntetisk replay: hver post sett, lest, beholdt eller tapt](../assets/img/completeness.svg)
 

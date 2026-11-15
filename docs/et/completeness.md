@@ -37,15 +37,14 @@ loendusega.
 
 | Veerg | Mis see on |
 |---|---|
-| `time` | kordusa kell, nagu tabelis |
+| `time` | korduse kell, nagu tabelis |
 | `type`, `name` | üksuse liik; mida konverter selle nimetab, kus ta seda loeb |
 | `entity` | laev või avatar, kuhu see kuulub, nagu tabeli `entity` |
 | `decoded` | mis sellest loeti, JSON-ina |
 | `payload`, `text` | tema baidid tervena; JSON-plokid tervena |
 | `entityType`, `packet`, `method` | numbrid |
 
-Read on sorteeritud paketi, meetodi, olemi ja aja järgi. Kumb olem on kumb mängija: mängu dokumendi `entities` ja
-`players`.
+Read on sorteeritud paketi, meetodi, olemi ja aja järgi. Millised olemid on millised mängijad: mängu dokumendi `entities` ja `players`.
 
 ## Mida loetakse ja kuidas kontrolliti {#what-is-read-and-how-it-was-checked}
 
@@ -56,7 +55,7 @@ Read on sorteeritud paketi, meetodi, olemi ja aja järgi. Kumb olem on kumb män
   lahkumise ja tagasituleku vahel.
 - **Voo versioon** (`streamVersion`): sama, mis päises.
 
-Kõik muu loetu (uppumised, kahju, tervis, mürsud, torpeedod, kohad, kus mürsud lõppesid, vestlus, kurnatud kutsed,
+Kõik muu loetu (uppumised, kahju, tervis, mürsud, torpeedod, kohad, kus mürsud lõppesid, vestlus, pikleeritud kutsed,
 mängijate kirjed, asukohad) on `partial`: tabelis või mängu dokumendis ning lisafailis tervena.
 
 **Hoitud, aga mitte loetud** (`raw`), suurimad liigid: asukohauuendused, mida tabelis ei ole (pärast laeva

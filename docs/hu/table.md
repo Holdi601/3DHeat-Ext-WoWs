@@ -49,7 +49,7 @@ Mintánként vagy eseményenként egy sor, a `<match>.parquet` fájlban: 31 oszl
 egységet tesz meg, a térkép pedig körülbelül 1200 egység széles. A hajók hajótest-geometriájához mérve
 egy egység 15 m; a játék saját hatótávolság-adatai szerint 30 m (landaire/wows-toolkit,
 `crates/wows-core/src/units.rs`, MIT, amely a kettőt nem egyezteti). A táblázat a világegységeket
-1-es méretaránnyal tartja meg, ahogy minden 3DHeat-forrás megtartja a játéka saját egységeit, így a
+1-es méretaránnyal tartja meg, ahogy minden 3DHeat-forrás megtartja a játék saját egységeit, így az
 ugyanabban az egységben exportált pálya egybeesik. A lábléc `heat3d` súgói: Y felfelé, Z megfordítva
 (így a térkép nem tükröződik), egy hajó 12 egység hosszú, a `player` a személy, a `team` a csoport,
 a `match` a munkamenet.

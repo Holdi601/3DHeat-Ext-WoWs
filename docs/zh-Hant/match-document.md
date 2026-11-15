@@ -1,5 +1,5 @@
 ---
-title: "對應文件"
+title: "對戰文件"
 nav_order: 6
 lang: zh-Hant
 source: match-document.md
@@ -7,11 +7,11 @@ source_hash: "6e925c5effd7"
 nav_exclude: true
 search_exclude: true
 ---
-# 對應文件 {#the-match-document}
+# 對戰文件 {#the-match-document}
 
 `<match>.match.json` 保存了回放所記錄、但不屬於表格中任何一列的所有內容。檢視器的對戰分頁會讀取它。（程式碼稱它為摘要。）
 
-![合成對應文件的開頭，以及它的鍵](../assets/img/match-document.svg)
+![合成對戰文件的開頭，以及它的鍵](../assets/img/match-document.svg)
 
 ## 戰鬥 {#the-battle}
 

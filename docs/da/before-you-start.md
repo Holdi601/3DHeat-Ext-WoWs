@@ -90,7 +90,7 @@ og slutter med afslutningsstatus `0`. De nye filer ligger i mappen `out`.
 
 | Du ser | Det skal du gøre |
 |---|---|
-| `'python' is not recognized ...` eller `command not found` | Python er ikke på PATH: installer det igen med **Add python.exe to PATH** sat af, eller skriv `py` i stedet for `python` (Windows) |
+| `'python' is not recognized ...` eller `command not found` | Python er ikke på PATH: installer det igen med **Add python.exe to PATH** sat til, eller skriv `py` i stedet for `python` (Windows) |
 | `'pip' is not recognized ...` | skriv `python -m pip install -e .` i stedet |
 | `'heat3d-wows-replay' is not recognized ...` | skriv `python -m heat3d_ext_wows` i stedet for `heat3d-wows-replay`; den gør det samme |
 | `No module named heat3d_ext_wows` | du står ikke i værktøjets mappe, eller det er ikke installeret: `cd` derhen og kør `pip install -e .` |

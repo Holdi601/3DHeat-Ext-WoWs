@@ -49,9 +49,9 @@ Site, 3DHeat görüntüleyicisinin 40 diline çevrilmiştir: İngilizcesi `docs/
 python tools/docs_i18n.py hashes             # İngilizce bir değişiklikten sonra: her sayfanın karmasını kaydet
 python tools/docs_i18n.py svg-strings        # bir resim değişikliğinden sonra: çevrilecek etiketler
 python tools/docs_i18n.py status             # dil başına: güncel, eski ve eksik sayfalar
-python tools/docs_i18n.py todo --lang de     # (yeniden) çevrilecek Almanca sayfalar
-python tools/docs_i18n.py svg-build --lang de    # docs/assets/i18n/svg/de.json dosyasından Almanca resimler
-python tools/docs_i18n.py finish --lang de   # Almanca sayfalara İngilizce karmayı damgala
+python tools/docs_i18n.py todo --lang tr     # (yeniden) çevrilecek Türkçe sayfalar
+python tools/docs_i18n.py svg-build --lang tr    # docs/assets/i18n/svg/tr.json dosyasından Türkçe resimler
+python tools/docs_i18n.py finish --lang tr   # Türkçe sayfalara İngilizce karmayı damgala
 python tools/docs_i18n.py check              # karmalar ya da etiketler eskiyse 1 ile çıkar
 ```
 

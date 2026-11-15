@@ -20,7 +20,7 @@ lukee sen. (Koodi kutsuu sitä yhteenvedoksi.)
 |---|---|
 | `format`, `version` | `heat3d-wows-match`, `2` |
 | `game`, `match`, `map`, `mapName` | `World of Warships`; taistelun tunnus; kartta sellaisena kuin peli sen nimeää (`spaces/<map>`) ja sen näyttönimi |
-| `clientVersion`, `streamVersion` | pelin versio otsikosta, ja sellaisena kuin paketti­virta sen kertoo |
+| `clientVersion`, `streamVersion` | pelin versio otsikosta, ja sellaisena kuin pakettivirta sen kertoo |
 | `recorded` | milloin replay tallennettiin, sellaisena kuin peli sen kirjoittaa |
 | `player`, `vehicle` | tallentava pelaaja ja hänen aluksensa |
 | `gameType`, `scenario` | taistelun tyyppi (`RandomBattle`, ...) ja skenaario, otsikosta |

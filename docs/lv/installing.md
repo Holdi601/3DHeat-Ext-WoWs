@@ -9,13 +9,13 @@ search_exclude: true
 ---
 # Uzstādīšana {#installing}
 
-Jauns komandrindā? Vispirms izlasi [Pirms sākat](before-you-start.md). Nepieciešams Python 3.10 vai jaunāks; numpy un pyarrow tiek uzstādīti kopā ar to.
+Jauns komandrindā? Vispirms izlasiet [Pirms sākat](before-you-start.md). Nepieciešams Python 3.10 vai jaunāks; numpy un pyarrow tiek uzstādīti kopā ar to.
 
 ## Soli pa solim {#step-by-step}
 
-1. Iegūsti kodu: `git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git`, vai lejupielādē zip failu no [Releases](https://github.com/Holdi601/3DHeat-Ext-WoWs/releases) un izpako to.
-2. Atver termināli šajā mapē un ieraksti `pip install -e .`. Tas padara komandu `heat3d-wows-replay` pieejamu tavā ceļā.
-3. Pārbaudi: `heat3d-wows-replay --version`. Vajadzētu redzēt `heat3d-wows-replay 0.1.0`. `heat3d-wows-replay --help` parāda iespējas:
+1. Iegūstiet kodu: `git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git`, vai lejupielādējiet zip failu no [Releases](https://github.com/Holdi601/3DHeat-Ext-WoWs/releases) un izpakojiet to.
+2. Atveriet termināli šajā mapē un ierakstiet `pip install -e .`. Tas padara komandu `heat3d-wows-replay` pieejamu jūsu ceļā.
+3. Pārbaudiet: `heat3d-wows-replay --version`. Vajadzētu redzēt `heat3d-wows-replay 0.1.0`. `heat3d-wows-replay --help` parāda iespējas:
 
 ![heat3d-wows-replay --help](../assets/img/help.svg)
 

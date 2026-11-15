@@ -11,8 +11,8 @@ search_exclude: true
 
 ## Wargamings vilkår {#wargamings-terms}
 
-Lest 2026-11-07, Wargaming EULA versjon 14 (gjelder fra 10. april 2024, oppført som gjeldende); dets
-punkt 12.3 peker til en modpolicy for World of Warships, hvis side ikke ble vist utenfor en nettleser og ikke ble lest:
+Lest 2026-11-07, Wargaming EULA versjon 14 (gjelder fra 10. april 2024, oppført som gjeldende). Punkt 12.3
+viser til en retningslinje for mods i World of Warships; den siden kunne ikke vises utenfor en nettleser, og ble ikke lest:
 
 - 5.3 (b): med mindre det er gitt skriftlig tillatelse, må du ikke «... decompile,
   disassemble, reverse engineer or otherwise make unauthorized use of the

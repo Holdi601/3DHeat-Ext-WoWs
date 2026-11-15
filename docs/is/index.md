@@ -27,7 +27,7 @@ sem úttakið er venjulegt Parquet og JSON.
 
 ## Fljótleg byrjun {#quick-start}
 
-Nýr í skipanalínunni? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
+Hefurðu aldrei notað skipanalínu? Lestu fyrst [Áður en þú byrjar](before-you-start.md).
 
 ```bash
 git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git
@@ -44,7 +44,7 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 
 | Síða | Hvað hún fjallar um |
 |---|---|
-| [Áður en þú byrjar](before-you-start.md) | Python, skipanaglugga og hvernig árangur lítur út |
+| [Áður en þú byrjar](before-you-start.md) | Python, skipanalínu og hvernig árangur lítur út |
 | [Uppsetning](installing.md) | uppsetning, athugun, uppfærslur |
 | [Upptökum breytt](converting.md) | skref fyrir skref, allir valkostir, skilaboð, útgöngustaða |
 | [Taflan](table.md) | hver dálkur og atburður í `<match>.parquet` |
@@ -56,14 +56,14 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 
 ## Hluti af 3DHeat {#part-of-3dheat}
 
-Þessi breytir er eitt af verkfærum [3DHeat](https://github.com/Holdi601/3DHeat),
+Þessi umbreytir er eitt af verkfærum [3DHeat](https://github.com/Holdi601/3DHeat),
 rauntíma 3D-skoðara fyrir mælingar og upptökur ([skjölun](https://holdi601.github.io/3DHeat/)).
 Skoðarinn opnar töfluna í flipanum Hitakort og leikjaskjalið í flipanum
 Leikur. Hann getur pakkað skrám leiks í eina skrá:
 [Ein skrá á leik](https://holdi601.github.io/3DHeat/container.html). Það sem hver
-breytir verður að varðveita: [Breytar varðveita allt](https://holdi601.github.io/3DHeat/converters.html).
+umbreytir verður að varðveita: [Umbreytar varðveita allt](https://holdi601.github.io/3DHeat/converters.html).
 
-Breytirinn er viljandi hafður aðskilinn frá 3DHeat Watcher: upptökurnar
+Umbreytirinn er viljandi hafður aðskilinn frá 3DHeat Watcher: upptökurnar
 eru dulkóðaðar og skilmálar Wargaming eru víðtækir ([Skilmálar og leyfi](terms.md)).
 Ef hann þarf einhvern tíma að fara, fer ekkert annað með honum. Watcher keyrir hann þegar
 hann er uppsettur og virkar án hans.

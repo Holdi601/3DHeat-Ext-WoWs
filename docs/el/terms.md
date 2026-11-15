@@ -45,7 +45,7 @@ MIT ([`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/LICENSE))
 από άλλο έργο.
 
 Τα `bigworld.py` και `table.py` είναι τα ίδια αρχεία με αυτά του μετατροπέα World of Tanks
-([3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT))· άλλαξέ τα και τα δύο μαζί.
+([3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT))· αλλάξτε τα και τα δύο μαζί.
 
 ---
 

@@ -11,12 +11,21 @@ search_exclude: true
 
 ## Wargaming の規約 {#wargamings-terms}
 
-2026-11-07 に読んだもの。Wargaming EULA のバージョン 14（2024 年 4 月 10 日発効。現行として掲載）。そのセクション 12.3 は World of Warships の MOD の方針を指していますが、そのページはブラウザーの外では表示されず、読んでいません:
+2026-11-07 に読んだもの。Wargaming EULA のバージョン 14（2024 年 4 月 10 日発効。現行として掲載）。そのセクション 12.3 は World of Warships の MOD の方針を指していますが、そのページはブラウザーの外では表示されず、読んでいません。条文は英語の原文のまま引用します:
 
-- 5.3 (b): 書面による許可がない限り、「... コンテンツを逆コンパイル、逆アセンブル、リバースエンジニアリング、またはそれ以外の方法で無許可で使用すること」をしてはなりません。
-- 12.1 (k): 禁止されているのは「無許可のソフトウェアやツールを作成、使用、提供、または配布すること。これには、ハック、チート、エクスプロイト、スクリプト、ボット、トレーナー、自動化プログラム、または目的を問わず製品と何らかの形で相互作用する、その他のソフトウェアが含まれる。Wargaming とそのようなソフトウェアとの間のいかなる通信も、傍受、エミュレート、またはリダイレクトすること」。
-- 12.1 (l): 「... Wargaming が明示的に許可しない限り、製品を変更してユーザー体験を変える（「MOD」）ように設計されたソフトウェア」。
-- 12.1 (p): 「Wargaming が実装した実施と安全の措置を回避またはバイパスすること」。
+- 5.3 (b): unless authorised in writing, you must not "... decompile,
+  disassemble, reverse engineer or otherwise make unauthorized use of the
+  Content".
+- 12.1 (k): prohibited is "Creating, using, making available, or distributing
+  any unauthorized software or tools, including hacks, cheats, exploits,
+  scripts, bots, trainers, automation programs, or other software that
+  interacts with a Product in any way and for any purpose, including
+  intercepts, emulates, or redirects any communication between such software
+  and Wargaming."
+- 12.1 (l): "... any software designed to modify a Product and change the user
+  experience ("mods") unless expressly permitted by Wargaming".
+- 12.1 (p): "Circumventing or bypassing enforcement and security measures
+  implemented by Wargaming".
 
 この変換ツールがすること: ゲームが戦闘の後に、ゲームの外で書いたファイルを読みます。ゲームの中では何も変えず、サーバーとは通信せず、戦闘中に何も表示しません。ストリームは、ゲームの鍵で復号します。これは 5.3 (b) と 12.1 (p) が対象とすると読めるかもしれません。使うかどうかはユーザー自身の判断です。だからこれは別のパッケージになっています。
 

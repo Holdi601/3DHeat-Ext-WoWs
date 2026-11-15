@@ -17,7 +17,7 @@ Bir tekrar, JSON bloklarından oluşan bir başlık ve oyunun paket akışıdır
   hesabı ile savaşın kimliği metin olarak, `blockIds` içine okunur. Sonuçlar JSON'da değildir; 15.x onları akışta tutar.
 - Paket akışı, zlib ile sıkıştırılmış ve oyunun taşıdığı bir anahtarla Blowfish ile şifrelenmiş; bu dosyaları okuyan
   topluluk araçlarının yayımladığı. Deşifre edildiğinde şunları tutar:
-  - istemcinin görebildiği her geminin motorunun konum güncellemeleri (kendi takımı boyunca, düşmanlar görüldüğünde ya
+  - istemcinin görebildiği her geminin konum güncellemeleri (oyun motorunun gönderdiği) (kendi takımı boyunca, düşmanlar görüldüğünde ya
     da yakınken); hareket ederken saniyede birkaç kez, etmezken daha seyrek;
   - kayıt oyuncusunun kendi gemisi, kendi paketinde, saniyede yaklaşık yedi kez;
   - başlangıçta bir kez, oyuncuların kayıtları turşulanmış bir Python listesi olarak. Bunlar akıştaki hangi varlığın

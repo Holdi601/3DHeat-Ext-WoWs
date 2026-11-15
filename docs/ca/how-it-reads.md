@@ -44,7 +44,7 @@ Una repetició és una capçalera de blocs JSON i el flux de paquets del joc (no
 
 Els números de paquet i de mètode que canvien entre les versions comprovades (el paquet del propi vaixell és el
 43 o el 44, la crida d'enfonsament el 76 o el 83, els obusos el 101, 102, 126 o 127) es troben tots per la
-forma: vegeu [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py)
+forma: mira [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py)
 . Així un pedaç que els renumeri no buida la taula. Els números trobats són al `decoded` del document de partida.
 
 **El `pickle` són dades no fiables.** Una repetició és un fitxer de qualsevol lloc, i un `pickle` pot nomenar

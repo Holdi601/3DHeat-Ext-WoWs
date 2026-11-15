@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Pilnība {#completeness}
 
-Neviens atkārtojuma saturs netiek izmests. Ko konvertētājs nolasa, nonāk tabulā un mača dokumentā; katrs cits vienums tiek paturēts pilnībā papildfailā `<match>.messages.parquet`; un mača dokumenta `selfCheck.completeness` skaita, kas notika ar katru vienuma veidu. Tas ir noteikums, ko visi 3DHeat konvertētāji dalīa: [Konvertētāji saglabā visu](https://holdi601.github.io/3DHeat/converters.html).
+Neviens atkārtojuma saturs netiek izmests. Ko konvertētājs nolasa, nonāk tabulā un mača dokumentā; katrs cits vienums tiek paturēts pilnībā papildfailā `<match>.messages.parquet`; un mača dokumenta `selfCheck.completeness` skaita, kas notika ar katru vienuma veidu. Tas ir noteikums, ko ievēro visi 3DHeat konvertētāji: [Konvertētāji saglabā visu](https://holdi601.github.io/3DHeat/converters.html).
 
 ![Pašpārbaude sintētiskam atkārtojumam: katrs redzētais vienums, nolasīts, paturēts vai zaudēts](../assets/img/completeness.svg)
 

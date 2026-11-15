@@ -46,7 +46,7 @@ search_exclude: true
 | `chat` | avsenderen | `text` linjen, `reason` kanalen (`battle_team`, `battle_common`) |
 
 **Enheter.** En verdensenhet er ikke en meter. Et slagskip i fart dekker omtrent 2,4
-av dem i sekundet, og et kart er omtrent 1 200 på tvers. Målt mot skipenes skrogs geometri er en enhet 15 m;
+av dem i sekundet, og et kart er omtrent 1 200 på tvers. Målt mot skipenes skrog er en enhet 15 m;
 spillets egne rekkeviddetall gjør den til 30 m (landaire/wows-toolkit, `crates/wows-core/src/units.rs`, MIT, som lar
 de to stå uavstemt). Tabellen beholder verdensenheter i skala 1, slik alle 3DHeat-kilder beholder sitt spills egne
 enheter, så et nivå eksportert i samme enheter stemmer. Bunnteksten under `heat3d` gir hintene: y opp, z snudd (så kartet

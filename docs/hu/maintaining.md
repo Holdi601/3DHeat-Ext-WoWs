@@ -42,13 +42,13 @@ Annak, aki új verziót ad ki. A lépéseket ebben a sorrendben végezd el.
    a hash-ét, amelyből fordították. Fordítsd újra minden olyan oldalt, amelynek az angol forrása
    megváltozott, az ábrák feliratait is beleértve. Aztán nézd át minden nyelvet: mindhárom
    olvasónak érthető, a feliratok helyesek, és ugyanazokat a szavakat használja, mint a
-   3DHeat nézegető abban a nyelvben.
+   3DHeat megjelenítő abban a nyelvben.
 6. **Kiadás:** emeld meg a `VERSION` értékét, és készíts `v<VERSION>` címkét. **Csak a
    tulajdonos jóváhagyása után tolj.**
 
 ## Fordítások: a parancsok {#translations-the-commands}
 
-Az oldal a 3DHeat nézegető 40 nyelvére van lefordítva: az angol a `docs/` mappában van, minden
+Az oldal a 3DHeat megjelenítő 40 nyelvére van lefordítva: az angol a `docs/` mappában van, minden
 más nyelv a `docs/<lang>/` mappában, ugyanazokkal a fájlnevekkel. A `tools/docs_i18n.py`
 végzi a nyilvántartást:
 
@@ -63,7 +63,7 @@ python tools/docs_i18n.py check              # exit 1 when hashes or labels are 
 ```
 
 Csak azt fordítsd, amit a `todo` listáz: tartsd meg a Markdownt, a linkeket, a kódot, a fájl- és
-oszlopneveket úgy, ahogy vannak; fordítsd a címeket és a képleírásokat, és a 3DHeat nézegető saját
+oszlopneveket úgy, ahogy vannak; fordítsd a címeket és a képleírásokat, és a 3DHeat megjelenítő saját
 szavait használd a gombjaihoz és paneljeihez (a `src/i18n/locales/<lang>/` alatt). A generált
 referenciaoldalak és a terminálképek angol nyelven maradnak. Az oldalon egy elavult fordítás ezt
 jelzi, és az angol oldalra linkel; a hiányzó oldal visszaesik angolra. A fejléc nyelvi menüje és

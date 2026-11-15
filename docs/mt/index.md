@@ -26,7 +26,7 @@ Parquet u JSON sempliċi.
 
 ## Bidu veloċi {#quick-start}
 
-Ġdid fil-linja tal-kmandi? Aqra [Qabel ma tibda](before-you-start.md) l-ewwel.
+Ġdid mal-linja tal-kmandi? Aqra [Qabel ma tibda](before-you-start.md) l-ewwel.
 
 ```bash
 git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git
@@ -45,7 +45,7 @@ Għandek tara linja waħda għal kull ripetizzjoni, li tispiċċa bil-fajl li nk
 |---|---|
 | [Qabel ma tibda](before-you-start.md) | Python, terminal, u kif tkun taf li ħadem |
 | [Installazzjoni](installing.md) | installa, iċċekkja, aġġornamenti |
-| [Il-konverżjoni tar-ripetizzjonijiet](converting.md) | pass pass, kull għażla, messaġġi, status tal-ħruġ |
+| [Il-konverżjoni tar-ripetizzjonijiet](converting.md) | pass b'pass, kull għażla, messaġġi, status tal-ħruġ |
 | [It-tabella](table.md) | kull kolonna u avveniment ta' `<match>.parquet` |
 | [Id-dokument tal-partita](match-document.md) | kull ċavetta ta' `<match>.match.json` |
 | [Kif taqra ripetizzjoni](how-it-reads.md) | il-format, u kif inċċekkjat il-qari |
@@ -69,7 +69,7 @@ meta jkun installat u jaħdem mingħajru.
 
 | Għodda | X'tagħmel | Sors | Dokumentazzjoni |
 |---|---|---|---|
-| 3DHeat viewer | juri d-data bi 3D: heatmaps, ripetizzjonijiet, analiżi tat-tellieqa | [3DHeat](https://github.com/Holdi601/3DHeat) | [sit](https://holdi601.github.io/3DHeat/) |
+| 3DHeat viewer | juri d-dejta bi 3D: heatmaps, ripetizzjonijiet, analiżi tat-tellieqa | [3DHeat](https://github.com/Holdi601/3DHeat) | [sit](https://holdi601.github.io/3DHeat/) |
 | GameFiles | korsijiet u livelli mill-fajls li jiġu mal-logħob | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [sit](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetrija tal-gir, u livelli mibnija mill-vidjo tal-logħob | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [sit](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | plugin tal-Unreal Editor li jesporta livell | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [sit](https://holdi601.github.io/3DHeat-UnrealExporter/) |

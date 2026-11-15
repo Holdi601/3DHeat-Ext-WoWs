@@ -53,9 +53,9 @@ jinstabu kollha mill-forma - ara
 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py) - biex patch li jbiddel in-numri
 ma jħallix it-tabella vojta. In-numri misjuba jinsabu fid-`decoded` tad-dokument tal-partita.
 
-**Il-pickle huwa data li ma tistax tafdaha.** Ripetizzjoni hija fajl minn kullimkien, u pickle jista'
+**Il-pickle huwa dejta li ma tistax tafdaha.** Ripetizzjoni hija fajl minn kullimkien, u pickle jista'
 isemmi kodiċi li jitħaddem. Jitgħabba b'unpickler li jagħti kull klassi jew funzjoni li l-pickle
-jsemmi placeholder inerti, biex jibni data sempliċi u xejn aktar. Test jitfgħalu pickle li
+jsemmi placeholder inerti, biex jibni dejta sempliċi u xejn aktar. Test jitfgħalu pickle li
 jsejjaħ `os.system`.
 
 L-**għarqiet** għandhom il-ħin eżatt tas-sejħa. Il-post tagħhom huwa fejn il-vittma dehret

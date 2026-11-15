@@ -26,7 +26,7 @@ Atkārtojums ir galvene ar JSON blokiem un spēles paketes straume (formāta pie
 
 Paketes un metožu numuri, kas atšķiras starp pārbaudītajām versijām (kuģa paketes, kas pašam kuģim ir 43 vai 44; nogrimšanas izsaukums 76 vai 83; čaulas 101, 102, 126 vai 127), visi tiek atrasti pēc formas — skat. [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py) — tāpēc numerācijas maiņas ielāps neiztukšo tabulu. Atrastie numuri ir mača dokumenta `decoded`.
 
-**Pickle ir nedrošs dati.** Atkārtojums ir fails no jebkurienes, un pickle var nosaukt kodu, ko izpildīt. To ielādē ar atšifrētāju, kas katrai klasei vai funkcijai, ko pickle nosauc, dod inertu aizstājēju, tāpēc tas veido tikai vienkāršus datus un neko citu. Tests padod tam pickle, kas izsauc `os.system`.
+**Pickle dati ir nedroši.** Atkārtojums ir fails no jebkurienes, un pickle var nosaukt kodu, ko izpildīt. To ielādē ar atšifrētāju, kas katrai klasei vai funkcijai, ko pickle nosauc, dod inertu aizstājēju, tāpēc tas veido tikai vienkāršus datus un neko citu. Tests padod tam pickle, kas izsauc `os.system`.
 
 **Nogrimšanām** ir precīzs izsaukuma laiks. To vieta ir tur, kur upuris pēdējo reizi tika redzēts, ja tas bija piecu sekunžu robežās. **Kaujas sākums** ir pirmais brīdis, kad jebkurš kuģis vispār kustas (kuģi stāv skaitīšanas laikā).
 

@@ -53,14 +53,14 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 
 ## 3DHeat の一部として {#part-of-3dheat}
 
-この変換ツールは [3DHeat](https://github.com/Holdi601/3DHeat) の道具の 1 つです。3DHeat は、リアルタイムの 3D テレメトリとリプレイのビューアです（[ドキュメント](https://holdi601.github.io/3DHeat/)）。ビューアは、テーブルを Heatmap タブで、マッチドキュメントを Match タブで開きます。1 つの戦闘のファイルを 1 つにまとめることもできます: [1 マッチを 1 ファイルに](https://holdi601.github.io/3DHeat/container.html)。どの変換ツールも残さなければならないもの: [変換ツールはすべてを残す](https://holdi601.github.io/3DHeat/converters.html)。
+この変換ツールは [3DHeat](https://github.com/Holdi601/3DHeat) の道具の 1 つです。3DHeat は、リアルタイムの 3D テレメトリとリプレイのビューアです（[ドキュメント](https://holdi601.github.io/3DHeat/)）。ビューアは、テーブルを ヒートマップ タブで、マッチドキュメントを マッチ タブで開きます。1 つの戦闘のファイルを 1 つにまとめることもできます: [1 マッチを 1 ファイルに](https://holdi601.github.io/3DHeat/container.html)。どの変換ツールも残さなければならないもの: [変換ツールはすべてを残す](https://holdi601.github.io/3DHeat/converters.html)。
 
 この変換ツールは、3DHeat Watcher とは意図的に分けてあります。リプレイは暗号化されており、Wargaming の規約は広い範囲に及ぶからです（[用語とライセンス](terms.md)）。もし取り除く必要が出ても、ほかに何も一緒に取り除く必要はありません。Watcher は、インストールされていればこれを実行し、なくても動きます。
 
 | ツール | 内容 | ソース | ドキュメント |
 |---|---|---|---|
 | 3DHeat ビューア | データを 3D で表示: ヒートマップ、リプレイ、レース分析 | [3DHeat](https://github.com/Holdi601/3DHeat) | [サイト](https://holdi601.github.io/3DHeat/) |
-| GameFiles | ゲームに同梱されているファイルからのコースとレベル | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [サイト](https://holdi601.github.io/3DHeat-GameFiles/) |
+| GameFiles | ゲーム自身のファイルからのレベルとコース | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [サイト](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | ラップのテレメトリ、ゲームプレイ動画から組み直したレベル | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [サイト](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | レベルを書き出す Unreal Editor プラグイン | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [サイト](https://holdi601.github.io/3DHeat-UnrealExporter/) |
 | CS2 | Counter-Strike 2 のデモとマップ | [3DHeat-CS2](https://github.com/Holdi601/3DHeat-CS2) | [サイト](https://holdi601.github.io/3DHeat-CS2/) |

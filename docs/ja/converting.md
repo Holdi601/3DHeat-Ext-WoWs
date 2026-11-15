@@ -22,7 +22,7 @@ search_exclude: true
 
    `out` はターミナルのいるフォルダーに作られます。
 4. **表示された内容を読む。** リプレイ 1 つにつき 1 行が表示され、書き込んだテーブルで終わるはずです。
-5. **結果を開く:** 3DHeat ビューアで `out/<map>/<match>.parquet` を Heatmap タブに、`<match>.match.json` を Match タブに読み込みます。または、任意の Parquet か JSON の読み取りツールで読んでください。
+5. **結果を開く:** 3DHeat ビューアで `out/<map>/<match>.parquet` を ヒートマップ タブに、`<match>.match.json` を マッチ タブに読み込みます。または、任意の Parquet か JSON の読み取りツールで読んでください。
 
 ![合成リプレイでの実行: 変換、もう一度の実行、壊れたファイル、空のフォルダー](../assets/img/convert.svg)
 

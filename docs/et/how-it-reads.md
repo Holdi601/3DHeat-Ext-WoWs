@@ -56,7 +56,7 @@ tervis on seal, kui nad olid ulatuses.
 **Ei loeta:**
 
 - Lennukid ja nende eskadrillid (kutsed, mis neid kannavad, ei olnud lahti võetud), minikaardi nägemise
-  uuendused (pakitud), märkamine, ribad, tulekahjud ja üleujutused eraldi sündmustena (nende kahju on tabamustes),
+  uuendused (pakitud), märkamine, autasud, tulekahjud ja üleujutused eraldi sündmustena (nende kahju on tabamustes),
   kulumaterjalid, vallutuspunktid ja meeskonna skoorid (olemite omadused ilma definitsioonita, kuju järgi
   eristamata), laeva ülejäänud omadused (siht, roolid, kiiruse seade...).
 - Mängijakirjete ja kahjustusstatistika võtmete numbrid nimedena: mäng nummerdab need, ja numbrid muutuvad; need

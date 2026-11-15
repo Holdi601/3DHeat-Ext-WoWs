@@ -9,7 +9,7 @@ search_exclude: true
 ---
 # Áður en þú byrjar {#before-you-start}
 
-Nýr í skipanalínunni? Þessi síða fer með þig frá engu að virkri
+Hefurðu aldrei notað skipanalínu? Þessi síða fer með þig frá engu að virkri
 `heat3d-wows-replay` á um tíu mínútum. Ef þú notar Python nú þegar skaltu fara beint í
 [Uppsetning](installing.md).
 
@@ -22,9 +22,9 @@ Nýr í skipanalínunni? Þessi síða fer með þig frá engu að virkri
 3. Í macOS og Linux er Python 3 oft þegar til staðar. Skrifaðu `python3`
    þar sem þessar síður segja `python`, og `pip3` fyrir `pip`.
 
-## 2. Opnaðu skipanaglugga {#open-a-terminal}
+## 2. Opnaðu skipanalínu {#open-a-terminal}
 
-Skipanagluggi (terminal) er gluggi þar sem þú skrifar skipanir.
+Skipanalína (terminal) er gluggi þar sem þú skrifar skipanir.
 
 - **Windows:** opnaðu möppuna í File Explorer, smelltu á vistfangastikuna,
   skrifaðu `cmd` og ýttu á Enter. Gluggi opnast, þegar í þeirri möppu.
@@ -50,7 +50,7 @@ python --version
 
 1. Á [GitHub-síðu verkfærisins](https://github.com/Holdi601/3DHeat-Ext-WoWs) skaltu smella á
    græna hnappinn **Code**, svo á **Download ZIP**, og pakka zip-skránni upp.
-2. Opnaðu skipanaglugga í upppökkuðu möppunni (þeirri sem hefur `README.md`).
+2. Opnaðu skipanalínu í möppunni sem þú pakkaðir upp (þeirri sem hefur `README.md`).
 3. Skrifaðu:
 
    ```bash
@@ -73,8 +73,8 @@ python --version
   skrá eða möppu þar, án oddsviganna.
 - Slóð með bilum þarf gæsalappir: `"C:\Program Files (x86)\Steam"`.
 - Texti á eftir `#` er athugasemd: þú skrifar hann ekki.
-- `-o out` skrifar í möppu sem heitir `out` inni í möppunni sem skipanagluggi
-  þinn er í. Hún er búin til ef hún er ekki til.
+- `-o out` skrifar í möppu sem heitir `out` inni í möppunni sem skipanalínan
+  þín er í. Hún er búin til ef hún er ekki til.
 
 ## Hvernig árangur lítur út {#what-success-looks-like}
 

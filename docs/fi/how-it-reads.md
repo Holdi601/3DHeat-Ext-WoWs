@@ -9,14 +9,14 @@ search_exclude: true
 ---
 # Miten replay luetaan {#how-it-reads-a-replay}
 
-Replay on JSON-lohkojen otsikko ja pelin paketti­virta (formaattihuomiot:
+Replay on JSON-lohkojen otsikko ja pelin pakettivirta (formaattihuomiot:
 [`heat3d_ext_wows/bigworld.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/bigworld.py)):
 
 - Ensimmäinen lohko selkokielisenä: kartta, asiakasversio, tallentava pelaaja ja alus, sekä luettelo: jokaisen
   pelaajan nimi, liittolainen tai vihollinen, ja aluksen numero. Uudemmat asiakkaat (15.x) lisäävät kaksi lohkoa:
   tyhjän, ja tallentavan pelaajan tilin sekä taistelun tunnuksen tekstinä, luettuna kenttään `blockIds`. Tulokset
   eivät ole JSON:ssa; 15.x säilyttää ne virrassa.
-- Paketti­virta, zlib-pakattuna ja Blowfish-salattuna pelin mukana tulevalla avaimella, jonka replayt lukevat
+- Pakettivirta, zlib-pakattuna ja Blowfish-salattuna pelin mukana tulevalla avaimella, jonka replayt lukevat
   yhteisön työkalut ovat julkaisseet. Purettuna se sisältää:
   - moottorin sijaintipäivitykset jokaiselle aluksella, jonka asiakas näki (oma joukkue koko ajan, viholliset kun
     ne oli havaittu tai olivat lähellä), useita kertoja sekunnissa liikkuessa ja harvemmin, kun ne eivät liiku;
@@ -84,7 +84,7 @@ minkä replay antaa toisen kerran:
 
 Testit rakentavat replayt samaan asetteluun, joten tässä tietovarastossa ei ole yhtään oikeaa replayta.
 
-**Ei tarkistettu:** asiakasversiot ennen 0.9.6, Lestan asiakas (Mir Korabley), operaatiot ja skenaariot yhtä enemmän,
+**Ei tarkistettu:** asiakasversiot ennen 0.9.6, Lestan asiakas (Mir Korabley), operaatiot ja skenaariot, joita on useampi kuin yksi,
 klaani- ja sijoitustaistelut sekä se, mikä alusnumero on mikäkin alus.
 
 ---

@@ -83,4 +83,4 @@ başka hiçbir şey onunla birlikte gitmez. Watcher kuruluysa bunu çalıştır�
 
 ---
 
-Kaynak: [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs). [3DHeat](https://github.com/Holdi601/3DHeat) parçası ([belgeler](https://holdi601.github.io/3DHeat/)).
+Kaynak: [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs).
