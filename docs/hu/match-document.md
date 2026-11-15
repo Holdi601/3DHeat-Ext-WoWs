@@ -1,7 +1,7 @@
 ---
 title: "A meccsdokumentum"
 nav_order: 6
-lang: hu
+lang: "hu"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

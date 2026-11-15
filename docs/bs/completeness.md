@@ -1,7 +1,7 @@
 ---
 title: "Potpunost"
 nav_order: 8
-lang: bs
+lang: "bs"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

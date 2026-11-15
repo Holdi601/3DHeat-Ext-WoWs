@@ -1,7 +1,7 @@
 ---
 title: "Inštalácia"
 nav_order: 3
-lang: sk
+lang: "sk"
 source: installing.md
 source_hash: "39ecfa59d182"
 nav_exclude: true

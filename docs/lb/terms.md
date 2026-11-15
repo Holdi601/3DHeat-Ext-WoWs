@@ -1,7 +1,7 @@
 ---
 title: "Konditiounen a Lizenz"
 nav_order: 9
-lang: lb
+lang: "lb"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

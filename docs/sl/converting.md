@@ -1,7 +1,7 @@
 ---
 title: Pretvorba posnetkov
 nav_order: 4
-lang: sl
+lang: "sl"
 source: converting.md
 source_hash: "6434f8e61c9c"
 nav_exclude: true

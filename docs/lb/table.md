@@ -1,7 +1,7 @@
 ---
 title: "D'Tabell"
 nav_order: 5
-lang: lb
+lang: "lb"
 source: table.md
 source_hash: "d4e0282a90df"
 nav_exclude: true

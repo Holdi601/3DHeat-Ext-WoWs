@@ -1,7 +1,7 @@
 ---
 title: Како чита реплеј
 nav_order: 7
-lang: sr
+lang: "sr"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Maintenir la documentation
 nav_order: 99
-lang: fr
+lang: "fr"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

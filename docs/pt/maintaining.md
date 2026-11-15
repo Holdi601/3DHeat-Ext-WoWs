@@ -1,7 +1,7 @@
 ---
 title: Manutenção
 nav_order: 99
-lang: pt
+lang: "pt"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

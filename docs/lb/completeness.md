@@ -1,7 +1,7 @@
 ---
 title: "Vollstännegkeet"
 nav_order: 8
-lang: lb
+lang: "lb"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

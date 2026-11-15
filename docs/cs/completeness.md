@@ -1,7 +1,7 @@
 ---
 title: "Úplnost"
 nav_order: 8
-lang: cs
+lang: "cs"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

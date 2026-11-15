@@ -1,7 +1,7 @@
 ---
 title: "Údržba dokumentácie"
 nav_order: 99
-lang: sk
+lang: "sk"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Поддръжка на документацията
 nav_order: 99
-lang: bg
+lang: "bg"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

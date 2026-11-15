@@ -1,7 +1,7 @@
 ---
 title: Téarmaí agus ceadúnas
 nav_order: 9
-lang: ga
+lang: "ga"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

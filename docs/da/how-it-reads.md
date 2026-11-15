@@ -1,7 +1,7 @@
 ---
 title: Sådan læses et replay
 nav_order: 7
-lang: da
+lang: "da"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

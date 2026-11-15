@@ -1,7 +1,7 @@
 ---
 title: 매치 문서
 nav_order: 6
-lang: ko
+lang: "ko"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

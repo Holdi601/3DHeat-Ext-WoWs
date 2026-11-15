@@ -1,7 +1,7 @@
 ---
 title: "Id-dokument tal-partita"
 nav_order: 6
-lang: mt
+lang: "mt"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

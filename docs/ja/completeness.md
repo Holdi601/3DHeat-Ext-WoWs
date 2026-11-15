@@ -1,7 +1,7 @@
 ---
 title: 完全性
 nav_order: 8
-lang: ja
+lang: "ja"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

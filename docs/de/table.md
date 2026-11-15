@@ -1,7 +1,7 @@
 ---
 title: Die Tabelle
 nav_order: 5
-lang: de
+lang: "de"
 source: table.md
 source_hash: "d4e0282a90df"
 nav_exclude: true

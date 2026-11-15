@@ -1,7 +1,7 @@
 ---
 title: "Villkor och licens"
 nav_order: 9
-lang: sv
+lang: "sv"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

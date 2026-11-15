@@ -1,7 +1,7 @@
 ---
 title: マッチドキュメント
 nav_order: 6
-lang: ja
+lang: "ja"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

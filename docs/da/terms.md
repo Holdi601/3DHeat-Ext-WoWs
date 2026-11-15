@@ -1,7 +1,7 @@
 ---
 title: Vilkår og licens
 nav_order: 9
-lang: da
+lang: "da"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Baile
 nav_order: 1
-lang: ga
+lang: "ga"
 source: index.md
 source_hash: "b9f393050306"
 nav_exclude: true

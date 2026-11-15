@@ -1,7 +1,7 @@
 ---
 title: "對戰文件"
 nav_order: 6
-lang: zh-Hant
+lang: "zh-Hant"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

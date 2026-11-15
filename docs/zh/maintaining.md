@@ -1,7 +1,7 @@
 ---
 title: "维护文档"
 nav_order: 99
-lang: zh
+lang: "zh"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

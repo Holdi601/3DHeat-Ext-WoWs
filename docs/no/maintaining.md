@@ -1,7 +1,7 @@
 ---
 title: "Vedlikeholde dokumentasjonen"
 nav_order: 99
-lang: no
+lang: "no"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

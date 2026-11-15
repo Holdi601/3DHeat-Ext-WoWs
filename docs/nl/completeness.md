@@ -1,7 +1,7 @@
 ---
 title: "Volledigheid"
 nav_order: 8
-lang: nl
+lang: "nl"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

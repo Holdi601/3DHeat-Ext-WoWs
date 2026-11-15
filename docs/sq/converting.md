@@ -1,7 +1,7 @@
 ---
 title: "Konvertimi i riluajtjeve"
 nav_order: 4
-lang: sq
+lang: "sq"
 source: converting.md
 source_hash: "6434f8e61c9c"
 nav_exclude: true

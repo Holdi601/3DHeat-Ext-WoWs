@@ -1,7 +1,7 @@
 ---
 title: "Plotësia"
 nav_order: 8
-lang: sq
+lang: "sq"
 source: completeness.md
 source_hash: "3e67ab80e664"
 nav_exclude: true

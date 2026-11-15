@@ -1,7 +1,7 @@
 ---
 title: Kako se snimka čita
 nav_order: 7
-lang: hr
+lang: "hr"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

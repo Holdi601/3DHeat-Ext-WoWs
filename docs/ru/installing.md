@@ -1,7 +1,7 @@
 ---
 title: Установка
 nav_order: 3
-lang: ru
+lang: "ru"
 source: installing.md
 source_hash: "39ecfa59d182"
 nav_exclude: true

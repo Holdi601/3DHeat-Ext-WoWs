@@ -1,7 +1,7 @@
 ---
 title: Prieš pradedant
 nav_order: 2
-lang: lt
+lang: "lt"
 source: before-you-start.md
 source_hash: "310d596b3b1f"
 nav_exclude: true

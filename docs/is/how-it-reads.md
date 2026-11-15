@@ -1,7 +1,7 @@
 ---
 title: "Hvernig upptaka er lesin"
 nav_order: 7
-lang: is
+lang: "is"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

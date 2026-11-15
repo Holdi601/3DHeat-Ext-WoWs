@@ -1,7 +1,7 @@
 ---
 title: Mača dokuments
 nav_order: 6
-lang: lv
+lang: "lv"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

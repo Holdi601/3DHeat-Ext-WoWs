@@ -1,7 +1,7 @@
 ---
 title: "Instalimi"
 nav_order: 3
-lang: sq
+lang: "sq"
 source: installing.md
 source_hash: "39ecfa59d182"
 nav_exclude: true

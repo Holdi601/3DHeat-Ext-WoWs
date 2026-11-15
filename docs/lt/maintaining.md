@@ -1,7 +1,7 @@
 ---
 title: Dokumentacijos palaikymas
 nav_order: 99
-lang: lt
+lang: "lt"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

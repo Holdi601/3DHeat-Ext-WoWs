@@ -1,7 +1,7 @@
 ---
 title: "Ier Dir ufänkt"
 nav_order: 2
-lang: lb
+lang: "lb"
 source: before-you-start.md
 source_hash: "310d596b3b1f"
 nav_exclude: true

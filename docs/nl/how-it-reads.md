@@ -1,7 +1,7 @@
 ---
 title: "Hoe het een replay leest"
 nav_order: 7
-lang: nl
+lang: "nl"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

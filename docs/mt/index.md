@@ -1,7 +1,7 @@
 ---
 title: "Dar"
 nav_order: 1
-lang: mt
+lang: "mt"
 source: index.md
 source_hash: "b9f393050306"
 nav_exclude: true

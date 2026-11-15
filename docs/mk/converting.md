@@ -1,7 +1,7 @@
 ---
 title: "Претворање на снимки"
 nav_order: 4
-lang: mk
+lang: "mk"
 source: converting.md
 source_hash: "6434f8e61c9c"
 nav_exclude: true

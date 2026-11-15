@@ -1,7 +1,7 @@
 ---
 title: "Hogyan olvassa a visszajátszást"
 nav_order: 7
-lang: hu
+lang: "hu"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Documentul meciului
 nav_order: 6
-lang: ro
+lang: "ro"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

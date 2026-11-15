@@ -1,7 +1,7 @@
 ---
 title: Cothabháil
 nav_order: 99
-lang: ga
+lang: "ga"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

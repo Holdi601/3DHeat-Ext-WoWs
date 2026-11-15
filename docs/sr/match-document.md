@@ -1,7 +1,7 @@
 ---
 title: Документ меча
 nav_order: 6
-lang: sr
+lang: "sr"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

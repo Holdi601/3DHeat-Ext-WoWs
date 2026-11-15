@@ -1,7 +1,7 @@
 ---
 title: 用語とライセンス
 nav_order: 9
-lang: ja
+lang: "ja"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

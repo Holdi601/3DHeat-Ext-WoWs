@@ -1,7 +1,7 @@
 ---
 title: Dokument meczu
 nav_order: 6
-lang: pl
+lang: "pl"
 source: match-document.md
 source_hash: "6e925c5effd7"
 nav_exclude: true

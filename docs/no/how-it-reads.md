@@ -1,7 +1,7 @@
 ---
 title: "Slik leser den en replay"
 nav_order: 7
-lang: no
+lang: "no"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

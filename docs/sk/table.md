@@ -1,7 +1,7 @@
 ---
 title: "Tabuľka"
 nav_order: 5
-lang: sk
+lang: "sk"
 source: table.md
 source_hash: "d4e0282a90df"
 nav_exclude: true

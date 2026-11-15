@@ -1,7 +1,7 @@
 ---
 title: Сопровождение документации
 nav_order: 99
-lang: ru
+lang: "ru"
 source: maintaining.md
 source_hash: "1a502bc5713c"
 nav_exclude: true

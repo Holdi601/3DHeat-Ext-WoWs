@@ -1,7 +1,7 @@
 ---
 title: Kako bere posnetek
 nav_order: 7
-lang: sl
+lang: "sl"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

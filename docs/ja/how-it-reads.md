@@ -1,7 +1,7 @@
 ---
 title: リプレイの読み取り方
 nav_order: 7
-lang: ja
+lang: "ja"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

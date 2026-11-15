@@ -1,7 +1,7 @@
 ---
 title: Kordustete konverteerimine
 nav_order: 4
-lang: et
+lang: "et"
 source: converting.md
 source_hash: "6434f8e61c9c"
 nav_exclude: true

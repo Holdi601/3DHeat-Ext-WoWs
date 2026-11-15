@@ -1,7 +1,7 @@
 ---
 title: "Tekrarı nasıl okur"
 nav_order: 7
-lang: tr
+lang: "tr"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Как се чете повторението
 nav_order: 7
-lang: bg
+lang: "bg"
 source: how-it-reads.md
 source_hash: "ec73820ae278"
 nav_exclude: true

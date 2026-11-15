@@ -1,7 +1,7 @@
 ---
 title: Etusivu
 nav_order: 1
-lang: fi
+lang: "fi"
 source: index.md
 source_hash: "b9f393050306"
 nav_exclude: true

@@ -1,7 +1,7 @@
 ---
 title: Табела
 nav_order: 5
-lang: sr
+lang: "sr"
 source: table.md
 source_hash: "d4e0282a90df"
 nav_exclude: true

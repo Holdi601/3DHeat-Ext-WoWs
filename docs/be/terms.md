@@ -1,7 +1,7 @@
 ---
 title: "Умовы і ліцэнзія"
 nav_order: 9
-lang: be
+lang: "be"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true

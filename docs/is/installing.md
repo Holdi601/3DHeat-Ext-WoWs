@@ -1,7 +1,7 @@
 ---
 title: "Uppsetning"
 nav_order: 3
-lang: is
+lang: "is"
 source: installing.md
 source_hash: "39ecfa59d182"
 nav_exclude: true

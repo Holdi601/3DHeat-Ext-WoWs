@@ -1,7 +1,7 @@
 ---
 title: "Kushtet dhe licenca"
 nav_order: 9
-lang: sq
+lang: "sq"
 source: terms.md
 source_hash: "3326635d2603"
 nav_exclude: true
