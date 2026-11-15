@@ -18,4 +18,4 @@ test = ["pytest>=8.0"]
 heat3d-wows-replay = "heat3d_ext_wows.cli:main"
 
 [tool.setuptools]
-packages = ["heat3d_ext_wows", "heat3d_update"]
+packages = ["heat3d_ext_wows"]
