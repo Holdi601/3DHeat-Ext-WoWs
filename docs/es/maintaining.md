@@ -23,10 +23,10 @@ Para quien publica una nueva versión. Haz los pasos en este orden.
 2. **Lista lo que cambió desde la última versión publicada:**
 
    ```bash
-   git log --oneline v<VERSIÓN>..HEAD
+   git log --oneline v<VERSION>..HEAD
    ```
 
-   `<VERSIÓN>` es la última versión publicada (si aún no hay etiqueta: todo el
+   `<VERSION>` es la última versión publicada (si aún no hay etiqueta: todo el
    `git log --oneline`). Cada nueva función, opción o columna necesita su página
    y una fila en la sección **Docs** de
    [CHANGELOG.md](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/CHANGELOG.md).
@@ -43,7 +43,7 @@ Para quien publica una nueva versión. Haz los pasos en este orden.
    origen en inglés cambió, incluidas las etiquetas de los diagramas. Luego revisa cada
    idioma: claro para los tres lectores, etiquetas correctas, y las mismas palabras
    que usa el visor de 3DHeat en ese idioma.
-6. **Publicación:** sube `VERSION` y etiqueta `v<VERSIÓN>`. **Sube los cambios solo
+6. **Publicación:** sube `VERSION` y etiqueta `v<VERSION>`. **Sube los cambios solo
    con el visto bueno del propietario.**
 
 ## Traducciones: los comandos {#translations-the-commands}

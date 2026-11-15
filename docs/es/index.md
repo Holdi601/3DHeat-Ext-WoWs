@@ -17,7 +17,7 @@ partida (el resumen de la batalla) que el
 cada barco, disparó y fue alcanzado.
 
 **¿Para qué lo usaría?** Para volver a ver una batalla desde arriba, con todos los
-barcos a la vez; para ver mapas de calor de dónde navegáis, combatís y hundís tú y otros
+barcos a la vez; para ver mapas de calor de dónde navegas, combates y hundes tú y otros
 en cientos de batallas; para ver adónde fueron los obuses y torpedos; o para leer una repetición
 con tus propios scripts, ya que la salida son archivos Parquet y JSON sencillos.
 
@@ -70,7 +70,7 @@ cuando está instalado y funciona sin él.
 
 | Herramienta | Qué hace | Código | Documentación |
 |---|---|---|---|
-| Visor de 3DHeat | muestra los datos en 3D: mapas de calor, repeticiones, análisis de carreras | [3DHeat](https://github.com/Holdi601/3DHeat) | [sitio](https://holdi601.github.io/3DHeat/) |
+| Visor de 3DHeat | muestra los datos en 3D: mapas de calor, repeticiones, análisis de carrera | [3DHeat](https://github.com/Holdi601/3DHeat) | [sitio](https://holdi601.github.io/3DHeat/) |
 | GameFiles | recorridos y niveles de los archivos que traen los juegos | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [sitio](https://holdi601.github.io/3DHeat-GameFiles/) |
 | GameCapture | telemetría de vueltas, y niveles reconstruidos a partir de vídeo de juego | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [sitio](https://holdi601.github.io/3DHeat-GameCapture/) |
 | Unreal Exporter | un complemento del editor de Unreal que exporta un nivel | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [sitio](https://holdi601.github.io/3DHeat-UnrealExporter/) |

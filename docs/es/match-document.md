@@ -38,7 +38,7 @@ tabla. La pestaña Partida del visor lo lee. (El código lo llama el resumen.)
 
 | Clave | Qué es |
 |---|---|
-| `players` | una entrada por barco: nombre, `ally` o `enemy`, número y nombre del barco, entidad, muestras, bajas, hundido o no; `seen` (daño causado y recibido, obuses, torpedos y última vida que vio el cliente); `header` (la entrada de la lista) y `record` (la ficha del jugador en el flujo, por número de clave) |
+| `players` | una entrada por barco: nombre, `ally` o `enemy`, número y nombre del barco, entidad, muestras, bajas, sobrevivió; `seen` (daño causado y recibido, obuses, torpedos y última vida que vio el cliente); `header` (la entrada de la lista) y `record` (la ficha del jugador en el flujo, por número de clave) |
 | `kills` | cada hundimiento: hora, víctima, asesino, número de causa, lugar |
 | `chat` | cada línea de chat, con canal y remitente |
 | `damageStats` | las estadísticas propias del jugador que graba, tal como las lleva el juego: por arma y tipo, un recuento y una cantidad (el tipo 0 es el daño causado) |

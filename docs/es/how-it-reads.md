@@ -67,7 +67,7 @@ los enemigos: sus disparos, impactos y vida están mientras estuvieron al alcanc
 
 **No se lee:**
 
-- Aviones y sus escuadrillas (las llamadas que los llevan no se desarmaron), las actualizaciones
+- Aviones y sus escuadrillas (las llamadas que los llevan no se desglosaron), las actualizaciones
   de visión del minimapa (empaquetadas), la detección, las cintas, los incendios e inundaciones como
   eventos propios (su daño está en los impactos), los consumibles, los puntos de captura y las
   puntuaciones de equipo (propiedades de entidades sin definición, que no se distinguen por la forma),
@@ -96,8 +96,8 @@ valor frente a algo que la repetición da por una segunda vía:
   estadísticas son más altas: al cliente no se le envía cada impacto, o las estadísticas cuentan
   más que los impactos (sin resolver).
 - **Obuses:** un obús empieza a unas pocas unidades de la última posición conocida de su barco
-  (los cañones están repartidos a lo largo del casco); casi el final de cada obús sigue,
-  en menos de un minuto, a un disparo que vio el cliente.
+  (los cañones están repartidos a lo largo del casco); casi el final de cada obús va seguido,
+  en menos de un minuto, de un disparo que vio el cliente.
 
 Los tests construyen repeticiones con la misma disposición, así que en este repositorio no se guarda
 ninguna repetición real.

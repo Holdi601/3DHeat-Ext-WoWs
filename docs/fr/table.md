@@ -24,7 +24,7 @@ Une ligne par échantillon ou événement, dans `<match>.parquet` : 31 colonnes
 | `event` | ce que représente la ligne (voir ci-dessous) |
 | `player`, `team`, `own` | le nom du joueur ; `ally` ou `enemy` par rapport au joueur qui enregistre ; `1` sur les lignes du joueur qui enregistre |
 | `vehicle`, `type` | le navire du joueur qui enregistre par son nom (`PASB018-Iowa-1944`), les autres par le numéro de navire du jeu (`4253956080`), sauf si `--ship-names` les nomme ; `battleship`, `cruiser`, `destroyer`, `aircraft carrier`, `submarine` lorsque le nom le dit, sinon `ship` |
-| `x`, `y`, `z` | les unités du monde du jeu : x est, y haut (niveau de la mer 0), z nord |
+| `x`, `y`, `z` | les unités du monde du jeu : x vers l'est, y vers le haut (niveau de la mer 0), z vers le nord |
 | `dirX`, `dirY`, `dirZ` | vers où pointe la proue, un vecteur unitaire dans le même repère (`dirY` 0 : cap seulement) ; sur un obus ou une torpille, le sens de leur trajectoire |
 | `other`, `reason` | l'autre navire d'un événement (tueur, victime, attaquant) ; le numéro de cause du jeu pour un naufrage (non nommé), le type d'impact pour un impact, le canal pour le chat |
 | `value`, `health` | le nombre de l'événement (dégâts, vitesse d'un obus ou d'une torpille en unités du monde par seconde) ; les points de vie du navire après un impact |

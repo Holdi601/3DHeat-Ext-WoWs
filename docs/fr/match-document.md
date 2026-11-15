@@ -30,7 +30,7 @@ L'onglet Match de la visionneuse le lit. (Le code l'appelle le résumé.)
 | `positionPacket`, `ownPositionPacket` | les numéros de paquets d'où viennent les positions : celles des autres navires, celle du joueur qui enregistre |
 | `deathMethod` | le numéro de méthode où les naufrages ont été trouvés |
 | `hz`, `ownHz`, `positions` | échantillons par seconde des autres navires et du navire propre ; lignes de position |
-| `units` | unités du monde (15 m selon les coques, 30 m selon les portées du jeu) ; x est, y haut, z nord |
+| `units` | unités du monde (15 m selon les coques, 30 m selon les portées du jeu) ; x vers l'est, y vers le haut, z vers le nord |
 | `events` | le nombre de lignes de la table pour chaque événement |
 | `decoded` | les numéros de méthode et de paquet trouvés pour chaque type de message |
 
