@@ -1,11 +1,12 @@
 ---
 title: The table
-nav_order: 4
+nav_order: 5
 ---
 
 # The table
 
-One row per sample or event, in `<match>.parquet`.
+One row per sample or event, in `<match>.parquet`: 31 columns
+([Column list](columns.md), generated from the code).
 
 ![The table of a synthetic replay, summarised](assets/img/table.svg)
 
@@ -13,7 +14,7 @@ One row per sample or event, in `<match>.parquet`.
 
 | Column | What |
 |---|---|
-| `match`, `map` | the battle's id; the map (`spaces/54_Faroe`) |
+| `match`, `map` | the battle's id; the map (`spaces/99_testmap` in the pictures) |
 | `time` | seconds since the recording began (the countdown is in it) |
 | `battleTime` | seconds since the battle began; negative during the countdown |
 | `event` | what the row is (below) |
@@ -26,6 +27,8 @@ One row per sample or event, in `<match>.parquet`.
 | `text` | a chat line |
 | `shot`, `params` | a salvo's id; the shell's or torpedo's type, as the game's parameter number |
 | `entity` | the ship's id in the replay |
+| `otherVehicle`, `otherType` | on an `impact` on a ship: that ship and its class |
+| `hitLocalX`, `hitLocalY`, `hitLocalZ` | on an `impact` on a ship: where the shell ended in that ship's own frame, in metres (world units times 15): x forward, y up from the sea, z right |
 | `pitch`, `roll` | on a position, the ship's pitch and roll (radians) as the game sends them: a ship heels in a turn |
 
 | `event` | On the row of | What |
@@ -35,7 +38,7 @@ One row per sample or event, in `<match>.parquet`.
 | `hurt`, `damage` | the victim, the attacker | a hit: `value` the damage, `health` what is left |
 | `shot` | the shooter | one row per shell, at the gun, in the direction it flew |
 | `torpedo` | the shooter | one row per torpedo, where it was launched, in the direction it ran |
-| `impact` | the shooter | where a shell ended (hit, miss into the water, ...); `reason` the hit type number; on a ship (any type but 0 water, 8, 32, 64 land, within 6 units of a ship) `other`/`otherVehicle`/`otherType` the ship and `hitLocalX/Y/Z` the point in its frame (m at 15 m a unit: x forward, y up from the sea, z right) |
+| `impact` | the shooter | where a shell ended (hit, miss into the water, ...); `reason` the hit type number; on a ship (any type but 0 water, 8, 32, 64 land, within 6 units of a ship) `other`/`otherVehicle`/`otherType` the ship and `hitLocalX/Y/Z` the point in its frame (above) |
 | `chat` | the sender | `text` the line, `reason` the channel (`battle_team`, `battle_common`) |
 
 **Units.** A world unit is not a metre. A battleship at speed covers about 2.4

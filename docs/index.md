@@ -5,63 +5,79 @@ nav_order: 1
 
 # 3DHeat World of Warships replays
 
-World of Warships replays (`.wowsreplay`) into heatmap tables and match
-summaries for the 3DHeat viewer - or anything that reads Parquet and JSON.
-Every ship's position over time; every ship sunk, every hit and its damage,
-every shell and torpedo fired and where shells ended, where it happened; ship
-health, chat, and the recording player's own damage statistics.
+**What is it?** World of Warships can save every battle you play as a replay
+file. This tool turns those files into a table and a match document (the
+battle's summary) that the
+[3DHeat viewer](https://holdi601.github.io/3DHeat/) shows in 3D: where every
+ship sailed, fired and was hit.
 
-This converter is kept outside the 3DHeat Watcher on purpose: the replays are
-enciphered, and Wargaming's terms (below) are broad. If the converter ever has
-to go, nothing else goes with it. The Watcher runs it as a command when it is
-installed, and works without it.
+**Why would I use it?** To watch a battle again from above, every ship at
+once; to see heatmaps of where you and others sail, fight and sink over
+hundreds of battles; to see where shells and torpedoes went; or to read a replay with your own scripts, since the
+output is plain Parquet and JSON.
 
-**What it is useful for:** seeing a battle again from above, every
-ship at once; heatmaps of where you and others drive, fight and die over
-hundreds of battles; where shells and torpedoes came from and where they
-ended; checking what a replay really holds, item by item. The output is plain
-Parquet and JSON, so pandas, DuckDB or your own scripts read it as well as the
-viewer does.
+**Example:** one replay file in, a table and a match document out:
 
-![From a replay to the viewer](assets/img/pipeline.svg)
+![From a replay to the 3DHeat viewer](assets/img/pipeline.svg)
 
 ## Quick start
+
+New to the command line? Read [Before you start](before-you-start.md) first.
 
 ```bash
 git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git
 cd 3DHeat-Ext-WoWs
-pip install -e .                              # installs the heat3d-wows-replay command
-heat3d-wows-replay <replays or folders> -o out
+pip install -e .
+heat3d-wows-replay "<World of Warships>/replays" -o out
 ```
 
-Then open `out/<map>/<match>.parquet` and `<match>.match.json` in the
-[3DHeat viewer](https://holdi601.github.io/3DHeat/).
-
-## Part of 3DHeat
-
-This converter is one of the tools of [3DHeat](https://github.com/Holdi601/3DHeat), a realtime 3D
-telemetry and replay viewer for very large positional datasets
-([documentation](https://holdi601.github.io/3DHeat/)). Its output opens in the viewer as it is: the table
-in the Heatmap tab, the match document in the Match tab. How the viewer packs
-a match's files into one `.3dheat` file is described in
-[One file a match](https://holdi601.github.io/3DHeat/container.html); what every converter must keep in
-[Converters keep everything](https://holdi601.github.io/3DHeat/converters.html).
-
-- Source and issues: [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs)
-- This site: [https://holdi601.github.io/3DHeat-Ext-WoWs/](https://holdi601.github.io/3DHeat-Ext-WoWs/)
+You should see one line per replay, ending in the file it wrote:
+`... -> out/<map>/<match>.parquet`. Open that file and the
+`<match>.match.json` next to it in the 3DHeat viewer.
 
 ## This documentation
 
 | Page | What it covers |
 |---|---|
-| [Installing](installing.md) | requirements, install, updates |
-| [Converting replays](converting.md) | step by step, every option, exit status |
+| [Before you start](before-you-start.md) | Python, a terminal, and what success looks like |
+| [Installing](installing.md) | install, check, updates |
+| [Converting replays](converting.md) | step by step, every option, messages, exit status |
 | [The table](table.md) | every column and event of `<match>.parquet` |
-| [The match document](match-document.md) | `<match>.match.json` |
-| [How it reads a replay](how-it-reads.md) | the format, and what was checked on real replays |
+| [The match document](match-document.md) | every key of `<match>.match.json` |
+| [How it reads a replay](how-it-reads.md) | the format, and how the reading was checked |
 | [Completeness](completeness.md) | the sidecar and the self-check |
 | [Terms and licence](terms.md) | Wargaming's terms, licence, sources |
+| [Command reference](cli-reference.md), [Column list](columns.md) | generated from the code |
+
+## Part of 3DHeat
+
+This converter is one of the tools of [3DHeat](https://github.com/Holdi601/3DHeat),
+a realtime 3D telemetry and replay viewer ([documentation](https://holdi601.github.io/3DHeat/)).
+The viewer opens the table in its Heatmap tab and the match document in its
+Match tab. It can pack a match's files into one file:
+[One file a match](https://holdi601.github.io/3DHeat/container.html). What every
+converter must keep: [Converters keep everything](https://holdi601.github.io/3DHeat/converters.html).
+
+The converter is kept apart from the 3DHeat Watcher on purpose: the replays
+are enciphered, and Wargaming's terms are broad ([Terms and licence](terms.md)).
+If it ever has to go, nothing else goes with it. The Watcher runs it when it
+is installed and works without it.
+
+| Tool | What it does | Source | Documentation |
+|---|---|---|---|
+| 3DHeat viewer | shows the data in 3D: heatmaps, replays, race analysis | [3DHeat](https://github.com/Holdi601/3DHeat) | [site](https://holdi601.github.io/3DHeat/) |
+| GameFiles | courses and levels out of the files games ship | [3DHeat-GameFiles](https://github.com/Holdi601/3DHeat-GameFiles) | [site](https://holdi601.github.io/3DHeat-GameFiles/) |
+| GameCapture | lap telemetry, and levels rebuilt from gameplay video | [3DHeat-GameCapture](https://github.com/Holdi601/3DHeat-GameCapture) | [site](https://holdi601.github.io/3DHeat-GameCapture/) |
+| Unreal Exporter | an Unreal Editor plugin that exports a level | [3DHeat-UnrealExporter](https://github.com/Holdi601/3DHeat-UnrealExporter) | [site](https://holdi601.github.io/3DHeat-UnrealExporter/) |
+| CS2 | Counter-Strike 2 demos and maps | [3DHeat-CS2](https://github.com/Holdi601/3DHeat-CS2) | [site](https://holdi601.github.io/3DHeat-CS2/) |
+| Watcher | records what games publish while you play | [3DHeat-Watcher](https://github.com/Holdi601/3DHeat-Watcher) | [site](https://holdi601.github.io/3DHeat-Watcher/) |
+| War Thunder replays | `.wrpl` replays and War Thunder levels | [3DHeat-Ext-WarThunder](https://github.com/Holdi601/3DHeat-Ext-WarThunder) | [site](https://holdi601.github.io/3DHeat-Ext-WarThunder/) |
+| World of Tanks replays | `.wotreplay` replays | [3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT) | [site](https://holdi601.github.io/3DHeat-Ext-WoT/) |
+| World of Warships replays | `.wowsreplay` replays | [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs) | [site](https://holdi601.github.io/3DHeat-Ext-WoWs/) |
+| Squad demos | Squad server demos | [3DHeat-Ext-Squad](https://github.com/Holdi601/3DHeat-Ext-Squad) | [site](https://holdi601.github.io/3DHeat-Ext-Squad/) |
+| DCS maps | DCS World maps as 3D levels | [3DHeat-Ext-DCS](https://github.com/Holdi601/3DHeat-Ext-DCS) | [site](https://holdi601.github.io/3DHeat-Ext-DCS/) |
+| IL-2 maps | IL-2 Great Battles maps as 3D levels | [3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2) | [site](https://holdi601.github.io/3DHeat-Ext-IL2/) |
 
 ---
 
-Part of [3DHeat](https://github.com/Holdi601/3DHeat) ([documentation](https://holdi601.github.io/3DHeat/)). Source: [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs).
+Source: [3DHeat-Ext-WoWs](https://github.com/Holdi601/3DHeat-Ext-WoWs).

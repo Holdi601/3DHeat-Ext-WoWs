@@ -1,6 +1,6 @@
 ---
 title: How it reads a replay
-nav_order: 6
+nav_order: 7
 ---
 
 # How it reads a replay
@@ -40,7 +40,7 @@ in [`heat3d_ext_wows/bigworld.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/b
   - pickled calls to the recording player: its damage statistics, updates of
     the players' records, the battle's state;
   - on 15.x clients, the battle's results at the end: a packet of its own, a
-    JSON object with the battle's id, read whole into the summary's
+    JSON object with the battle's id, read whole into the match document's
     `results` (the game's own lists, unnamed: `commonList`,
     `privateDataList`, `playersPublicInfo` per account, ...).
 
@@ -48,7 +48,7 @@ Packet and method numbers that differ between the versions checked (the own
 ship's packet is 43 or 44, the sinking call 76 or 83, the shells 101, 102,
 126 or 127) are all found by shape - see
 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py) - so a renumbering
-patch does not empty the table. The numbers found are in the summary's
+patch does not empty the table. The numbers found are in the match document's
 `decoded`.
 
 **The pickle is untrusted data.** A replay is a file from anywhere, and a
@@ -60,19 +60,7 @@ data and nothing else. A test feeds it a pickle that calls `os.system`.
 last seen, when that was within five seconds. **The battle's start** is the
 first moment any ship moves at all (ships lie still in the countdown).
 
-**The summary** has, besides the match's lines: each player's `seen`
-(damage dealt and received, shells, torpedoes, last health the client saw),
-`header` (the roster's entry) and `record` (the player record from the
-stream, by key number); `chat`; `damageStats` (the recording player's own,
-as the game keeps them: per weapon and kind, a count and an amount - kind 0
-is damage dealt); `avatarPickles` (every pickled call to the recording
-player, decoded, by method number); `header` (the first block, all of it but
-the roster: game mode, weather, map border, team sizes...); `moreBlocks`;
-`results` (15.x); `blockIds`; `entities` (every entity the stream creates:
-its type number and role, when it came into the client's view and when it
-left); `streamVersion` (the version as the stream says it); and `selfCheck`
-(the completeness count, and the checks of the entities, the results, the
-ids and the version).
+Everything that is not a table row is in [the match document](match-document.md).
 
 **What the client was told** is complete for its own team and partial for
 enemies: their shots, hits and health are there while in range.
@@ -93,49 +81,30 @@ enemies: their shots, hits and health are there while in range.
 - The ship number as a name: the names are in the game's own parameter
   files, not in the replay.
 
-## Verified
+## How the reading was checked
 
-On public replays, at 2026-11-07:
+The reading was checked on public replays of clients from 0.9 to 15.x, each
+value against something the replay gives a second time:
 
-| Client | Map | Ships | Positions | Others' rate | Own ship | Sunk (placed) |
-|---|---|---|---|---|---|---|
-| 0.9.6 (July 2020) | Shoreside | 24 of 24 | 41,036 | 5.7 Hz | 7.0 Hz | 20 (19) |
-| 0.10.11 | naval_mission | 14 of 14 | 47,212 | 6.8 Hz | 7.0 Hz | 9 (9) |
-| 15.9 (2026) | Seychelles | 24 of 24 | 20,345 | 6.0 Hz | 7.0 Hz | 14 (13) |
-| 15.10 (November 2026) | Faroe | 12 of 12 | 19,419 | 7.0 Hz | 7.0 Hz | 10 (10) |
+- **Positions:** every ship's entity matched a roster name; headings agree
+  with the direction of travel to within 0.1 rad; after its sinking, a ship
+  moves less than 0.1 units. A ship lying still is updated less often.
+- **Health:** each ship sunk within the client's view ends with health 0.
+  About half of all hits match a fall of health in the second before; the
+  rest fall together with repairs or other hits.
+- **Damage against the game's own statistics:** on the newest client the
+  recording player's damage read is within 0.1% of the statistics. On older
+  clients the statistics are higher: the client is not sent every hit, or
+  the statistics count more than hits (not resolved).
+- **Shells:** a shell starts a few units from its ship's last known position
+  (the guns are spread along the hull); nearly every shell's end follows,
+  within a minute, a shot the client saw.
 
-Rates are the median gap between one ship's updates; a ship lying still is
-updated less often. Checks: every ship's entity was matched to a roster name
-on all four; headings agree with the direction of travel to 0.01-0.07 rad;
-after its sinking call, every one of the 53 victims moves no more than 0.1
-units (a ship under way covers about 2 a second). The battle's start came out
-at 30.6-31.9 s on three of the replays; on the 0.9.6 one at 12.5 s, possibly a
-recording that began late in the countdown (not checked).
-
-Checks on the rest, in the order of the table above:
-
-- **Health:** each ship sunk within the client's view has a last health of 0
-  (17 of 20, 9 of 9, 12 of 14, 10 of 10 sunk ships; the others sank out of
-  view). A hit's damage equals a fall of the health in the second before it
-  for 64%, 67%, 54% and 52% of hits; the rest fall together with repairs or
-  with other hits.
-- **Damage against the game's own statistics:** on the 15.10 replay the
-  recording player's damage read (91,461) is within 0.1% of the statistics'
-  damage dealt (91,544). On the others the statistics are 12-79% higher
-  (95,310 read against 170,884; 225,064 against 252,506; 84,295 against
-  124,353) - the client is not sent every hit of its own ship, or the
-  statistics count more than hits; not resolved.
-- **Shells:** a shell starts a median 2.5-4.5 units from its ship's last
-  known position (the guns are along a ship 12 or more units long).
-- **Where shells ended:** 2,973 of 2,992, 1,576 of 1,576, 980 of 1,176 and
-  1,645 of 1,648 end within a minute after their ship fired a shell or
-  torpedo the client saw (the rest: shells of ships out of sight).
-
-The tests build replays to the same layout, so no real replay is kept in this
-repository.
+The tests build replays to the same layout, so no real replay is kept in
+this repository.
 
 **Not checked:** clients before 0.9.6, the Lesta client (Mir Korabley),
-operations and scenarios beyond the one above, clan and ranked battles, and
+operations and scenarios beyond one, clan and ranked battles, and
 which ship number is which ship.
 
 ---

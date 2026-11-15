@@ -1,6 +1,6 @@
 ---
 title: Terms and licence
-nav_order: 8
+nav_order: 9
 ---
 
 # Terms and licence
@@ -37,11 +37,11 @@ MIT ([`LICENSE`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/LICENSE))
 (Apache-2.0). Written for this project: the Blowfish cipher here is its own,
 with its tables computed from the digits of pi as the cipher defines them.
 Facts about the format are common knowledge among replay tools; the unit scale
-note is from landaire/wows-toolkit (MIT). No code was taken from any project,
-and none from Monstrofil/replays_unpack, which has no licence.
+note is from landaire/wows-toolkit (MIT). No code was taken from any other
+project.
 
 `bigworld.py` and `table.py` are the same files as in the World of Tanks
-converter (`../wot-replay`); change both together.
+converter ([3DHeat-Ext-WoT](https://github.com/Holdi601/3DHeat-Ext-WoT)); change both together.
 
 ---
 

@@ -120,7 +120,7 @@ def test_the_command_writes_the_sidecar(tmp_path):
     (tmp_path / "a.wowsreplay").write_bytes(replay())
     out = tmp_path / "out"
     assert main([str(tmp_path), "-o", str(out)]) == 0
-    side = pq.read_table(out / "99_Test" / f"{ARENA}.messages.parquet")
-    doc = json.loads((out / "99_Test" / f"{ARENA}.match.json").read_text(encoding="utf-8"))
+    side = pq.read_table(out / "99_testmap" / f"{ARENA}.messages.parquet")
+    doc = json.loads((out / "99_testmap" / f"{ARENA}.match.json").read_text(encoding="utf-8"))
     assert doc["selfCheck"]["completeness"]["lost"] == 0
     assert side.num_rows == doc["selfCheck"]["completeness"]["seen"] - doc["selfCheck"]["completeness"]["decoded"]

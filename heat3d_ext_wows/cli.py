@@ -48,7 +48,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--force", action="store_true", help="convert again what is already written")
     ap.add_argument("--ship-names", metavar="JSON", help="a JSON object of shipId -> ship name; replays carry only "
                     "the number for every ship but the recording player's")
-    ap.add_argument("--version", action="version", version=__version__)
+    ap.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     args = ap.parse_args(argv)
     files = find(args.replays)
     if not files:

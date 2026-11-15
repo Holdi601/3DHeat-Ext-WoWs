@@ -21,8 +21,8 @@ AVATAR, OWN, ALLY, ENEMY = 500, 501, 502, 503
 ARENA = 2630531823886288
 
 HEADER = {
-    "mapName": "spaces/99_Test",
-    "mapDisplayName": "99_Test",
+    "mapName": "spaces/99_testmap",
+    "mapDisplayName": "99_testmap",
     "clientVersionFromExe": "15,10,0,13533378",
     "playerName": "me",
     "playerVehicle": "PASB018-Iowa-1944",
@@ -111,7 +111,7 @@ def test_ship_class_from_the_index_name():
 def test_every_ship_is_named_and_tracked():
     m = read(replay())
     s = m.summary
-    assert s["match"] == str(ARENA) and s["map"] == "spaces/99_Test" and s["clientVersion"] == "15.10.0.13533378"
+    assert s["match"] == str(ARENA) and s["map"] == "spaces/99_testmap" and s["clientVersion"] == "15.10.0.13533378"
     players = {p["name"]: p for p in s["players"]}
     assert players["me"]["entity"] == OWN and players["foe"]["entity"] == ENEMY
     assert players["me"]["samples"] == 301 and s["ownPositionPacket"] == 44
@@ -157,10 +157,10 @@ def test_the_command_writes_the_table_and_summary(tmp_path):
     (tmp_path / "a.wowsreplay").write_bytes(replay())
     out = tmp_path / "out"
     assert main([str(tmp_path), "-o", str(out)]) == 0
-    t = pq.read_table(out / "99_Test" / f"{ARENA}.parquet")
+    t = pq.read_table(out / "99_testmap" / f"{ARENA}.parquet")
     hints = json.loads(t.schema.metadata[b"heat3d"])
     assert hints["kind"] == "wows-replay" and hints["entity"]["size"] == 12
-    doc = json.loads((out / "99_Test" / f"{ARENA}.match.json").read_text(encoding="utf-8"))
+    doc = json.loads((out / "99_testmap" / f"{ARENA}.match.json").read_text(encoding="utf-8"))
     assert doc["format"] == "heat3d-wows-match" and doc["player"] == "me"
 
 
@@ -169,5 +169,13 @@ def test_ship_names_file(tmp_path):
     names = tmp_path / "names.json"
     names.write_text(json.dumps({"4003": "PGSC108-Hipper"}), encoding="utf-8")
     assert main([str(tmp_path / "a.wowsreplay"), "-o", str(tmp_path / "out"), "--ship-names", str(names)]) == 0
-    t = pq.read_table(tmp_path / "out" / "99_Test" / f"{ARENA}.parquet")
+    t = pq.read_table(tmp_path / "out" / "99_testmap" / f"{ARENA}.parquet")
     assert "PGSC108-Hipper" in t.column("vehicle").to_pylist()
+
+
+def test_version_names_the_command(capsys):
+    import pytest as _pytest
+    from heat3d_ext_wows import __version__, cli as _cli
+    with _pytest.raises(SystemExit):
+        _cli.main(["--version"])
+    assert capsys.readouterr().out.strip() == f"heat3d-wows-replay {__version__}"

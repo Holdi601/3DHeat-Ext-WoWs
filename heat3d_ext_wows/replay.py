@@ -4,7 +4,7 @@ time, and every ship sunk where it happened.
 
 What the file holds (see `bigworld` for the container):
 
-- The first JSON block: the map (`mapName`, e.g. `spaces/54_Faroe`), the
+- The first JSON block: the map (`mapName`, e.g. `spaces/99_testmap`), the
   client version, the recording player (`playerName`, `playerVehicle`, e.g.
   `PASB018-Iowa-1944`) and the roster - `vehicles`, a list of `name`, `id`
   (the player's account), `shipId` (the ship's number in the game's own
@@ -101,9 +101,9 @@ COLUMNS = {
     "otherVehicle": "s", "otherType": "s", "hitLocalX": "f", "hitLocalY": "f", "hitLocalZ": "f",
 }  # fmt: skip
 
-#: A position's pitch and roll as the packet has them, radians. Checked on the four replays read (see the README):
+#: A position's pitch and roll as the packet has them, radians. Checked on real replays (docs/completeness.md):
 #: the pitch is 0 throughout (ships do not pitch in the game); the roll goes with the rate of turn (a ship heels in a
-#: turn), correlation 0.6 on the 15.10 replay.
+#: turn).
 COLUMNS.update(pitch="f", roll="f")
 HINTS["columns"]["extra"] += ["pitch", "roll"]
 
