@@ -50,7 +50,7 @@ Je ziet één regel per replay, eindigend met het bestand dat hij schreef:
 | [Het wedstrijddocument](match-document.md) | elke sleutel van `<match>.match.json` |
 | [Hoe het een replay leest](how-it-reads.md) | het formaat, en hoe de lezing gecontroleerd is |
 | [Volledigheid](completeness.md) | de sidecar en de zelfcontrole |
-| [Voorwaarden en licentie](terms.md) | de voorwaarden van Wargaming, licentie, bronnen |
+| [Voorwaarden en licentie](terms.md) | wat hij leest, licentie, bronnen |
 | [Opdrachtreferentie](../cli-reference.md), [Kolomlijst](../columns.md) | gegenereerd uit de code |
 
 ## Onderdeel van 3DHeat {#part-of-3dheat}
@@ -62,10 +62,12 @@ tabblad Match. Hij kan de bestanden van een wedstrijd in één bestand inpakken:
 [Eén bestand per wedstrijd](https://holdi601.github.io/3DHeat/container.html). Wat elke
 converter moet bewaren: [Converters bewaren alles](https://holdi601.github.io/3DHeat/converters.html).
 
-De converter staat bewust los van de 3DHeat Watcher: de replays zijn versleuteld, en de
-voorwaarden van Wargaming zijn breed ([Voorwaarden en licentie](terms.md)).
-Moet hij ooit weg, dan gaat er niets anders mee. De Watcher draait hem als hij
-geïnstalleerd is en werkt ook zonder hem.
+Elke spellezer is een eigen klein project met een eigen licentiebestand, eigen
+releases en een eigen issuetracker, zodat hij los geïnstalleerd, bijgewerkt,
+onderhouden - of op verzoek van een rechthebbende teruggetrokken - kan worden,
+zonder dat de viewer of de andere tools daar iets van merken. De Watcher voert
+deze converter uit als hij geïnstalleerd is, en werkt ook zonder. Wat de
+converter leest: [Voorwaarden en licentie](terms.md).
 
 | Tool | Wat hij doet | Bron | Documentatie |
 |---|---|---|---|

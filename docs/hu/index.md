@@ -49,7 +49,7 @@ Visszajátszásonként egy sort kell látnod, a végén a fájllal, amelyet írt
 | [A meccsdokumentum](match-document.md) | a `<match>.match.json` minden kulcsa |
 | [Hogyan olvassa a visszajátszást](how-it-reads.md) | a formátum, és hogyan ellenőriztük az olvasást |
 | [Teljesség](completeness.md) | a kísérőfájl és az önellenőrzés |
-| [Feltételek és licenc](terms.md) | a Wargaming feltételei, licenc, források |
+| [Feltételek és licenc](terms.md) | mit olvas, licenc, források |
 | [Parancsreferencia](../cli-reference.md), [Oszloplista](../columns.md) | a kódból generálva |
 
 ## A 3DHeat része {#part-of-3dheat}
@@ -60,9 +60,12 @@ A megjelenítő a táblázatot a Hőtérkép fülön, a meccsdokumentumot a Mecc
 fájljait egybe is csomagolhatja: [Egy fájl egy meccshez](https://holdi601.github.io/3DHeat/container.html).
 Amit minden konverternek meg kell őriznie: [A konverterek mindent megtartanak](https://holdi601.github.io/3DHeat/converters.html).
 
-A konvertert szándékosan tartjuk külön a 3DHeat Watchertől: a visszajátszások titkosítottak, a
-Wargaming feltételei pedig szélesek ([Feltételek és licenc](terms.md)). Ha valaha el kell
-távolítani, semmi más nem megy vele együtt. A Watcher telepítve futtatja, és enélkül is működik.
+Minden játékolvasó önálló kis projekt saját licencfájllal, kiadásokkal és
+hibakövetővel, így külön telepíthető, frissíthető, karbantartható - vagy egy
+jogtulajdonos kérésére visszavonható - anélkül, hogy a megjelenítőt vagy a
+többi eszközt érintené. A Watcher futtatja ezt a konvertert, ha telepítve van,
+és nélküle is működik. Mit olvas a konverter: [Feltételek és
+licenc](terms.md).
 
 | Eszköz | Mit csinál | Forrás | Dokumentáció |
 |---|---|---|---|

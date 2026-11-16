@@ -3,37 +3,26 @@ title: "Skilmálar og leyfi"
 nav_order: 9
 lang: "is"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Skilmálar og leyfi {#terms-and-licence}
 
-## Skilmálar Wargaming {#wargamings-terms}
+## Hvað hann les {#what-it-reads}
 
-Lesið 2026-11-07, Wargaming EULA útgáfa 14 (í gildi frá 10. apríl 2024, skráð
-sem núverandi); kafli 12.3 í henni vísar á reglur um viðbætur (mods) fyrir World of Warships, en sú
-síða birtist ekki utan vafra og var ekki lesin:
+Umbreytirinn les upptökuskrár sem leikurinn skrifaði á þína eigin tölvu, eftir
+bardagann og utan leiksins. Hann breytir engu í leiknum, talar ekki við neinn
+netþjón og sýnir ekkert meðan á bardaga stendur. Ekkert úr leiknum fylgir
+honum eða er dreift áfram: engar leikjaskrár, enginn leikjakóði, engin
+DLL-söfn. Það sem hann skrifar verður eftir á tölvunni þinni.
 
-- 5.3 (b): nema með skriflegri heimild máttu ekki "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): bannað er "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat tengist ekki Wargaming og er ekki samþykkt af Wargaming. World of
+Warships og tengd heiti og vörumerki tilheyra eigendum sínum.
 
-Það sem þessi umbreytir gerir: hann les skrá sem leikurinn skrifaði, eftir bardagann,
-utan leiksins. Hann breytir engu í leiknum, talar við engan þjón og
-sýnir ekkert meðan á bardaga stendur. Hann afkóðar strauminn með lykli leiksins,
-sem hægt er að lesa 5.3 (b) og 12.1 (p) þannig að nái yfir. Notkun hans er ákvörðun
-notandans; þess vegna er hann sérstakur pakki.
+Rétthafar: opnið issue á
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - við svörum fljótt og
+fjarlægjum hvað sem er ef þess er óskað.
 
 ## Leyfi og heimildir {#licence-and-sources}
 

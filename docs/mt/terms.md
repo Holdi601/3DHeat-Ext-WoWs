@@ -3,36 +3,28 @@ title: "Termini u liċenzja"
 nav_order: 9
 lang: "mt"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Termini u liċenzja {#terms-and-licence}
 
-## It-termini ta' Wargaming {#wargamings-terms}
+## X'jaqra {#what-it-reads}
 
-Moqrija fis-7 ta' Novembru 2026, Wargaming EULA verżjoni 14 (effettiva mal-10 ta' April 2024,
-elenkata bħala kurrenti); it-taqsima 12.3 tagħha tindika politika tal-mods ta' World of Warships, li l-paġna tagħha ma dehritx barra minn browser u ma nqrietx:
+Il-konvertitur jaqra fajls ta' ripetizzjoni li l-logħba kitbet fuq
+il-kompjuter tiegħek stess, wara l-battalja u barra mil-logħba. Ma jibdel xejn
+fil-logħba, ma jitkellem ma' ebda server u ma juri xejn waqt battalja. Xejn
+mil-logħba ma jiġi pprovdut jew imqassam mill-ġdid miegħu: l-ebda riżorsi
+tal-logħba, l-ebda kodiċi tal-logħba, l-ebda DLL. Dak li jikteb jibqa' fuq
+il-kompjuter tiegħek.
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): prohibited is "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat mhuwiex affiljat ma' Wargaming u mhuwiex approvat minn Wargaming. World
+of Warships u l-ismijiet u t-trademarks relatati jappartjenu lis-sidien
+tagħhom.
 
-X'jagħmel dan il-konvertitur: jaqra fajl li kitbet il-logħba, wara l-battalja, barra
-mil-logħba. Ma jibdel xejn fil-logħba, ma jkellem ebda server, u ma juri xejn waqt
-battalja. Jiddeċifra l-fluss bil-ċavetta tal-logħba, li 5.3 (b) u 12.1 (p) jistgħu
-jinqraw bħala li jkopruh. L-użu tiegħu huwa d-deċiżjoni tal-utent; huwa għalhekk
-li huwa pakkett separat.
+Detenturi tad-drittijiet: iftħu issue fuq
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - inwieġbu malajr u
+nneħħu kollox fuq talba.
 
 ## Liċenzja u sorsi {#licence-and-sources}
 

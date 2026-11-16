@@ -50,7 +50,7 @@ Du bør se én linje per replay, som slutter med filen den skrev:
 | [Kampdokumentet](match-document.md) | hver nøkkel i `<kamp>.match.json` |
 | [Slik leser den en replay](how-it-reads.md) | formatet, og hvordan lesingen ble kontrollert |
 | [Fullstendighet](completeness.md) | sidefilen og selvkontrollen |
-| [Vilkår og lisens](terms.md) | Wargamings vilkår, lisens, kilder |
+| [Vilkår og lisens](terms.md) | hva den leser, lisens, kilder |
 | [Kommandoreferanse](../cli-reference.md), [Kolonneliste](../columns.md) | generert fra koden |
 
 ## Del av 3DHeat {#part-of-3dheat}
@@ -62,10 +62,12 @@ Det kan pakke filene for ett slag til én fil:
 [Én fil per kamp](https://holdi601.github.io/3DHeat/container.html). Det hver
 konverter må beholde: [Konvertere beholder alt](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverteren holdes adskilt fra 3DHeat Watcher med vilje: replayene er kryptert, og
-Wargamings vilkår er vide ([Vilkår og lisens](terms.md)). Skulle den noen gang måtte
-bort, går ingenting annet med den. Watcher kjører den når den er installert, og
-fungerer uten den.
+Hver spilleser er sitt eget lille prosjekt med egen lisensfil, egne utgivelser
+og egen issue-tracker, så den kan installeres, oppdateres, vedlikeholdes -
+eller trekkes tilbake på forespørsel fra en rettighetshaver - for seg selv,
+uten å påvirke viseren eller de andre verktøyene. Watcher kjører denne
+konverteren når den er installert, og fungerer uten den. Hva konverteren
+leser: [Vilkår og lisens](terms.md).
 
 | Verktøy | Hva det gjør | Kilde | Dokumentasjon |
 |---|---|---|---|

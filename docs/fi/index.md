@@ -50,7 +50,7 @@ Näet yhden rivin replayta kohden, ja se päättyy tiedostoon, jonka se kirjoitt
 | [Ottelun asiakirja](match-document.md) | jokainen avain tiedostossa `<match>.match.json` |
 | [Miten replay luetaan](how-it-reads.md) | formaatti ja se, miten lukeminen tarkistettiin |
 | [Täydellisyys](completeness.md) | sivutiedosto ja itsetarkistus |
-| [Ehdot ja lisenssi](terms.md) | Wargamingin ehdot, lisenssi, lähteet |
+| [Ehdot ja lisenssi](terms.md) | mitä se lukee, lisenssi, lähteet |
 | [Komentoviite](../cli-reference.md), [Sarakeluettelo](../columns.md) | luotu koodista |
 
 ## Osa 3DHeatiä {#part-of-3dheat}
@@ -62,9 +62,12 @@ Se voi pakata ottelun tiedostot yhteen tiedostoon:
 [Yksi tiedosto ottelua kohden](https://holdi601.github.io/3DHeat/container.html). Mitä jokaisen muuntimen
 on säilytettävä: [Muuntimet säilyttävät kaiken](https://holdi601.github.io/3DHeat/converters.html).
 
-Muunnin on pidetty erillään 3DHeat Watcherista tarkoituksella: replayt ovat salattuja, ja Wargamingin
-ehdot ovat laajat ([Ehdot ja lisenssi](terms.md)). Jos se joskus poistetaan, mikään muu ei lähde sen mukana.
-Watcher ajaa sitä, kun se on asennettu, ja toimii ilman sitä.
+Jokainen pelin lukija on oma pieni projektinsa, jolla on oma lisenssitiedosto,
+omat julkaisut ja oma vianseuranta, joten sen voi asentaa, päivittää,
+ylläpitää - tai vetää pois oikeuksien haltijan pyynnöstä - erikseen ilman,
+että se vaikuttaa katseluohjelmaan tai muihin työkaluihin. Watcher ajaa tämän
+muuntimen, kun se on asennettu, ja toimii ilman sitä. Mitä muunnin lukee:
+[Ehdot ja lisenssi](terms.md).
 
 | Työkalu | Mitä se tekee | Lähde | Dokumentaatio |
 |---|---|---|---|

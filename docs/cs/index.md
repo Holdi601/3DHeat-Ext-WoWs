@@ -47,7 +47,7 @@ tento soubor a vedle něj `<match>.match.json` v prohlížeči 3DHeat.
 | [Dokument zápasu](match-document.md) | každý klíč v `<match>.match.json` |
 | [Jak se replay čte](how-it-reads.md) | formát a jak bylo čtení ověřeno |
 | [Úplnost](completeness.md) | doplněk a vlastní kontrola |
-| [Podmínky a licence](terms.md) | podmínky Wargamingu, licence, zdroje |
+| [Podmínky a licence](terms.md) | co čte, licence, zdroje |
 | [Přehled příkazů](../cli-reference.md), [Seznam sloupců](../columns.md) | generováno z kódu |
 
 ## Součást 3DHeat {#part-of-3dheat}
@@ -58,9 +58,12 @@ Prohlížeč otevře tabulku na své záložce Teplotní mapa a dokument zápasu
 zápasu do jednoho: [Jeden soubor na zápas](https://holdi601.github.io/3DHeat/container.html). Co musí
 každý převodník zachovat: [Převodníky zachovávají vše](https://holdi601.github.io/3DHeat/converters.html).
 
-Převodník je záměrně oddělený od 3DHeat Watcheru: replaye jsou šifrované a podmínky Wargamingu jsou široké
-([Podmínky a licence](terms.md)). Kdyby musel pryč, nic dalšího s ním neodejde. Watcher ho spouští, když je
-nainstalovaný, a funguje i bez něj.
+Každá čtečka hry je samostatný malý projekt s vlastním souborem licence,
+vydáními a evidencí problémů, takže ji lze instalovat, aktualizovat,
+udržovat - nebo na žádost držitele práv stáhnout - samostatně, bez vlivu na
+prohlížeč a ostatní nástroje. Watcher tento převodník spouští, když je
+nainstalovaný, a funguje i bez něj. Co převodník čte: [Podmínky a
+licence](terms.md).
 
 | Nástroj | Co dělá | Zdroj | Dokumentace |
 |---|---|---|---|

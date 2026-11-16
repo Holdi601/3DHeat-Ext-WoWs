@@ -51,7 +51,7 @@ Trebali biste vidjeti jedan red po replayu, koji završava datotekom koju je nap
 | [Dokument meča](match-document.md) | svaki ključ u `<match>.match.json` |
 | [Kako čita replay](how-it-reads.md) | format i kako je čitanje provjereno |
 | [Potpunost](completeness.md) | sidecar i samoprovjera |
-| [Uvjeti i licenca](terms.md) | Wargamingovi uvjeti, licenca, izvori |
+| [Uvjeti i licenca](terms.md) | šta čita, licenca, izvori |
 | [Referenca naredbi](../cli-reference.md), [Lista kolona](../columns.md) | generisano iz koda |
 
 ## Dio 3DHeata {#part-of-3dheat}
@@ -63,10 +63,11 @@ Meč. Može spakirati datoteke jednog meča u jednu datoteku:
 [Jedna datoteka po meču](https://holdi601.github.io/3DHeat/container.html). Šta svaki
 konverter mora zadržati: [Konverteri čuvaju sve](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverter je namjerno odvojen od 3DHeat Watchera: replayevi
-su šifrirani, a Wargamingovi uvjeti su široki ([Uvjeti i licenca](terms.md)).
-Ako ikad mora otići, ništa drugo ne odlazi s njim. Watcher ga pokreće kada je
-instaliran i radi i bez njega.
+Svaki čitač igre je zaseban mali projekat s vlastitim fajlom licence,
+izdanjima i sistemom za praćenje problema, pa se može instalirati, ažurirati,
+održavati - ili povući na zahtjev nosioca prava - zasebno, bez uticaja na
+preglednik ili druge alate. Watcher pokreće ovaj konverter kada je instaliran
+i radi i bez njega. Šta konverter čita: [Uvjeti i licenca](terms.md).
 
 | Alat | Šta radi | Izvor | Dokumentacija |
 |---|---|---|---|

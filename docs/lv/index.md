@@ -42,14 +42,19 @@ Katram atkārtojumam redzēsiet vienu rindu, kas beidzas ar failu, kuru tas uzra
 | [Mača dokuments](match-document.md) | katra `<match>.match.json` atslēga |
 | [Kā tas nolasa atkārtojumu](how-it-reads.md) | formāts un kā lasīšana pārbaudīta |
 | [Pilnība](completeness.md) | papildfails un pašpārbaude |
-| [Noteikumi un licence](terms.md) | Wargaming noteikumi, licence, avoti |
+| [Noteikumi un licence](terms.md) | ko tas lasa, licence, avoti |
 | [Komandu atsauce](../cli-reference.md), [Kolonnu saraksts](../columns.md) | ģenerēts no koda |
 
 ## Daļa no 3DHeat {#part-of-3dheat}
 
 Šis konvertētājs ir viens no [3DHeat](https://github.com/Holdi601/3DHeat) rīkiem, reāllaika 3D telemetrijas un atkārtojumu skatītāja ([dokumentācija](https://holdi601.github.io/3DHeat/)). Skatītājs atver tabulu tās Siltumkartes cilnē un mača dokumentu tās Mača cilnē. Tas var iepakot mača failus vienā failā: [Viens fails vienam mačam](https://holdi601.github.io/3DHeat/container.html). Ko katram konvertētājam jāsaglabā: [Konvertētāji saglabā visu](https://holdi601.github.io/3DHeat/converters.html).
 
-Konvertētājs ir atdalīts no 3DHeat Watcher ar nolūku: atkārtojumi ir šifrēti, un Wargaming noteikumi ir plaši ([Noteikumi un licence](terms.md)). Ja tas kādreiz būs jāizņem, nekas cits līdz ar to nepazudīs. Watcher to palaiž, ja tas ir uzstādīts, un darbojas arī bez tā.
+Katrs spēles lasītājs ir atsevišķs neliels projekts ar savu licences failu,
+laidieniem un problēmu izsekotāju, tāpēc to var instalēt, atjaunināt,
+uzturēt - vai pēc tiesību turētāja lūguma atsaukt - atsevišķi, neietekmējot
+skatītāju vai citus rīkus. Watcher palaiž šo konvertētāju, ja tas ir
+instalēts, un darbojas arī bez tā. Ko lasa konvertētājs: [Noteikumi un
+licence](terms.md).
 
 | Rīks | Ko tas dara | Avots | Dokumentācija |
 |---|---|---|---|

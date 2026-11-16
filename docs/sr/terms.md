@@ -3,37 +3,26 @@ title: Услови и лиценца
 nav_order: 9
 lang: "sr"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Услови и лиценца {#terms-and-licence}
 
-## Wargaming-ови услови {#wargamings-terms}
+## Шта чита {#what-it-reads}
 
-Прочитано 2026-11-07, Wargaming EULA верзија 14 (на снази од 10. априла 2024,
-наведена као актуелна); његов одељак 12.3 упућује на правила модова за World of
-Warships, чија страница није приказана ван прегледача и није прочитана:
+Конвертор чита датотеке реплеја које је игра записала на вашем сопственом
+рачунару, после битке и ван игре. Не мења ништа у игри, не комуницира ни са
+једним сервером и не приказује ништа током битке. Ништа из игре се не
+испоручује нити даље дистрибуира са њим: нема ресурса игре, кода игре ни DLL
+датотека. Оно што запише остаје на вашем рачунару.
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): prohibited is "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat није повезан са Wargaming-ом нити га Wargaming подржава. World of
+Warships и повезани називи и жигови припадају својим власницима.
 
-Шта овај конвертор ради: чита датотеку коју је игра записала, после битке,
-ван игре. Ништа не мења у игри, не разговара ни са једним сервером, и ништа
-не приказује током битке. Он ипак дешифрује низ игриним кључем, што се 5.3 (b)
-и 12.1 (p) могу читати да покривају. Коришћење је одлука корисника; зато је
-посебан пакет.
+Носиоци права: отворите issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - брзо одговарамо и на
+захтев уклањамо било шта.
 
 ## Лиценца и извори {#licence-and-sources}
 

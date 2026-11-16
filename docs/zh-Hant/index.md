@@ -42,14 +42,14 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 | [對戰文件](match-document.md) | `<match>.match.json` 的每個鍵 |
 | [讀取回放的方式](how-it-reads.md) | 格式，以及讀取是如何核對的 |
 | [完整性](completeness.md) | 附屬檔案與自我檢查 |
-| [名詞與授權](terms.md) | Wargaming 的條款、授權、來源 |
+| [名詞與授權](terms.md) | 它讀取什麼、授權、來源 |
 | [指令參考](../cli-reference.md)、[欄位清單](../columns.md) | 由程式碼產生 |
 
 ## 3DHeat 的一部分 {#part-of-3dheat}
 
 這個轉換器是 [3DHeat](https://github.com/Holdi601/3DHeat) 的工具之一。3DHeat 是即時 3D 遙測與回放檢視器（[說明文件](https://holdi601.github.io/3DHeat/)）。檢視器會在熱圖分頁中開啟表格，在對戰分頁中開啟對戰文件。它也能把一場對戰的檔案打包成一個檔案：[每場對戰一個檔案](https://holdi601.github.io/3DHeat/container.html)。每個轉換器都必須保留的內容：[轉換器保留一切](https://holdi601.github.io/3DHeat/converters.html)。
 
-此轉換器刻意與 3DHeat Watcher 分開：回放是加密的，而 Wargaming 的條款涵蓋範圍很廣（[名詞與授權](terms.md)）。如果它必須被移除，其他部分不會連帶受到影響。安裝 Watcher 時，Watcher 會執行它；沒有它，Watcher 也能運作。
+每個遊戲讀取工具都是獨立的小專案，有自己的授權檔案、發行版本和問題追蹤器，因此可以單獨安裝、更新、維護，或應權利人的要求撤下，而不影響檢視器或其他工具。安裝了此轉換器時，Watcher 會執行它；沒有它，Watcher 也能運作。此轉換器讀取什麼：[名詞與授權](terms.md)。
 
 | 工具 | 功能 | 原始碼 | 說明文件 |
 |---|---|---|---|

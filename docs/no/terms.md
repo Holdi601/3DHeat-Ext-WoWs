@@ -3,34 +3,26 @@ title: "Vilkår og lisens"
 nav_order: 9
 lang: "no"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Vilkår og lisens {#terms-and-licence}
 
-## Wargamings vilkår {#wargamings-terms}
+## Hva den leser {#what-it-reads}
 
-Lest 2026-11-07, Wargaming EULA versjon 14 (gjelder fra 10. april 2024, oppført som gjeldende). Punkt 12.3
-viser til en retningslinje for mods i World of Warships; den siden kunne ikke vises utenfor en nettleser, og ble ikke lest:
+Konverteren leser replayfiler som spillet skrev på din egen datamaskin, etter
+kampen og utenfor spillet. Den endrer ingenting i spillet, snakker ikke med
+noen server og viser ingenting under en kamp. Ingenting fra spillet følger med
+eller videredistribueres: ingen spillressurser, ingen spillkode, ingen DLL-er.
+Det den skriver, blir værende på datamaskinen din.
 
-- 5.3 (b): med mindre det er gitt skriftlig tillatelse, må du ikke «... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content».
-- 12.1 (k): forbudt er «Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming.»
-- 12.1 (l): «... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming».
-- 12.1 (p): «Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming».
+3DHeat er ikke tilknyttet eller godkjent av Wargaming. World of Warships og
+tilhørende navn og varemerker tilhører sine eiere.
 
-Hva denne konverteren gjør: den leser en fil spillet skrev, etter slaget, utenfor spillet. Den endrer ingenting
-i spillet, snakker med ingen server, og viser ingenting under et slag. Den dekrypterer strømmen med spillets
-nøkkel, noe 5.3 (b) og 12.1 (p) kan leses som å dekke. Å bruke den er brukerens egen beslutning; derfor er den en egen pakke.
+Rettighetshavere: opprett en issue på
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - vi svarer raskt og
+fjerner hva som helst på forespørsel.
 
 ## Lisens og kilder {#licence-and-sources}
 

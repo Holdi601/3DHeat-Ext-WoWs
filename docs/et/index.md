@@ -47,7 +47,7 @@ Iga kordus kohta näed ühte rida, mis lõpeb failiga, kuhu see kirjutas:
 | [Mängu dokument](match-document.md) | iga võti failis `<match>.match.json` |
 | [Kuidas tööriist kordust loeb](how-it-reads.md) | formaat ja kuidas lugemist kontrolliti |
 | [Täielikkus](completeness.md) | lisafail ja enesekontroll |
-| [Tingimused ja litsents](terms.md) | Wargamingi tingimused, litsents, allikad |
+| [Tingimused ja litsents](terms.md) | mida see loeb, litsents, allikad |
 | [Käskude viide](../cli-reference.md), [Veergude loend](../columns.md) | koodist genereeritud |
 
 ## Osa 3DHeatist {#part-of-3dheat}
@@ -58,9 +58,12 @@ kordusvaaturist ([dokumentatsioon](https://holdi601.github.io/3DHeat/)). Vaatur 
 [Üks fail mängu kohta](https://holdi601.github.io/3DHeat/container.html). Mida iga konverter peab säilitama:
 [Konverterid hoiavad kõike](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverter on 3DHeat Watcherist tahtlikult eraldi: kordused on šifreeritud ja Wargamingi tingimused on laiad
-([Tingimused ja litsents](terms.md)). Kui ta peab kunagi kaduma, ei kao sellega koos midagi muud. Watcher käivitab
-selle, kui see on paigaldatud, ja töötab ka ilma selleta.
+Iga mängu lugeja on oma väike projekt oma litsentsifaili, väljalasete ja
+probleemide jälgijaga, nii et seda saab eraldi paigaldada, uuendada,
+hooldada - või õiguste omaja soovil tagasi võtta - ilma et see mõjutaks
+vaaturit või teisi tööriistu. Watcher käivitab selle konverteri, kui see on
+paigaldatud, ja töötab ka ilma selleta. Mida konverter loeb: [Tingimused ja
+litsents](terms.md).
 
 | Tööriist | Mida see teeb | Lähtekood | Dokumentatsioon |
 |---|---|---|---|

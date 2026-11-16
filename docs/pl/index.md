@@ -50,7 +50,7 @@ Zobaczysz jedną linię na replay, kończącą się plikiem, który zapisał:
 | [Dokument meczu](match-document.md) | każdy klucz `<match>.match.json` |
 | [Jak czytany jest replay](how-it-reads.md) | format i jak sprawdzono odczyt |
 | [Kompletność](completeness.md) | plik towarzyszący i samosprawdzenie |
-| [Warunki i licencja](terms.md) | warunki Wargaming, licencja, źródła |
+| [Warunki i licencja](terms.md) | co czyta, licencja, źródła |
 | [Opis poleceń](../cli-reference.md), [Lista kolumn](../columns.md) | generowane z kodu |
 
 ## Część 3DHeat {#part-of-3dheat}
@@ -62,10 +62,11 @@ Mecz. Może też spakować pliki meczu w jeden plik:
 [Jeden plik na mecz](https://holdi601.github.io/3DHeat/container.html). Czego musi dotrzymać każdy
 konwerter: [Konwertery zachowują wszystko](https://holdi601.github.io/3DHeat/converters.html).
 
-Konwerter jest trzymany osobno od 3DHeat Watcher celowo: replaye są zaszyfrowane,
-a warunki Wargaming są szerokie ([Warunki i licencja](terms.md)).
-Gdyby musiał zniknąć, nic innego nie znika razem z nim. Watcher uruchamia go, gdy jest
-zainstalowany, i działa bez niego.
+Każdy czytnik gry to osobny mały projekt z własnym plikiem licencji, wydaniami
+i systemem zgłoszeń, więc można go instalować, aktualizować, utrzymywać - albo
+wycofać na prośbę posiadacza praw - osobno, bez wpływu na przeglądarkę i
+pozostałe narzędzia. Watcher uruchamia ten konwerter, gdy jest zainstalowany,
+i działa bez niego. Co czyta konwerter: [Warunki i licencja](terms.md).
 
 | Narzędzie | Co robi | Źródło | Dokumentacja |
 |---|---|---|---|

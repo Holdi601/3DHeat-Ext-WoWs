@@ -3,37 +3,28 @@ title: "Όροι και άδεια"
 nav_order: 9
 lang: "el"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Όροι και άδεια {#terms-and-licence}
 
-## Οι όροι της Wargaming {#wargamings-terms}
+## Τι διαβάζει {#what-it-reads}
 
-Διαβάστηκαν στις 2026-11-07, Wargaming EULA έκδοση 14 (σε ισχύ από 10 Απριλίου 2024, όπως
-αναφέρεται ως τρέχουσα)· η ενότητα 12.3 της παραπέμπει σε πολιτική τροποποιήσεων του World of
-Warships, της οποίας η σελίδα δεν εμφανίστηκε έξω από τον περιηγητή και δεν διαβάστηκε:
+Ο μετατροπέας διαβάζει αρχεία replay που έγραψε το παιχνίδι στον δικό σας
+υπολογιστή, μετά τη μάχη και έξω από το παιχνίδι. Δεν αλλάζει τίποτα στο
+παιχνίδι, δεν επικοινωνεί με κανέναν διακομιστή και δεν δείχνει τίποτα κατά τη
+διάρκεια μιας μάχης. Τίποτα από το παιχνίδι δεν παραδίδεται ούτε αναδιανέμεται
+μαζί του: κανένα στοιχείο του παιχνιδιού, κανένας κώδικας του παιχνιδιού,
+κανένα DLL. Ό,τι γράφει μένει στον υπολογιστή σας.
 
-- 5.3 (b): εκτός αν υπάρχει γραπτή άδεια, δεν επιτρέπεται το "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): απαγορεύεται το "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+Το 3DHeat δεν συνδέεται με τη Wargaming ούτε έχει την έγκρισή της. Το World of
+Warships και τα σχετικά ονόματα και εμπορικά σήματα ανήκουν στους κατόχους
+τους.
 
-Τι κάνει αυτός ο μετατροπέας: διαβάζει ένα αρχείο που έγραψε το παιχνίδι, μετά τη μάχη, έξω από
-το παιχνίδι. Δεν αλλάζει τίποτα στο παιχνίδι, δεν μιλά με κανέναν διακομιστή, και δεν δείχνει
-τίποτα κατά τη διάρκεια μιας μάχης. Αποκρυπτογραφεί όμως τη ροή με το κλειδί του παιχνιδιού, το
-οποίο οι 5.3 (b) και 12.1 (p) μπορούν να διαβαστούν ότι καλύπτουν. Η χρήση του είναι απόφαση του
-χρήστη· γι' αυτό είναι χωριστό πακέτο.
+Κάτοχοι δικαιωμάτων: ανοίξτε ένα issue στο
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - απαντάμε γρήγορα και
+αφαιρούμε οτιδήποτε κατόπιν αιτήματος.
 
 ## Άδεια και πηγές {#licence-and-sources}
 

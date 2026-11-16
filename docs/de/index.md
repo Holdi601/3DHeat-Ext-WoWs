@@ -3,7 +3,7 @@ title: Start
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "ed297a81b477"
+source_hash: "bbc8dc6aaeeb"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -50,7 +50,7 @@ Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
 | [Das Match-Dokument](match-document.md) | jeder Schlüssel von `<match>.match.json` |
 | [So liest es ein Replay](how-it-reads.md) | das Format und wie das Lesen geprüft wurde |
 | [Vollständigkeit](completeness.md) | die Begleitdateien und die Selbstprüfung |
-| [Begriffe und Lizenz](terms.md) | Bedingungen von Wargaming, Lizenz, Quellen |
+| [Begriffe und Lizenz](terms.md) | was er liest, Lizenz, Quellen |
 | [Befehlsreferenz](../cli-reference.md), [Spaltenliste](../columns.md) | aus dem Code erzeugt |
 
 ## Teil von 3DHeat {#part-of-3dheat}
@@ -62,10 +62,12 @@ Dateien eines Matches in eine einzige Datei packen:
 [Eine Datei pro Match](https://holdi601.github.io/3DHeat/container.html). Was jeder
 Umwandler behalten muss: [Umwandler behalten alles](https://holdi601.github.io/3DHeat/converters.html).
 
-Der Umwandler ist mit Absicht vom 3DHeat-Watcher getrennt: Die Replays sind verschlüsselt,
-und die Bedingungen von Wargaming sind weit gefasst ([Begriffe und Lizenz](terms.md)).
-Falls er einmal wegfallen muss, geht nichts anderes mit. Der Watcher startet ihn, wenn er
-installiert ist, und arbeitet auch ohne ihn.
+Jeder Spiel-Leser ist ein eigenes kleines Projekt mit eigener Lizenzdatei,
+eigenen Releases und eigenem Issue-Tracker, sodass er für sich installiert,
+aktualisiert, gepflegt - oder auf Wunsch eines Rechteinhabers zurückgezogen -
+werden kann, ohne den Viewer oder die anderen Werkzeuge zu berühren. Der
+Watcher führt diesen Umwandler aus, wenn er installiert ist, und funktioniert
+auch ohne ihn. Was der Umwandler liest: [Begriffe und Lizenz](terms.md).
 
 | Werkzeug | Was es tut | Quelle | Dokumentation |
 |---|---|---|---|

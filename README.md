@@ -23,6 +23,11 @@ language: choose it at the top of any page there.)
 Part of [3DHeat](https://github.com/Holdi601/3DHeat), the realtime 3D
 telemetry and replay viewer ([documentation](https://holdi601.github.io/3DHeat/)).
 
+Each game reader is its own small project with its own licence file, releases
+and issue tracker, so it can be installed, updated, maintained - or withdrawn
+on a rights holder's request - on its own, without affecting the viewer or the
+other tools.
+
 ## Install
 
 New to the command line? Read
@@ -108,9 +113,8 @@ how the viewer reads columns and roles:
 
 - A replay is what one game client was told: your team all the time,
   enemies only while spotted or near.
-- The converter is kept apart from the 3DHeat Watcher on purpose: the
-  replays are enciphered, and Wargaming's terms are broad. Using it is your
-  decision: read [Terms and licence](https://holdi601.github.io/3DHeat-Ext-WoWs/terms.html).
+- What the converter reads, and that nothing from the game is shipped with
+  it: [Terms and licence](https://holdi601.github.io/3DHeat-Ext-WoWs/terms.html).
 - How a replay is read and how it was checked:
   [How it reads a replay](https://holdi601.github.io/3DHeat-Ext-WoWs/how-it-reads.html)
   and [Completeness](https://holdi601.github.io/3DHeat-Ext-WoWs/completeness.html).
@@ -148,3 +152,8 @@ MIT ([`LICENSE`](LICENSE)). Needs numpy (BSD-3-Clause) and pyarrow
 other replay tools. Tests: `pip install -e .[test]` then `pytest` (the tests
 build replays in code; no real replay is kept here). For maintainers:
 [Maintaining](https://holdi601.github.io/3DHeat-Ext-WoWs/maintaining.html).
+
+3DHeat is not affiliated with or endorsed by Wargaming. World of Warships and
+related names and trademarks belong to their owners. Rights holders: open an
+issue at <https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - we respond quickly
+and remove anything on request.

@@ -47,7 +47,7 @@ Ar trebui să vedeți câte o linie pentru fiecare replay, terminată cu fișier
 | [Documentul meciului](match-document.md) | fiecare cheie din `<match>.match.json` |
 | [Cum citește un replay](how-it-reads.md) | formatul și cum a fost verificată citirea |
 | [Completitudinea](completeness.md) | fișierul auxiliar și autoverificarea |
-| [Termeni și licență](terms.md) | termenii Wargaming, licența, surse |
+| [Termeni și licență](terms.md) | ce citește, licența, surse |
 | [Referința comenzilor](../cli-reference.md), [Lista coloanelor](../columns.md) | generate din cod |
 
 ## Parte din 3DHeat {#part-of-3dheat}
@@ -59,10 +59,13 @@ Meci. Poate împacheta fișierele unui meci într-un singur fișier:
 [Un fișier pentru un meci](https://holdi601.github.io/3DHeat/container.html). Ce trebuie să păstreze orice
 convertor: [Convertoarele păstrează tot](https://holdi601.github.io/3DHeat/converters.html).
 
-Convertorul este ținut separat de 3DHeat Watcher în mod intenționat: replay-urile sunt
-criptate, iar termenii Wargaming sunt largi ([Termeni și licență](terms.md)).
-Dacă va trebui vreodată să dispară, nimic altceva nu dispare odată cu el. Watcher îl rulează
-când este instalat și funcționează și fără el.
+Fiecare cititor de joc este un mic proiect propriu, cu propriul fișier de
+licență, propriile versiuni și propriul sistem de urmărire a problemelor,
+astfel încât poate fi instalat, actualizat, întreținut - sau retras la cererea
+unui deținător de drepturi - separat, fără să afecteze vizualizatorul sau
+celelalte unelte. Watcher rulează acest convertor când este instalat și
+funcționează și fără el. Ce citește convertorul: [Termeni și
+licență](terms.md).
 
 | Instrument | Ce face | Sursă | Documentație |
 |---|---|---|---|

@@ -42,14 +42,20 @@ Ba cheart duit líne amháin a fheiceáil do gach athsheinm, ag críochnú leis 
 | [An cháipéis chluiche](match-document.md) | gach eochair de `<match>.match.json` |
 | [Conas a léann sé athsheinm](how-it-reads.md) | an fhormáid, agus conas a seiceáladh an léamh |
 | [Iomláine](completeness.md) | an comhad cliatháin agus an fhéinseiceáil |
-| [Téarmaí agus ceadúnas](terms.md) | téarmaí Wargaming, ceadúnas, foinsí |
+| [Téarmaí agus ceadúnas](terms.md) | cad a léann sé, ceadúnas, foinsí |
 | [Tagairt orduithe](../cli-reference.md), [Liosta colún](../columns.md) | ginte ón gcód |
 
 ## Cuid de 3DHeat {#part-of-3dheat}
 
 Is ceann d'uirlisí [3DHeat](https://github.com/Holdi601/3DHeat) an tiontaire seo, amharcán teiliméadrachta agus athsheinm 3T fíor-ama ([doiciméadúchán](https://holdi601.github.io/3DHeat/)). Osclaíonn an t-amharcán an tábla ina cluaisín Léarscáil teasa agus an cháipéis chluiche ina cluaisín Cluiche. Is féidir léi comhaid cluiche a phacáil i gcomhad amháin: [Comhad amháin an cluiche](https://holdi601.github.io/3DHeat/container.html). An rud a chaithfidh gach tiontaire a choimeád: [Coimeádann tiontairí gach rud](https://holdi601.github.io/3DHeat/converters.html).
 
-Tá an tiontaire scartha ó 3DHeat Watcher d'aon turas: tá na hathsheinmeanna criptithe, agus tá téarmaí Wargaming leathan ([Téarmaí agus ceadúnas](terms.md)). Má chaithfear é a bhaint, ní imíonn aon rud eile leis. Ritheann an Watcher é nuair atá sé suiteáilte agus oibríonn sé gan é.
+Is tionscadal beag dá chuid féin é gach léitheoir cluiche, lena chomhad
+ceadúnais, a eisiúintí agus a rianaitheoir fadhbanna féin, ionas gur féidir é
+a shuiteáil, a nuashonrú, a chothabháil - nó a tharraingt siar ar iarratas ó
+shealbhóir cearta - ar leith, gan tionchar ar an amharcán ná ar na huirlisí
+eile. Ritheann an Watcher an tiontaire seo nuair atá sé suiteáilte, agus
+oibríonn sé gan é. Cad a léann an tiontaire: [Téarmaí agus
+ceadúnas](terms.md).
 
 | Uirlis | Cad a dhéanann sí | Foinse | Doiciméadúchán |
 |---|---|---|---|

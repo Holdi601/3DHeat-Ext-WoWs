@@ -3,36 +3,26 @@ title: Pojmovi i licenca
 nav_order: 9
 lang: "hr"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Pojmovi i licenca {#terms-and-licence}
 
-## Wargamingovi uvjeti {#wargamings-terms}
+## Što čita {#what-it-reads}
 
-Pročitano 2026-11-07, Wargaming EULA verzija 14 (na snazi od 10. travnja 2024., navedena kao
-aktualna); njezin odjeljak 12.3 upućuje na pravila modova za World of Warships, čija stranica se izvan
-preglednika nije prikazala i nije pročitana:
+Pretvarač čita datoteke snimki koje je igra zapisala na vašem vlastitom
+računalu, nakon bitke i izvan igre. Ne mijenja ništa u igri, ne komunicira ni
+s jednim poslužiteljem i ne prikazuje ništa tijekom bitke. Ništa iz igre ne
+isporučuje se niti dalje distribuira s njim: nema resursa igre, koda igre ni
+DLL-ova. Ono što zapiše ostaje na vašem računalu.
 
-- 5.3 (b): osim ako nije odobreno u pisanom obliku, ne smiješ "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): zabranjeno je "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat nije povezan s Wargamingom niti ga Wargaming podržava. World of
+Warships i povezani nazivi i zaštitni znakovi pripadaju svojim vlasnicima.
 
-Što ovaj pretvarač radi: čita datoteku koju je igra zapisala, nakon bitke, izvan igre. Ne mijenja
-ništa u igri, ne razgovara ni s jednim poslužiteljem i ništa ne prikazuje tijekom bitke. Tok dešifrira
-igrinim ključem, a 5.3 (b) i 12.1 (p) se mogu tumačiti da to obuhvaćaju. Korištenje je odluka korisnika;
-zato je to zaseban paket.
+Nositelji prava: otvorite issue na
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - brzo odgovaramo i na
+zahtjev uklanjamo bilo što.
 
 ## Licenca i izvori {#licence-and-sources}
 

@@ -3,36 +3,27 @@ title: Ehdot ja lisenssi
 nav_order: 9
 lang: "fi"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Ehdot ja lisenssi {#terms-and-licence}
 
-## Wargamingin ehdot {#wargamings-terms}
+## Mitä se lukee {#what-it-reads}
 
-Luettu 2026-11-07, Wargamingin EULA versio 14 (voimassa 10. huhtikuuta 2024 alkaen, luettelo nykyisenä).
-Sen kohta 12.3 viittaa World of Warshipsin mod-käytäntöön, jonka sivu ei latautunut selaimen ulkopuolella,
-eikä sitä luettu:
+Muunnin lukee replay-tiedostoja, jotka peli on kirjoittanut omalle
+tietokoneellesi, taistelun jälkeen ja pelin ulkopuolella. Se ei muuta pelissä
+mitään, ei ota yhteyttä mihinkään palvelimeen eikä näytä mitään taistelun
+aikana. Pelistä ei toimiteta eikä levitetä sen mukana mitään: ei pelin
+resursseja, ei pelin koodia, ei DLL-tiedostoja. Se, mitä se kirjoittaa, pysyy
+tietokoneellasi.
 
-- 5.3 (b): ilman kirjallista lupaa et saa "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): kiellettyä on "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat ei ole sidoksissa Wargamingiin eikä Wargamingin hyväksymä. World of
+Warships ja siihen liittyvät nimet ja tavaramerkit kuuluvat omistajilleen.
 
-Mitä tämä muunnin tekee: se lukee pelin kirjoittaman tiedoston taistelun jälkeen, pelin ulkopuolella.
-Se ei muuta mitään pelissä, ei puhu palvelimelle eikä näytä mitään taistelun aikana. Se kyllä purkaa
-virran pelin avaimella, ja 5.3 (b) ja 12.1 (p) voidaan lukea kattavan sen. Käyttö on käyttäjän päätös;
-siksi se on erillinen paketti.
+Oikeuksien haltijat: avatkaa issue osoitteessa
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - vastaamme nopeasti ja
+poistamme pyynnöstä mitä tahansa.
 
 ## Lisenssi ja lähteet {#licence-and-sources}
 

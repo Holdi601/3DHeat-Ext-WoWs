@@ -3,7 +3,7 @@ title: "Accueil"
 nav_order: 1
 lang: "fr"
 source: index.md
-source_hash: "ed297a81b477"
+source_hash: "bbc8dc6aaeeb"
 nav_exclude: true
 search_exclude: true
 permalink: /fr/
@@ -50,7 +50,7 @@ visualiseur 3DHeat.
 | [Le document de partie](match-document.md) | chaque clé de `<match>.match.json` |
 | [Comment le replay est lu](how-it-reads.md) | le format, et comment la lecture a été vérifiée |
 | [Exhaustivité](completeness.md) | le fichier annexe et le contrôle interne |
-| [Termes et licence](terms.md) | les conditions de Wargaming, la licence, les sources |
+| [Termes et licence](terms.md) | ce qu'il lit, la licence, les sources |
 | [Référence des commandes](../cli-reference.md), [Liste des colonnes](../columns.md) | générées à partir du code |
 
 ## Une partie de 3DHeat {#part-of-3dheat}
@@ -62,9 +62,12 @@ Match. Il peut regrouper les fichiers d'un match en un seul :
 [Un fichier par match](https://holdi601.github.io/3DHeat/container.html). Ce que chaque convertisseur doit
 conserver : [Les convertisseurs gardent tout](https://holdi601.github.io/3DHeat/converters.html).
 
-Le convertisseur est gardé à part du Watcher de 3DHeat à dessein : les replays sont chiffrés, et les
-conditions de Wargaming sont larges ([Termes et licence](terms.md)). S'il doit un jour disparaître, rien
-d'autre ne disparaît avec lui. Le Watcher le lance lorsqu'il est installé, et fonctionne sans lui.
+Chaque lecteur de jeu est un petit projet à part, avec son propre fichier de
+licence, ses versions et son suivi des problèmes, de sorte qu'il peut être
+installé, mis à jour, maintenu - ou retiré à la demande d'un titulaire de
+droits - séparément, sans toucher à la visionneuse ni aux autres outils. Le
+Watcher lance ce convertisseur quand il est installé et fonctionne sans lui.
+Ce que lit le convertisseur : [Termes et licence](terms.md).
 
 | Outil | Ce qu'il fait | Source | Documentation |
 |---|---|---|---|

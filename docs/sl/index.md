@@ -49,7 +49,7 @@ Videli boste eno vrstico za vsak posnetek, ki se konča z datoteko, ki jo je zap
 | [Dokument tekme](match-document.md) | vsak ključ v `<match>.match.json` |
 | [Kako bere posnetek](how-it-reads.md) | format in kako je bilo branje preverjeno |
 | [Popolnost](completeness.md) | spremljevalna datoteka in samopreverjanje |
-| [Pogoji in licenca](terms.md) | pogoji Wargaminga, licenca, viri |
+| [Pogoji in licenca](terms.md) | kaj bere, licenca, viri |
 | [Referenca ukazov](../cli-reference.md), [Seznam stolpcev](../columns.md) | ustvarjeno iz kode |
 
 ## Del 3DHeat {#part-of-3dheat}
@@ -60,9 +60,12 @@ tabelo na zavihku Toplotni zemljevid in dokument tekme na zavihku Tekma. Lahko z
 eno datoteko: [Ena datoteka za tekmo](https://holdi601.github.io/3DHeat/container.html). Kaj mora vsak
 pretvornik ohraniti: [Pretvorniki ohranijo vse](https://holdi601.github.io/3DHeat/converters.html).
 
-Pretvornik je namenoma ločen od 3DHeat Watcherja: posnetki so šifrirani, pogoji Wargaminga pa so široki
-([Pogoji in licenca](terms.md)). Če ga bo treba odstraniti, z njim ne odide nič drugega. Watcher ga zažene,
-kadar je nameščen, in deluje tudi brez njega.
+Vsak bralnik igre je samostojen majhen projekt z lastno datoteko licence,
+izdajami in sledilnikom težav, zato ga je mogoče namestiti, posodobiti,
+vzdrževati - ali na zahtevo imetnika pravic umakniti - posebej, brez vpliva na
+pregledovalnik ali druga orodja. Watcher zažene ta pretvornik, kadar je
+nameščen, in deluje tudi brez njega. Kaj bere pretvornik: [Pogoji in
+licenca](terms.md).
 
 | Orodje | Kaj počne | Vir | Dokumentacija |
 |---|---|---|---|

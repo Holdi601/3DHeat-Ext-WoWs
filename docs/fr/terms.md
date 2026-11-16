@@ -3,32 +3,27 @@ title: Termes et licence
 nav_order: 9
 lang: "fr"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Termes et licence {#terms-and-licence}
 
-## Les conditions de Wargaming {#wargamings-terms}
+## Ce qu'il lit {#what-it-reads}
 
-Lues le 2026-11-07, EULA de Wargaming version 14 (en vigueur le 10 avril 2024, indiquée comme la version
-actuelle) ; sa section 12.3 renvoie à une politique de mods de World of Warships, dont la page ne s'est pas
-affichée hors d'un navigateur et n'a pas été lue :
+Le convertisseur lit les fichiers de replay que le jeu a écrits sur votre
+propre ordinateur, après la bataille et hors du jeu. Il ne change rien au jeu,
+ne parle à aucun serveur et n'affiche rien pendant une bataille. Rien du jeu
+n'est fourni ni redistribué avec lui : aucune ressource du jeu, aucun code du
+jeu, aucune DLL. Ce qu'il écrit reste sur votre ordinateur.
 
-- 5.3 (b) : sauf autorisation écrite, vous ne devez pas « ... decompile, disassemble, reverse engineer or
-  otherwise make unauthorized use of the Content ».
-- 12.1 (k) : est interdit « Creating, using, making available, or distributing any unauthorized software or
-  tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any
-  communication between such software and Wargaming. »
-- 12.1 (l) : « ... any software designed to modify a Product and change the user experience ("mods") unless
-  expressly permitted by Wargaming ».
-- 12.1 (p) : « Circumventing or bypassing enforcement and security measures implemented by Wargaming ».
+3DHeat n'est ni affilié à Wargaming ni approuvé par Wargaming. World of
+Warships ainsi que les noms et marques associés appartiennent à leurs
+propriétaires.
 
-Ce que fait ce convertisseur : il lit un fichier que le jeu a écrit, après la bataille, hors du jeu. Il ne
-modifie rien dans le jeu, ne parle à aucun serveur, et n'affiche rien pendant une bataille. Il déchiffre
-bien le flux avec la clé du jeu, ce que les points 5.3 (b) et 12.1 (p) peuvent couvrir. L'utiliser relève de la
-décision de l'utilisateur ; c'est pour cela qu'il s'agit d'un paquet à part.
+Titulaires de droits : ouvrez une issue sur
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - nous répondons vite et
+retirons tout ce qui est demandé.
 
 ## Licence et sources {#licence-and-sources}
 

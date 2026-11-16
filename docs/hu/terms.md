@@ -3,36 +3,28 @@ title: "Feltételek és licenc"
 nav_order: 9
 lang: "hu"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Feltételek és licenc {#terms-and-licence}
 
-## A Wargaming feltételei {#wargamings-terms}
+## Mit olvas {#what-it-reads}
 
-2026-11-07-én olvasva, a Wargaming EULA 14-es verziója (hatályos 2024. április 10-től, mint jelenlegi);
-a 12.3 pontja egy World of Warships modszabályzatra hivatkozik, amelynek oldala böngészőn kívül nem
-jelent meg, ezért nem olvastuk el:
+A konverter azokat a visszajátszásfájlokat olvassa, amelyeket a játék a saját
+számítógépedre írt, a csata után és a játékon kívül. Semmit nem változtat a
+játékban, egyetlen szerverrel sem kommunikál, és csata közben semmit nem
+jelenít meg. A játékból semmi nem kerül vele szállításra vagy
+továbbterjesztésre: sem játékerőforrás, sem játékkód, sem DLL. Amit ír, a te
+számítógépeden marad.
 
-- 5.3 (b): hacsak írásban nincs engedélyezve, nem szabad "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): tilos "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+A 3DHeat nem áll kapcsolatban a Wargaminggel, és a Wargaming nem támogatja. A
+World of Warships és a kapcsolódó nevek és védjegyek a tulajdonosaikat
+illetik.
 
-Amit ez a konverter csinál: a játék által, a csata után, a játékon kívül írt fájlt olvas.
-A játékban semmit nem változtat, egyetlen szerverrel sem beszél, és csata közben semmit nem mutat.
-A folyamot a játék kulcsával fejti vissza, amit az 5.3 (b) és a 12.1 (p) pont lefedhet. Hogy
-használod-e, a felhasználó döntése; ezért külön csomag.
+Jogtulajdonosok: nyissanak egy issue-t itt:
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - gyorsan válaszolunk, és
+kérésre bármit eltávolítunk.
 
 ## Licenc és források {#licence-and-sources}
 

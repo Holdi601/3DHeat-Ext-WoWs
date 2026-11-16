@@ -51,7 +51,7 @@ Dir sollt eng Zeil pro Replay gesinn, déi mat der Datei ophält, déi geschriww
 | [D'Match-Dokument](match-document.md) | all Schlëssel vun `<match>.match.json` |
 | [Wéi e Replay gelies gëtt](how-it-reads.md) | d'Format, a wéi d'Liese gepréift gouf |
 | [Vollstännegkeet](completeness.md) | d'Niewendatei an d'Selbstkontroll |
-| [Konditiounen a Lizenz](terms.md) | d'Konditioune vu Wargaming, Lizenz, Quellen |
+| [Konditiounen a Lizenz](terms.md) | wat en liest, Lizenz, Quellen |
 | [Befehlsreferenz](../cli-reference.md), [Kolonnelëscht](../columns.md) | aus dem Code generéiert |
 
 ## Deel vun 3DHeat {#part-of-3dheat}
@@ -63,10 +63,12 @@ Match-Tab. Hie kann d'Dateie vun engem Match an eng Datei paken:
 [Eng Datei pro Match](https://holdi601.github.io/3DHeat/container.html). Wat all
 Konverter muss behalen: [Konverteren behalen alles](https://holdi601.github.io/3DHeat/converters.html).
 
-De Konverter ass mat Absicht vum 3DHeat Watcher getrennt gehalen: d'Replays
-sinn chiffréiert, an d'Konditioune vu Wargaming sinn breet ([Konditiounen a Lizenz](terms.md)).
-Wann en eng Kéier muss fort, geet näischt anescht mat. De Watcher léisst en lafen, wann en
-installéiert ass, a funktionéiert och ouni en.
+All Spill-Lieser ass säin eegent klengt Projet mat senger eegener Lizenzdatei,
+senge Releasen a sengem Issue-Tracker, sou datt en eleng installéiert,
+aktualiséiert, gefleegt - oder op Ufro vun engem Rechtsinhaber zeréckgezunn -
+ka ginn, ouni de Viewer oder déi aner Tools ze beréieren. De Watcher féiert
+dëse Konverter aus, wann en installéiert ass, a funktionéiert och ouni hien.
+Wat de Konverter liest: [Konditiounen a Lizenz](terms.md).
 
 | Tool | Wat et mécht | Quell | Dokumentatioun |
 |---|---|---|---|

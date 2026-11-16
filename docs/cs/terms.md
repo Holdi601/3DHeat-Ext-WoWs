@@ -3,34 +3,26 @@ title: "Podmínky a licence"
 nav_order: 9
 lang: "cs"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Podmínky a licence {#terms-and-licence}
 
-## Podmínky Wargamingu {#wargamings-terms}
+## Co čte {#what-it-reads}
 
-Přečteno 2026-11-07, EULA Wargamingu verze 14 (účinná od 10. dubna 2024, uvedená jako platná); její oddíl 12.3
-odkazuje na zásady modů pro World of Warships, jejichž stránka se mimo prohlížeč nezobrazila a nebyla přečtena:
+Převodník čte soubory replayů, které hra zapsala na vašem vlastním počítači,
+po bitvě a mimo hru. Nic ve hře nemění, nekomunikuje s žádným serverem a během
+bitvy nic nezobrazuje. Nic ze hry se s ním nedodává ani dál nešíří: žádná data
+hry, žádný kód hry, žádné knihovny DLL. To, co zapíše, zůstává na vašem
+počítači.
 
-- 5.3 (b): pokud to nepovolíte písemně, nesmíte "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): zakázáno je "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat není přidružen ke společnosti Wargaming ani jí schválen. World of
+Warships a související názvy a ochranné známky patří jejich vlastníkům.
 
-Co tento převodník dělá: čte soubor, který hra zapsala po bitvě, mimo hru. Nic ve hře nemění, s žádným serverem
-nemluví a během bitvy nic neukazuje. Proud dešifruje klíčem hry, o kterém lze podle 5.3 (b) a 12.1 (p) číst, že je
-pokrytý. Použití je rozhodnutí uživatele; proto je to samostatný balíček.
+Držitelé práv: založte issue na
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - odpovídáme rychle a na
+požádání cokoli odstraníme.
 
 ## Licence a zdroje {#licence-and-sources}
 

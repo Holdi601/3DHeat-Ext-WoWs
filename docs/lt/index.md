@@ -50,7 +50,7 @@ Turėtumėte matyti po vieną eilutę kiekvienam įrašui, o eilutė baigiasi fa
 | [Rungtynių dokumentas](match-document.md) | kiekvienas `<match>.match.json` raktas |
 | [Kaip įrankis skaito įrašą](how-it-reads.md) | formatas ir tai, kaip skaitymas patikrintas |
 | [Pilnumas](completeness.md) | papildomas failas ir savikontrolė |
-| [Sąlygos ir licencija](terms.md) | Wargaming sąlygos, licencija, šaltiniai |
+| [Sąlygos ir licencija](terms.md) | ką jis skaito, licencija, šaltiniai |
 | [Komandų nuoroda](../cli-reference.md), [Stulpelių sąrašas](../columns.md) | sugeneruota iš kodo |
 
 ## Dalis 3DHeat {#part-of-3dheat}
@@ -62,9 +62,12 @@ rungtynių failus į vieną failą:
 [Vienas failas rungtynėms](https://holdi601.github.io/3DHeat/container.html). Ką privalo išsaugoti kiekvienas
 konverteris: [Konverteriai išsaugo viską](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverteris tyčia laikomas atskirai nuo 3DHeat Watcher: įrašai užšifruoti, o Wargaming sąlygos platios
-([Sąlygos ir licencija](terms.md)). Jei jį reikės pašalinti, su juo nieko daugiau nedingsta. Watcher jį
-paleidžia, kai jis įdiegtas, ir veikia be jo.
+Kiekviena žaidimo skaityklė yra atskiras mažas projektas su savo licencijos
+failu, leidimais ir problemų sekimo sistema, todėl ją galima įdiegti,
+atnaujinti, prižiūrėti - arba teisių turėtojo prašymu atšaukti - atskirai,
+nepaveikiant peržiūros programos ir kitų įrankių. Watcher paleidžia šį
+konverterį, kai jis įdiegtas, ir veikia be jo. Ką skaito konverteris: [Sąlygos
+ir licencija](terms.md).
 
 | Įrankis | Ką daro | Šaltinis | Dokumentacija |
 |---|---|---|---|

@@ -50,7 +50,7 @@ Għandek tara linja waħda għal kull ripetizzjoni, li tispiċċa bil-fajl li nk
 | [Id-dokument tal-partita](match-document.md) | kull ċavetta ta' `<match>.match.json` |
 | [Kif taqra ripetizzjoni](how-it-reads.md) | il-format, u kif inċċekkjat il-qari |
 | [Kompletezza](completeness.md) | is-sidecar u l-awto-kontroll |
-| [Termini u liċenzja](terms.md) | it-termini ta' Wargaming, il-liċenzja, is-sorsi |
+| [Termini u liċenzja](terms.md) | x'jaqra, il-liċenzja, is-sorsi |
 | [Referenza tal-kmandi](../cli-reference.md), [Lista tal-kolonni](../columns.md) | iġġenerati mill-kodiċi |
 
 ## Parti mid-3DHeat {#part-of-3dheat}
@@ -62,10 +62,12 @@ Partita tiegħu. Jista' jpakkja l-fajls ta' partita f'fajl wieħed:
 [Fajl wieħed għal kull partita](https://holdi601.github.io/3DHeat/container.html). X'għandu jżomm
 kull konvertitur: [Il-konvertituri jżommu kollox](https://holdi601.github.io/3DHeat/converters.html).
 
-Il-konvertitur inżamm separat mid-3DHeat Watcher apposta: ir-ripetizzjonijiet
-huma ċifrati, u t-termini ta' Wargaming huma wiesgħa ([Termini u liċenzja](terms.md)).
-Jekk xi darba jkollu jitneħħa, ma jitneħħa xejn ieħor miegħu. Il-Watcher iħaddmu
-meta jkun installat u jaħdem mingħajru.
+Kull qarrej ta' logħba huwa proġett żgħir għalih, bil-fajl tal-liċenzja,
+il-ħarġiet u t-tracker tal-problemi tiegħu, sabiex ikun jista' jiġi installat,
+aġġornat, miżmum - jew irtirat fuq talba ta' detentur tad-drittijiet - waħdu,
+mingħajr ma jolqot il-viewer jew l-għodod l-oħra. Il-Watcher iħaddem dan
+il-konvertitur meta jkun installat u jaħdem mingħajru. X'jaqra l-konvertitur:
+[Termini u liċenzja](terms.md).
 
 | Għodda | X'tagħmel | Sors | Dokumentazzjoni |
 |---|---|---|---|

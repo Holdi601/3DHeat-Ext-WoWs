@@ -3,31 +3,19 @@ title: 用語とライセンス
 nav_order: 9
 lang: "ja"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # 用語とライセンス {#terms-and-licence}
 
-## Wargaming の規約 {#wargamings-terms}
+## 読み取るもの {#what-it-reads}
 
-2026-11-07 に読んだもの。Wargaming EULA のバージョン 14（2024 年 4 月 10 日発効。現行として掲載）。そのセクション 12.3 は World of Warships の MOD の方針を指していますが、そのページはブラウザーの外では表示されず、読んでいません。条文は英語の原文のまま引用します:
+この変換ツールは、ゲームがあなた自身のコンピューターに書き出したリプレイファイルを、戦闘の後にゲームの外で読み取ります。ゲームの中は何も変えず、どのサーバーとも通信せず、戦闘中には何も表示しません。ゲームのものは何も同梱も再配布もしません。ゲームのアセットも、ゲームのコードも、DLL も含みません。書き出したものはあなたのコンピューターに残ります。
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): prohibited is "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat は Wargaming と提携しておらず、Wargaming の承認も受けていません。World of Warships および関連する名称と商標は、それぞれの所有者に帰属します。
 
-この変換ツールがすること: ゲームが戦闘の後に、ゲームの外で書いたファイルを読みます。ゲームの中では何も変えず、サーバーとは通信せず、戦闘中に何も表示しません。ストリームは、ゲームの鍵で復号します。これは 5.3 (b) と 12.1 (p) が対象とすると読めるかもしれません。使うかどうかはユーザー自身の判断です。だからこれは別のパッケージになっています。
+権利者の方へ: <https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> で issue を開いてください。すぐに対応し、ご依頼があれば何でも削除します。
 
 ## ライセンスと出典 {#licence-and-sources}
 

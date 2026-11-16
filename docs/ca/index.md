@@ -50,7 +50,7 @@ al visualitzador de 3DHeat.
 | [El document de partida](match-document.md) | cada clau de `<partida>.match.json` |
 | [Com llegeix una repetició](how-it-reads.md) | el format, i com es va comprovar la lectura |
 | [Completesa](completeness.md) | l'annex i l'autocomprovació |
-| [Condicions i llicència](terms.md) | les condicions de Wargaming, la llicència, les fonts |
+| [Condicions i llicència](terms.md) | què llegeix, la llicència, les fonts |
 | [Referència d'ordres](../cli-reference.md), [Llista de columnes](../columns.md) | generades a partir del codi |
 
 ## Part de 3DHeat {#part-of-3dheat}
@@ -62,9 +62,12 @@ Mapa de calor i el document de partida a la seva pestanya Partida. Pot empaqueta
 en un de sol: [Un fitxer per partida](https://holdi601.github.io/3DHeat/container.html). La regla que ha de complir
 tot convertidor: [Els convertidors ho guarden tot](https://holdi601.github.io/3DHeat/converters.html).
 
-El convertidor es manté apart del Watcher de 3DHeat a propòsit: les repeticions estan xifrades, i les
-condicions de Wargaming són àmplies ([Condicions i llicència](terms.md)). Si algun dia ha de desaparèixer,
-no se'n va res més. El Watcher l'executa quan està instal·lat i funciona sense ell.
+Cada lector de joc és un petit projecte propi amb el seu fitxer de llicència,
+les seves versions i el seu gestor d'incidències, de manera que es pot
+instal·lar, actualitzar, mantenir - o retirar a petició d'un titular de
+drets - per separat, sense afectar el visor ni les altres eines. El Watcher
+executa aquest convertidor quan està instal·lat i funciona sense ell. Què
+llegeix el convertidor: [Condicions i llicència](terms.md).
 
 | Eina | Què fa | Font | Documentació |
 |---|---|---|---|

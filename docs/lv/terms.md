@@ -3,22 +3,26 @@ title: Noteikumi un licence
 nav_order: 9
 lang: "lv"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Noteikumi un licence {#terms-and-licence}
 
-## Wargaming noteikumi {#wargamings-terms}
+## Ko tas lasa {#what-it-reads}
 
-Lasīts 2026-11-07, Wargaming EULA versija 14 (spēkā no 2024. gada 10. aprīļa, uzskaitīta kā pašreizējā); tās 12.3 punkts atsaucas uz World of Warships modifikāciju politiku, kuras lappuse ārpus pārlūka neatvērās un netika lasīta:
+Konvertētājs lasa atkārtojumu failus, kurus spēle ierakstīja jūsu pašu datorā,
+pēc kaujas un ārpus spēles. Tas spēlē neko nemaina, nesazinās ne ar vienu
+serveri un kaujas laikā neko nerāda. Kopā ar to netiek piegādāts vai izplatīts
+nekas no spēles: ne spēles resursi, ne spēles kods, ne DLL faili. Tas, ko tas
+ieraksta, paliek jūsu datorā.
 
-- 5.3 (b): ja nav rakstiski atļauts, jūs nedrīkstat "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content".
-- 12.1 (k): aizliegts ir "Creating, using, making available, or distributing any unauthorized software or tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication between such software and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures implemented by Wargaming".
+3DHeat nav saistīts ar Wargaming un nav Wargaming apstiprināts. World of
+Warships un saistītie nosaukumi un preču zīmes pieder to īpašniekiem.
 
-Ko dara šis konvertētājs: tas nolasa failu, ko spēle uzrakstīja pēc kaujas, ārpus spēles. Tas nemaina neko spēlē, nesazinās ar serveri un nerāda neko kaujas laikā. Tas tomēr atšifrē straumi ar spēles atslēgu, ko 5.3 (b) un 12.1 (p) var lasīt kā aptverošu. Tā izmantošana ir lietotāja lēmums; tāpēc tas ir atsevišķa pakotne.
+Tiesību turētāji: atveriet issue vietnē
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - mēs atbildam ātri un
+pēc pieprasījuma noņemam jebko.
 
 ## Licence un avoti {#licence-and-sources}
 

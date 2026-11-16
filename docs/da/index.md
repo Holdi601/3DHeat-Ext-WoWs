@@ -50,7 +50,7 @@ Du bør se én linje pr. replay, som ender med filen, den skrev:
 | [Kampdokumentet](match-document.md) | hver nøgle i `<match>.match.json` |
 | [Sådan læses et replay](how-it-reads.md) | formatet, og hvordan læsningen blev kontrolleret |
 | [Fuldstændighed](completeness.md) | sidecaren og selvkontrollen |
-| [Vilkår og licens](terms.md) | Wargamings vilkår, licens, kilder |
+| [Vilkår og licens](terms.md) | hvad den læser, licens, kilder |
 | [Kommandoreference](../cli-reference.md), [Kolonneliste](../columns.md) | genereret ud fra koden |
 
 ## Del af 3DHeat {#part-of-3dheat}
@@ -61,9 +61,12 @@ Vieweren åbner tabellen på sin Heatmap-fane og kampdokumentet på sin Kamp-fan
 filer i én fil: [En fil pr. kamp](https://holdi601.github.io/3DHeat/container.html). Hvad enhver
 konverter skal bevare: [Konvertere bevarer alt](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverteren holdes adskilt fra 3DHeat Watcher med vilje: replays er krypteret, og Wargamings vilkår
-er brede ([Vilkår og licens](terms.md)). Skulle den nogensinde udgå, går intet andet med den.
-Watcheren kører den, når den er installeret, og fungerer uden den.
+Hver spillæser er sit eget lille projekt med sin egen licensfil, sine egne
+udgivelser og sin egen issue-tracker, så den kan installeres, opdateres,
+vedligeholdes - eller trækkes tilbage på en rettighedshavers anmodning - for
+sig selv, uden at det påvirker vieweren eller de andre værktøjer. Watcher
+kører denne konverter, når den er installeret, og virker uden den. Hvad
+konverteren læser: [Vilkår og licens](terms.md).
 
 | Værktøj | Hvad det gør | Kilde | Dokumentation |
 |---|---|---|---|

@@ -3,22 +3,28 @@ title: Téarmaí agus ceadúnas
 nav_order: 9
 lang: "ga"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Téarmaí agus ceadúnas {#terms-and-licence}
 
-## Téarmaí Wargaming {#wargamings-terms}
+## Cad a léann sé {#what-it-reads}
 
-Léite ar 2026-11-07, EULA Wargaming leagan 14 (éifeachtach 10 Aibreán 2024, liostaithe mar cheann reatha); pointeálann a alt 12.3 chuig polasaí módanna World of Warships, nár rindreáladh a leathanach lasmuigh de bhrabhsálaí agus nár léadh:
+Léann an tiontaire comhaid athsheinme a scríobh an cluiche ar do ríomhaire
+féin, tar éis an chatha agus lasmuigh den chluiche. Ní athraíonn sé aon rud sa
+chluiche, ní labhraíonn sé le haon fhreastalaí agus ní thaispeánann sé aon rud
+le linn catha. Ní sheoltar ná ní athdháiltear aon rud ón gcluiche leis: gan
+sócmhainní an chluiche, gan cód an chluiche, gan DLLanna. Fanann a scríobhann
+sé ar do ríomhaire.
 
-- 5.3 (b): mura bhfuil údarás scríofa agat, ní mór duit gan "... decompile, disassemble, reverse engineer or otherwise make unauthorized use of the Content".
-- 12.1 (k): toirmiscthe is ea "Creating, using, making available, or distributing any unauthorized software or tools, including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication between such software and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures implemented by Wargaming".
+Níl baint ag 3DHeat le Wargaming agus níl sé formhuinithe ag Wargaming. Is
+lena n-úinéirí World of Warships agus na hainmneacha agus na trádmharcanna
+gaolmhara.
 
-An rud a dhéanann an tiontaire seo: léann sé comhad a scríobh an cluiche, tar éis an chatha, lasmuigh den chluiche. Ní athraíonn sé aon rud sa chluiche, ní labhraíonn sé le haon fhreastalaí, agus ní thaispeánann sé aon rud le linn catha. Déanann sé an sruth a dhícriptiú le heochair an chluiche, rud ar féidir 5.3 (b) agus 12.1 (p) a léamh mar chlúdach air. Is cinneadh an úsáideora é é a úsáid; sin é an fáth gur pacáiste ar leith é.
+Sealbhóirí cearta: oscail issue ag
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - freagraímid go tapa
+agus bainimid aon rud ar iarratas.
 
 ## Ceadúnas agus foinsí {#licence-and-sources}
 

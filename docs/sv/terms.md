@@ -3,37 +3,26 @@ title: "Villkor och licens"
 nav_order: 9
 lang: "sv"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Villkor och licens {#terms-and-licence}
 
-## Wargamings villkor {#wargamings-terms}
+## Vad den läser {#what-it-reads}
 
-Lästa 2026-11-07, Wargaming EULA version 14 (gäller från 10 april 2024, listad som
-gällande); dess avsnitt 12.3 hänvisar till en modpolicy för World of Warships, vars
-sida inte visades utanför en webbläsare och inte lästes:
+Konverteraren läser reprisfiler som spelet har skrivit på din egen dator,
+efter striden och utanför spelet. Den ändrar ingenting i spelet, pratar inte
+med någon server och visar ingenting under en strid. Ingenting från spelet
+följer med eller distribueras vidare: inga speltillgångar, ingen spelkod, inga
+DLL-filer. Det den skriver stannar på din dator.
 
-- 5.3 (b): om inte skriftligt godkänt får du inte "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): förbjudet är "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat är inte knutet till eller godkänt av Wargaming. World of Warships och
+tillhörande namn och varumärken tillhör sina ägare.
 
-Vad den här konverteraren gör: den läser en fil som spelet skrev, efter striden,
-utanför spelet. Den ändrar inget i spelet, pratar med ingen server, och visar inget
-under en strid. Den avkodar strömmen med spelets nyckel, vilket 5.3 (b) och 12.1 (p)
-kan läsas som att de täcker. Att använda den är användarens beslut; därför är den ett
-eget paket.
+Rättighetsinnehavare: öppna ett issue på
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - vi svarar snabbt och
+tar bort vad som helst på begäran.
 
 ## Licens och källor {#licence-and-sources}
 

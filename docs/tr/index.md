@@ -50,7 +50,7 @@ Her tekrar için bir satır görmelisiniz; sonunda yazdığı dosya yer alır:
 | [Maç belgesi](match-document.md) | `<match>.match.json` dosyasının her anahtarı |
 | [Tekrarı nasıl okur](how-it-reads.md) | biçim ve okumanın nasıl denetlendiği |
 | [Tamlık](completeness.md) | yan dosya ve öz denetim |
-| [Koşullar ve lisans](terms.md) | Wargaming'in koşulları, lisans, kaynaklar |
+| [Koşullar ve lisans](terms.md) | ne okuduğu, lisans, kaynaklar |
 | [Komut başvurusu](../cli-reference.md), [Sütun listesi](../columns.md) | koddan üretilmiştir |
 
 ## 3DHeat'in parçası {#part-of-3dheat}
@@ -62,9 +62,12 @@ maç belgesini Maç sekmesinde açar. Bir maçın dosyalarını tek bir dosyada 
 [Bir maç tek dosyada](https://holdi601.github.io/3DHeat/container.html). Her dönüştürücünün
 tutması gerekenler: [Dönüştürücüler her şeyi tutar](https://holdi601.github.io/3DHeat/converters.html).
 
-Dönüştürücü, 3DHeat Watcher'dan bilerek ayrı tutulur: tekrarlar şifrelidir ve Wargaming'in
-koşulları geniştir ([Koşullar ve lisans](terms.md)). Bu araç bir gün kaldırılmak zorunda kalırsa
-başka hiçbir şey onunla birlikte gitmez. Watcher kuruluysa bunu çalıştırır, ama bu araç olmadan da çalışır.
+Her oyun okuyucu, kendi lisans dosyası, sürümleri ve sorun izleyicisi olan
+ayrı küçük bir projedir; bu yüzden görüntüleyiciyi veya diğer araçları
+etkilemeden tek başına kurulabilir, güncellenebilir, bakımı yapılabilir - ya
+da bir hak sahibinin isteği üzerine geri çekilebilir. Watcher, kuruluysa bu
+dönüştürücüyü çalıştırır ve o olmadan da çalışır. Dönüştürücünün okudukları:
+[Koşullar ve lisans](terms.md).
 
 | Araç | Ne yapar | Kaynak | Belgeler |
 |---|---|---|---|

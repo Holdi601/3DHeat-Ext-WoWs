@@ -3,37 +3,26 @@ title: "Умовы і ліцэнзія"
 nav_order: 9
 lang: "be"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Умовы і ліцэнзія {#terms-and-licence}
 
-## Умовы Wargaming {#wargamings-terms}
+## Што ён чытае {#what-it-reads}
 
-Прачытана 2026-11-07, EULA Wargaming версіі 14 (дзейнічае з 10 красавіка 2024,
-пазначана як бягучая); яе раздзел 12.3 спасылаецца на палітыку модаў World of
-Warships, старонка якой не адлюстроўвалася па-за браўзерам і не была прачытана:
+Канвертар чытае файлы запісаў, якія гульня запісала на вашым уласным
+камп'ютары, пасля бою і па-за гульнёй. Ён нічога не мяняе ў гульні, не
+звяртаецца ні да якога сервера і нічога не паказвае падчас бою. Нічога з
+гульні з ім не пастаўляецца і не распаўсюджваецца: ні рэсурсаў гульні, ні кода
+гульні, ні DLL. Тое, што ён запісвае, застаецца на вашым камп'ютары.
 
-- 5.3 (b): калі няма пісьмовага дазволу, нельга "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): забаронена "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat не звязаны з Wargaming і не адобраны ёю. World of Warships і звязаныя
+назвы і гандлёвыя маркі належаць іх уладальнікам.
 
-Што робіць гэты канвертар: ён чытае файл, які запісала гульня, пасля бою, па-за
-гульнёй. Ён нічога не змяняе ў гульні, не звяртаецца да ніводнага сервера і
-нічога не паказвае падчас бою. Ён расшыфроўвае струмень ключом гульні, што
-5.3 (b) і 12.1 (p) можна прачытаць як ахопленае. Карыстацца ім - рашэнне
-карыстальніка; таму гэта асобны пакет.
+Праваўладальнікам: адкрыйце issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - мы хутка адказваем і па
+запыце выдаляем што заўгодна.
 
 ## Ліцэнзія і крыніцы {#licence-and-sources}
 

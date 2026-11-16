@@ -50,7 +50,7 @@ Du bör se en rad per repris, som slutar med filen den skrev:
 | [Matchdokumentet](match-document.md) | varje nyckel i `<match>.match.json` |
 | [Så läser den en repris](how-it-reads.md) | formatet, och hur läsningen kontrollerades |
 | [Fullständighet](completeness.md) | sidofilen och självkontrollen |
-| [Villkor och licens](terms.md) | Wargamings villkor, licens, källor |
+| [Villkor och licens](terms.md) | vad den läser, licens, källor |
 | [Kommandoreferens](../cli-reference.md), [Kolumnlista](../columns.md) | genererade från koden |
 
 ## Del av 3DHeat {#part-of-3dheat}
@@ -62,9 +62,12 @@ Match-flik. Den kan packa en matchs filer till en fil:
 [En fil per match](https://holdi601.github.io/3DHeat/container.html). Vad varje
 konverterare måste behålla: [Konverterare behåller allt](https://holdi601.github.io/3DHeat/converters.html).
 
-Konverteraren hålls avskild från 3DHeat Watcher med avsikt: repriserna är chifferskrivna, och
-Wargamings villkor är breda ([Villkor och licens](terms.md)). Om den ändå måste bort, följer inget
-annat med. Watcher kör den när den är installerad och fungerar utan den.
+Varje spelläsare är ett eget litet projekt med egen licensfil, egna releaser
+och egen ärendehantering, så den kan installeras, uppdateras, underhållas -
+eller dras tillbaka på en rättighetsinnehavares begäran - för sig, utan att
+påverka visaren eller de andra verktygen. Watcher kör den här konverteraren
+när den är installerad och fungerar utan den. Vad konverteraren läser:
+[Villkor och licens](terms.md).
 
 | Verktyg | Vad det gör | Källa | Dokumentation |
 |---|---|---|---|

@@ -46,7 +46,7 @@ You should see one line per replay, ending in the file it wrote:
 | [The match document](match-document.md) | every key of `<match>.match.json` |
 | [How it reads a replay](how-it-reads.md) | the format, and how the reading was checked |
 | [Completeness](completeness.md) | the sidecar and the self-check |
-| [Terms and licence](terms.md) | Wargaming's terms, licence, sources |
+| [Terms and licence](terms.md) | what it reads, licence, sources |
 | [Command reference](cli-reference.md), [Column list](columns.md) | generated from the code |
 
 ## Part of 3DHeat
@@ -58,10 +58,11 @@ Match tab. It can pack a match's files into one file:
 [One file a match](https://holdi601.github.io/3DHeat/container.html). What every
 converter must keep: [Converters keep everything](https://holdi601.github.io/3DHeat/converters.html).
 
-The converter is kept apart from the 3DHeat Watcher on purpose: the replays
-are enciphered, and Wargaming's terms are broad ([Terms and licence](terms.md)).
-If it ever has to go, nothing else goes with it. The Watcher runs it when it
-is installed and works without it.
+Each game reader is its own small project with its own licence file, releases
+and issue tracker, so it can be installed, updated, maintained - or withdrawn
+on a rights holder's request - on its own, without affecting the viewer or the
+other tools. The Watcher runs this converter when it is installed and works
+without it. What the converter reads: [Terms and licence](terms.md).
 
 | Tool | What it does | Source | Documentation |
 |---|---|---|---|

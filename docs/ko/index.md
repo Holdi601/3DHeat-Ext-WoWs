@@ -42,14 +42,16 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 | [매치 문서](match-document.md) | `<match>.match.json`의 모든 키 |
 | [리플레이를 읽는 법](how-it-reads.md) | 형식, 그리고 읽기를 어떻게 확인했는지 |
 | [완전성](completeness.md) | 사이드카와 자기 점검 |
-| [약관과 라이선스](terms.md) | Wargaming의 약관, 라이선스, 출처 |
+| [약관과 라이선스](terms.md) | 읽는 것, 라이선스, 출처 |
 | [명령 참조](../cli-reference.md), [열 목록](../columns.md) | 코드에서 생성됨 |
 
 ## 3DHeat의 일부 {#part-of-3dheat}
 
 이 변환기는 [3DHeat](https://github.com/Holdi601/3DHeat)의 도구 중 하나입니다. 3DHeat는 실시간 3D 텔레메트리와 리플레이 뷰어입니다([문서](https://holdi601.github.io/3DHeat/)). 뷰어는 테이블을 히트맵 탭에, 매치 문서를 매치 탭에 엽니다. 한 매치의 파일들을 하나로 묶을 수도 있습니다: [매치 하나를 담은 파일](https://holdi601.github.io/3DHeat/container.html). 모든 변환기가 지켜야 할 것: [변환기는 모든 것을 보관합니다](https://holdi601.github.io/3DHeat/converters.html).
 
-이 변환기는 일부러 3DHeat Watcher와 분리되어 있습니다. 리플레이는 암호화되어 있고, Wargaming의 약관은 넓기 때문입니다([약관과 라이선스](terms.md)). 나중에 이것을 빼야 한다고 해도 다른 것은 함께 빠지지 않습니다. Watcher는 이것이 설치되어 있으면 실행하고, 없어도 작동합니다.
+각 게임 리더는 자체 라이선스 파일, 릴리스, 이슈 트래커를 갖춘 독립된 작은 프로젝트입니다. 그래서 뷰어나 다른 도구에 영향을 주지 않고
+따로 설치, 업데이트, 유지 관리할 수 있고, 권리자의 요청이 있으면 따로 철회할 수도 있습니다. Watcher는 이 변환기가 설치되어
+있으면 실행하고, 없어도 동작합니다. 변환기가 읽는 것: [약관과 라이선스](terms.md).
 
 | 도구 | 하는 일 | 소스 | 문서 |
 |---|---|---|---|

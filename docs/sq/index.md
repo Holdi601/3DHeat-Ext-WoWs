@@ -50,7 +50,7 @@ Duhet të shohësh një rresht për çdo riluajtje, që mbaron me skedarin që s
 | [Dokumenti i ndeshjes](match-document.md) | çdo çelës i `<match>.match.json` |
 | [Si e lexon një riluajtje](how-it-reads.md) | formati, dhe si u kontrollua leximi |
 | [Plotësia](completeness.md) | skedari anësor dhe vetëkontrolli |
-| [Kushtet dhe licenca](terms.md) | kushtet e Wargaming, licenca, burimet |
+| [Kushtet dhe licenca](terms.md) | çfarë lexon, licenca, burimet |
 | [Referenca e komandave](../cli-reference.md), [Lista e kolonave](../columns.md) | e gjeneruar nga kodi |
 
 ## Pjesë e 3DHeat {#part-of-3dheat}
@@ -62,10 +62,12 @@ Ndeshja. Mund t'i paketojë skedarët e një ndeshjeje në një skedar të vetë
 [Një skedar për ndeshje](https://holdi601.github.io/3DHeat/container.html). Çfarë duhet të ruajë çdo
 konvertues: [Konvertuesit ruajnë gjithçka](https://holdi601.github.io/3DHeat/converters.html).
 
-Konvertuesi mbahet i ndarë nga 3DHeat Watcher me qëllim: riluajtjet
-janë të shifruara, dhe kushtet e Wargaming janë të gjera ([Kushtet dhe licenca](terms.md)).
-Nëse një ditë duhet të largohet, asgjë tjetër nuk largohet me të. Watcher e nis kur
-është i instaluar dhe funksionon edhe pa të.
+Çdo lexues loje është një projekt i vogël më vete, me skedarin e vet të
+licencës, versionet e veta dhe gjurmuesin e vet të problemeve, kështu që mund
+të instalohet, përditësohet, mirëmbahet - ose tërhiqet me kërkesë të një
+mbajtësi të drejtash - më vete, pa prekur shikuesin ose mjetet e tjera.
+Watcher e ekzekuton këtë konvertues kur është i instaluar dhe punon edhe pa
+të. Çfarë lexon konvertuesi: [Kushtet dhe licenca](terms.md).
 
 | Mjeti | Çfarë bën | Burimi | Dokumentacioni |
 |---|---|---|---|

@@ -3,7 +3,7 @@ title: "Inicio"
 nav_order: 1
 lang: "es"
 source: index.md
-source_hash: "ed297a81b477"
+source_hash: "bbc8dc6aaeeb"
 nav_exclude: true
 search_exclude: true
 permalink: /es/
@@ -51,7 +51,7 @@ Deberías ver una línea por repetición, terminando en el archivo que escribió
 | [El documento de la partida](match-document.md) | cada clave de `<partida>.match.json` |
 | [Cómo lee una repetición](how-it-reads.md) | el formato, y cómo se comprobó la lectura |
 | [Completitud](completeness.md) | el archivo auxiliar y la autocomprobación |
-| [Términos y licencia](terms.md) | los términos de Wargaming, licencia, fuentes |
+| [Términos y licencia](terms.md) | qué lee, licencia, fuentes |
 | [Referencia de comandos](../cli-reference.md), [Lista de columnas](../columns.md) | generadas a partir del código |
 
 ## Parte de 3DHeat {#part-of-3dheat}
@@ -63,10 +63,12 @@ pestaña Partida. Puede empaquetar los archivos de una partida en uno solo:
 [Un archivo por partida](https://holdi601.github.io/3DHeat/container.html). Lo que todo
 convertidor debe conservar: [Los convertidores lo conservan todo](https://holdi601.github.io/3DHeat/converters.html).
 
-El convertidor está separado del Watcher de 3DHeat a propósito: las repeticiones
-están cifradas, y los términos de Wargaming son amplios ([Términos y licencia](terms.md)).
-Si alguna vez hay que quitarlo, no se va nada más con él. El Watcher lo ejecuta
-cuando está instalado y funciona sin él.
+Cada lector de juego es un pequeño proyecto propio, con su propio archivo de
+licencia, sus versiones y su gestor de incidencias, de modo que se puede
+instalar, actualizar, mantener - o retirar a petición de un titular de
+derechos - por separado, sin afectar al visor ni a las demás herramientas. El
+Watcher ejecuta este convertidor cuando está instalado y funciona sin él. Qué
+lee el convertidor: [Términos y licencia](terms.md).
 
 | Herramienta | Qué hace | Código | Documentación |
 |---|---|---|---|

@@ -32,5 +32,5 @@ Where each feature is documented:
 | every column and its type | [Column list](docs/columns.md) |
 | the format, and how the reading was checked | [How it reads a replay](docs/how-it-reads.md) |
 | sidecar, self-check | [Completeness](docs/completeness.md) |
-| Wargaming's terms, licence | [Terms and licence](docs/terms.md) |
+| what it reads, licence | [Terms and licence](docs/terms.md) |
 | releasing | [Maintaining](docs/maintaining.md) |

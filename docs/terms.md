@@ -5,31 +5,20 @@ nav_order: 9
 
 # Terms and licence
 
-## Wargaming's terms
+## What it reads
 
-Read on 2026-11-07, Wargaming EULA version 14 (effective 10 April 2024, listed
-as current); its section 12.3 points to a World of Warships mod policy, whose
-page did not render outside a browser and was not read:
+The converter reads replay files that the game wrote on your own computer,
+after the battle and outside the game. It changes nothing in the game, talks
+to no server and shows nothing during a battle. Nothing from the game is
+shipped or redistributed with it: no game assets, no game code, no DLLs. What
+it writes stays on your computer.
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): prohibited is "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat is not affiliated with or endorsed by Wargaming. World of Warships and
+related names and trademarks belong to their owners.
 
-What this converter does: it reads a file the game wrote, after the battle,
-outside the game. It changes nothing in the game, talks to no server, and
-shows nothing during a battle. It does decipher the stream with the game's
-key, which 5.3 (b) and 12.1 (p) can be read to cover. Using it is the user's
-decision; that is why it is a separate package.
+Rights holders: open an issue at
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - we respond quickly and
+remove anything on request.
 
 ## Licence and sources
 

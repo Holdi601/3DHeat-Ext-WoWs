@@ -3,30 +3,26 @@ title: Tingimused ja litsents
 nav_order: 9
 lang: "et"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Tingimused ja litsents {#terms-and-licence}
 
-## Wargamingi tingimused {#wargamings-terms}
+## Mida see loeb {#what-it-reads}
 
-Loetud 2026-11-07, Wargamingi EULA versioon 14 (jõustus 10. aprillil 2024, on praegu kehtiv); selle jaotis 12.3
-viitab World of Warshipsi modipoliitikale, mille lehte brauserist väljaspool ei kuvatud ja mida ei loetud:
+Konverter loeb korduste faile, mille mäng kirjutas sinu enda arvutisse, pärast
+lahingut ja väljaspool mängu. See ei muuda mängus midagi, ei suhtle ühegi
+serveriga ega näita lahingu ajal midagi. Mängust ei tarnita ega levitata koos
+sellega midagi: ei mängu ressursse, ei mängu koodi ega DLL-e. See, mida see
+kirjutab, jääb sinu arvutisse.
 
-- 5.3 (b): kui ei ole kirjalikult volitatud, ei tohi sa "... decompile, disassemble, reverse engineer or otherwise make
-  unauthorized use of the Content".
-- 12.1 (k): keelatud on "Creating, using, making available, or distributing any unauthorized software or tools,
-  including hacks, cheats, exploits, scripts, bots, trainers, automation programs, or other software that interacts
-  with a Product in any way and for any purpose, including intercepts, emulates, or redirects any communication
-  between such software and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user experience ("mods") unless expressly
-  permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures implemented by Wargaming".
+3DHeat ei ole seotud Wargamingiga ega Wargamingi poolt heaks kiidetud. World
+of Warships ning sellega seotud nimed ja kaubamärgid kuuluvad nende omanikele.
 
-Mida see konverter teeb: ta loeb faili, mille mäng kirjutas, pärast lahingut, väljaspool mängu. Ta ei muuda mängus
-midagi, ei räägi ühegi serveriga ega näita midagi lahingu ajal. Ta dešifreerib voo mängu võtmega, ja 5.3 (b) ning
-12.1 (p) võib lugeda nii, et need katavad seda. Selle kasutamine on kasutaja otsus; sellepärast on see eraldi pakett.
+Õiguste omajad: avage issue aadressil
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - vastame kiiresti ja
+eemaldame soovi korral kõik.
 
 ## Litsents ja allikad {#licence-and-sources}
 

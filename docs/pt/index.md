@@ -50,7 +50,7 @@ no visualizador 3DHeat.
 | [O documento da partida](match-document.md) | cada chave de `<match>.match.json` |
 | [Como ele lê um replay](how-it-reads.md) | o formato, e como a leitura foi verificada |
 | [Completude](completeness.md) | o arquivo auxiliar e a autoverificação |
-| [Termos e licença](terms.md) | os termos da Wargaming, licença, fontes |
+| [Termos e licença](terms.md) | o que ele lê, licença, fontes |
 | [Referência de comandos](../cli-reference.md), [Lista de colunas](../columns.md) | gerados a partir do código |
 
 ## Parte do 3DHeat {#part-of-3dheat}
@@ -62,9 +62,12 @@ Partida. Ele também pode empacotar os arquivos de uma partida num só arquivo:
 [Um arquivo por partida](https://holdi601.github.io/3DHeat/container.html). O que todo
 conversor precisa manter: [Conversores mantêm tudo](https://holdi601.github.io/3DHeat/converters.html).
 
-O conversor fica separado do 3DHeat Watcher de propósito: os replays são cifrados, e os
-termos da Wargaming são amplos ([Termos e licença](terms.md)). Se ele precisar sair, nada
-mais sai junto. O Watcher o executa quando está instalado e funciona sem ele.
+Cada leitor de jogo é um pequeno projeto próprio, com seu próprio arquivo de
+licença, suas versões e seu rastreador de problemas, para poder ser instalado,
+atualizado, mantido - ou retirado a pedido de um titular de direitos - por
+conta própria, sem afetar o visualizador nem as outras ferramentas. O Watcher
+executa este conversor quando ele está instalado e funciona sem ele. O que o
+conversor lê: [Termos e licença](terms.md).
 
 | Ferramenta | O que faz | Código | Documentação |
 |---|---|---|---|

@@ -3,34 +3,27 @@ title: Условия и лиценз
 nav_order: 9
 lang: "bg"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Условия и лиценз {#terms-and-licence}
 
-## Условията на Wargaming {#wargamings-terms}
+## Какво чете {#what-it-reads}
 
-Прочетено на 2026-11-07, Wargaming EULA версия 14 (в сила от 10 април 2024 г., посочено като актуално); неговата точка 12.3 сочи към правила за модификации на World of Warships, чиято страница не се показа извън браузър и не е прочетена:
+Преобразувателят чете файловете с повторения, които играта е записала на вашия
+собствен компютър, след битката и извън играта. Той не променя нищо в играта,
+не се свързва с никакъв сървър и не показва нищо по време на битка. Нищо от
+играта не се доставя и не се разпространява с него: нито ресурси на играта,
+нито код на играта, нито DLL файлове. Това, което записва, остава на вашия
+компютър.
 
-- 5.3 (b): освен ако не е разрешено писмено, не трябва да "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): забранено е "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat не е свързан с Wargaming и не е одобрен от Wargaming. World of Warships
+и свързаните имена и търговски марки принадлежат на техните притежатели.
 
-Какво прави този преобразувател: чете файл, който играта е записала, след битката,
-извън играта. Той не променя нищо в играта, не говори с никой сървър и
-не показва нищо по време на битка. Той декодира потока с ключа на играта, което 5.3 (b) и 12.1 (p) може
-да се четат като покриващи. Използването му е решение на потребителя; затова е отделен пакет.
+Носители на права: отворете issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - отговаряме бързо и
+премахваме всичко при поискване.
 
 ## Лиценз и източници {#licence-and-sources}
 

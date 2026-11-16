@@ -49,7 +49,7 @@ Uvidíte jeden riadok na každý replay, končiaci súborom, ktorý zapísal:
 | [Dokument zápasu](match-document.md) | každý kľúč v `<match>.match.json` |
 | [Ako sa replay číta](how-it-reads.md) | formát a to, ako sa čítanie overilo |
 | [Úplnosť](completeness.md) | sprievodný súbor a samokontrola |
-| [Podmienky a licencia](terms.md) | podmienky Wargamingu, licencia, zdroje |
+| [Podmienky a licencia](terms.md) | čo číta, licencia, zdroje |
 | [Referencia príkazov](../cli-reference.md), [Zoznam stĺpcov](../columns.md) | generované z kódu |
 
 ## Súčasť 3DHeat {#part-of-3dheat}
@@ -61,9 +61,12 @@ súbory jedného zápasu zabaliť do jedného súboru:
 [Jeden súbor na zápas](https://holdi601.github.io/3DHeat/container.html). Čo musí každý
 konvertor zachovať: [Konvertory zachovávajú všetko](https://holdi601.github.io/3DHeat/converters.html).
 
-Konvertor je zámerne oddelený od 3DHeat Watcher: replaye sú zašifrované a podmienky Wargamingu sú široké
-([Podmienky a licencia](terms.md)). Ak by ho bolo treba odstrániť, nič iné s ním nezmizne. Watcher ho spúšťa,
-keď je nainštalovaný, a funguje aj bez neho.
+Každá čítačka hry je samostatný malý projekt s vlastným súborom licencie,
+vydaniami a evidenciou problémov, takže ju možno inštalovať, aktualizovať,
+udržiavať - alebo na žiadosť držiteľa práv stiahnuť - samostatne, bez vplyvu
+na prehliadač a ostatné nástroje. Watcher tento konvertor spúšťa, keď je
+nainštalovaný, a funguje aj bez neho. Čo konvertor číta: [Podmienky a
+licencia](terms.md).
 
 | Nástroj | Čo robí | Zdroj | Dokumentácia |
 |---|---|---|---|

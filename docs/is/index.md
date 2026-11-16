@@ -51,7 +51,7 @@ heat3d-wows-replay "<World of Warships>/replays" -o out
 | [Leikjaskjalið](match-document.md) | hver lykill í `<match>.match.json` |
 | [Hvernig upptaka er lesin](how-it-reads.md) | sniðið, og hvernig lesturinn var athugaður |
 | [Heilleiki](completeness.md) | hliðarskráin og sjálfsathugunin |
-| [Skilmálar og leyfi](terms.md) | skilmálar Wargaming, leyfi, heimildir |
+| [Skilmálar og leyfi](terms.md) | hvað hann les, leyfi, heimildir |
 | [Skipanayfirlit](../cli-reference.md), [Dálkalisti](../columns.md) | búið til úr kóðanum |
 
 ## Hluti af 3DHeat {#part-of-3dheat}
@@ -63,10 +63,11 @@ Leikur. Hann getur pakkað skrám leiks í eina skrá:
 [Ein skrá á leik](https://holdi601.github.io/3DHeat/container.html). Það sem hver
 umbreytir verður að varðveita: [Umbreytar varðveita allt](https://holdi601.github.io/3DHeat/converters.html).
 
-Umbreytirinn er viljandi hafður aðskilinn frá 3DHeat Watcher: upptökurnar
-eru dulkóðaðar og skilmálar Wargaming eru víðtækir ([Skilmálar og leyfi](terms.md)).
-Ef hann þarf einhvern tíma að fara, fer ekkert annað með honum. Watcher keyrir hann þegar
-hann er uppsettur og virkar án hans.
+Hver leikjalesari er sitt eigið litla verkefni með eigin leyfisskrá, útgáfum
+og villuskrá, svo hægt er að setja hann upp, uppfæra, viðhalda - eða draga
+hann til baka að beiðni rétthafa - einan og sér, án áhrifa á skoðarann eða hin
+verkfærin. Watcher keyrir þennan umbreyti þegar hann er uppsettur og virkar án
+hans. Hvað umbreytirinn les: [Skilmálar og leyfi](terms.md).
 
 | Verkfæri | Hvað það gerir | Frumkóði | Skjölun |
 |---|---|---|---|

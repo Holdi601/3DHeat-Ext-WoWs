@@ -3,37 +3,27 @@ title: "Kushtet dhe licenca"
 nav_order: 9
 lang: "sq"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Kushtet dhe licenca {#terms-and-licence}
 
-## Kushtet e Wargaming {#wargamings-terms}
+## Çfarë lexon {#what-it-reads}
 
-Lexuar më 2026-11-07, Wargaming EULA versioni 14 (në fuqi nga 10 prilli 2024, listuar
-si aktuale); seksioni i saj 12.3 drejton te një politikë mod-esh për World of Warships, faqja e së cilës
-nuk u shfaq jashtë një shfletuesi dhe nuk u lexua:
+Konvertuesi lexon skedarët e riluajtjeve që loja i ka shkruar në kompjuterin
+tuaj, pas betejës dhe jashtë lojës. Nuk ndryshon asgjë në lojë, nuk komunikon
+me asnjë server dhe nuk shfaq asgjë gjatë një beteje. Asgjë nga loja nuk
+ofrohet as nuk rishpërndahet bashkë me të: asnjë burim i lojës, asnjë kod i
+lojës, asnjë DLL. Ajo që shkruan mbetet në kompjuterin tuaj.
 
-- 5.3 (b): unless authorised in writing, you must not "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): prohibited is "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat nuk është i lidhur me Wargaming dhe nuk miratohet nga Wargaming. World
+of Warships dhe emrat e markat tregtare përkatëse u përkasin pronarëve të
+tyre.
 
-Çfarë bën ky konvertues: lexon një skedar që e shkroi loja, pas betejës,
-jashtë lojës. Nuk ndryshon asgjë në lojë, nuk komunikon me asnjë server dhe
-nuk shfaq asgjë gjatë një beteje. Ai e deshifron rrjedhën me çelësin e lojës,
-gjë që 5.3 (b) dhe 12.1 (p) mund të lexohen si e mbulojnë. Përdorimi i tij është
-vendim i përdoruesit; prandaj është paketë e veçantë.
+Mbajtësit e të drejtave: hapni një issue në
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - përgjigjemi shpejt dhe
+heqim çdo gjë me kërkesë.
 
 ## Licenca dhe burimet {#licence-and-sources}
 

@@ -3,37 +3,26 @@ title: "Умови і ліцензія"
 nav_order: 9
 lang: "uk"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Умови і ліцензія {#terms-and-licence}
 
-## Умови Wargaming {#wargamings-terms}
+## Що він читає {#what-it-reads}
 
-Прочитано 2026-11-07, Wargaming EULA версії 14 (чинна з 10 квітня 2024 року, назва
-як поточна). Її розділ 12.3 посилається на правила модифікацій World of Warships; ця
-сторінка поза браузером не відобразилася, тож її не прочитано:
+Конвертер читає файли повторів, які гра записала на вашому власному
+комп'ютері, після бою і поза грою. Він нічого не змінює в грі, не звертається
+до жодного сервера і нічого не показує під час бою. Нічого з гри з ним не
+постачається і не поширюється: ні ресурсів гри, ні коду гри, ні DLL. Те, що
+він записує, залишається на вашому комп'ютері.
 
-- 5.3 (b): без письмового дозволу не можна "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): заборонено "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat не пов'язаний з Wargaming і не схвалений Wargaming. World of Warships і
+пов'язані назви та торговельні марки належать їхнім власникам.
 
-Що робить цей конвертер: він читає файл, який записала гра, після бою, поза грою.
-Він нічого не змінює в грі, не розмовляє з жодним сервером і нічого не показує під
-час бою. Він дешифрує потік ключем гри, і пункти 5.3 (b) і 12.1 (p) можна прочитати
-так, що вони це охоплюють. Користуватися ним — рішення користувача; тому він
-окремий пакет.
+Правовласникам: відкрийте issue на
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - ми швидко відповідаємо
+і на запит видаляємо що завгодно.
 
 ## Ліцензія і джерела {#licence-and-sources}
 

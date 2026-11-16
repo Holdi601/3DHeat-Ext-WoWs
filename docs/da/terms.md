@@ -3,35 +3,26 @@ title: Vilkår og licens
 nav_order: 9
 lang: "da"
 source: terms.md
-source_hash: "3326635d2603"
+source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
 # Vilkår og licens {#terms-and-licence}
 
-## Wargamings vilkår {#wargamings-terms}
+## Hvad den læser {#what-it-reads}
 
-Læst 2026-11-07, Wargaming EULA version 14 (i kraft fra 10. april 2024, angivet som gældende); dens afsnit 12.3
-henviser til en modpolitik for World of Warships, hvis side ikke kunne vises uden for en browser og ikke blev læst:
+Konverteren læser replay-filer, som spillet har skrevet på din egen computer,
+efter kampen og uden for spillet. Den ændrer intet i spillet, taler ikke med
+nogen server og viser intet under en kamp. Intet fra spillet følger med eller
+videredistribueres: ingen spilaktiver, ingen spilkode, ingen DLL'er. Det, den
+skriver, bliver på din computer.
 
-- 5.3 (b): medmindre det er godkendt skriftligt, må du ikke "... decompile,
-  disassemble, reverse engineer or otherwise make unauthorized use of the
-  Content".
-- 12.1 (k): forbudt er "Creating, using, making available, or distributing
-  any unauthorized software or tools, including hacks, cheats, exploits,
-  scripts, bots, trainers, automation programs, or other software that
-  interacts with a Product in any way and for any purpose, including
-  intercepts, emulates, or redirects any communication between such software
-  and Wargaming."
-- 12.1 (l): "... any software designed to modify a Product and change the user
-  experience ("mods") unless expressly permitted by Wargaming".
-- 12.1 (p): "Circumventing or bypassing enforcement and security measures
-  implemented by Wargaming".
+3DHeat er ikke tilknyttet eller godkendt af Wargaming. World of Warships og
+relaterede navne og varemærker tilhører deres ejere.
 
-Hvad denne konverter gør: den læser en fil, spillet skrev, efter kampen, uden for spillet. Den ændrer
-intet i spillet, taler med ingen server og viser intet under en kamp. Den dekrypterer strømmen med spillets
-nøgle, hvilket 5.3 (b) og 12.1 (p) kan læses som dækkende. At bruge den er brugerens beslutning; derfor er
-den en separat pakke.
+Rettighedshavere: opret et issue på
+<https://github.com/Holdi601/3DHeat-Ext-WoWs/issues> - vi svarer hurtigt og
+fjerner hvad som helst på anmodning.
 
 ## Licens og kilder {#licence-and-sources}
 
