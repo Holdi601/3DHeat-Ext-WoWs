@@ -1,5 +1,5 @@
 ---
-title: Begriffe und Lizenz
+title: Nutzungsbedingungen und Lizenz
 nav_order: 9
 lang: "de"
 source: terms.md
@@ -7,7 +7,7 @@ source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
-# Begriffe und Lizenz {#terms-and-licence}
+# Nutzungsbedingungen und Lizenz {#terms-and-licence}
 
 ## Was er liest {#what-it-reads}
 

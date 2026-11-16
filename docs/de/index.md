@@ -50,7 +50,7 @@ Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
 | [Das Match-Dokument](match-document.md) | jeder Schlüssel von `<match>.match.json` |
 | [So liest es ein Replay](how-it-reads.md) | das Format und wie das Lesen geprüft wurde |
 | [Vollständigkeit](completeness.md) | die Begleitdateien und die Selbstprüfung |
-| [Begriffe und Lizenz](terms.md) | was er liest, Lizenz, Quellen |
+| [Nutzungsbedingungen und Lizenz](terms.md) | was er liest, Lizenz, Quellen |
 | [Befehlsreferenz](../cli-reference.md), [Spaltenliste](../columns.md) | aus dem Code erzeugt |
 
 ## Teil von 3DHeat {#part-of-3dheat}
@@ -67,7 +67,7 @@ eigenen Releases und eigenem Issue-Tracker, sodass er für sich installiert,
 aktualisiert, gepflegt - oder auf Wunsch eines Rechteinhabers zurückgezogen -
 werden kann, ohne den Viewer oder die anderen Werkzeuge zu berühren. Der
 Watcher führt diesen Umwandler aus, wenn er installiert ist, und funktioniert
-auch ohne ihn. Was der Umwandler liest: [Begriffe und Lizenz](terms.md).
+auch ohne ihn. Was der Umwandler liest: [Nutzungsbedingungen und Lizenz](terms.md).
 
 | Werkzeug | Was es tut | Quelle | Dokumentation |
 |---|---|---|---|

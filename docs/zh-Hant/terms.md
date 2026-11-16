@@ -1,5 +1,5 @@
 ---
-title: "名詞與授權"
+title: "條款與授權"
 nav_order: 9
 lang: "zh-Hant"
 source: terms.md

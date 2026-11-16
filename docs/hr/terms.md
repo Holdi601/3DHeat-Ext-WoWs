@@ -1,5 +1,5 @@
 ---
-title: Pojmovi i licenca
+title: Uvjeti i licenca
 nav_order: 9
 lang: "hr"
 source: terms.md
@@ -7,7 +7,7 @@ source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
-# Pojmovi i licenca {#terms-and-licence}
+# Uvjeti i licenca {#terms-and-licence}
 
 ## Što čita {#what-it-reads}
 

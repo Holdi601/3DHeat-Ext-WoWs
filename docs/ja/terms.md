@@ -1,5 +1,5 @@
 ---
-title: 用語とライセンス
+title: 利用条件とライセンス
 nav_order: 9
 lang: "ja"
 source: terms.md
@@ -7,7 +7,7 @@ source_hash: "0b8a5164046e"
 nav_exclude: true
 search_exclude: true
 ---
-# 用語とライセンス {#terms-and-licence}
+# 利用条件とライセンス {#terms-and-licence}
 
 ## 読み取るもの {#what-it-reads}
 

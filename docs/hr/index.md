@@ -50,7 +50,7 @@ Trebao bi vidjeti jedan redak po snimci, koji završava datotekom koju je zapisa
 | [Dokument meča](match-document.md) | svaki ključ u `<match>.match.json` |
 | [Kako se snimka čita](how-it-reads.md) | format i kako je čitanje provjereno |
 | [Potpunost](completeness.md) | pomoćna datoteka i samoprovjera |
-| [Pojmovi i licenca](terms.md) | što čita, licenca, izvori |
+| [Uvjeti i licenca](terms.md) | što čita, licenca, izvori |
 | [Referenca naredbi](../cli-reference.md), [Popis stupaca](../columns.md) | generirano iz koda |
 
 ## Dio 3DHeata {#part-of-3dheat}
@@ -66,7 +66,7 @@ Svaki čitač igre zaseban je mali projekt s vlastitom datotekom licence,
 izdanjima i sustavom za praćenje problema, pa se može instalirati, ažurirati,
 održavati - ili povući na zahtjev nositelja prava - zasebno, bez utjecaja na
 preglednik ili druge alate. Watcher pokreće ovaj pretvarač kad je instaliran i
-radi i bez njega. Što pretvarač čita: [Pojmovi i licenca](terms.md).
+radi i bez njega. Što pretvarač čita: [Uvjeti i licenca](terms.md).
 
 | Alat | Što radi | Izvor | Dokumentacija |
 |---|---|---|---|
