@@ -9,9 +9,9 @@ search_exclude: true
 ---
 # Exhaustivité {#completeness}
 
-Rien dans un replay n'est jeté. Ce que le convertisseur lit va dans la table et le document de match ;
+Rien dans un replay n'est jeté. Ce que le convertisseur lit va dans la table et le document de partie ;
 chaque autre élément est conservé en entier dans le fichier annexe `<match>.messages.parquet` ; et
-`selfCheck.completeness` du document de match compte ce qu'est devenu chaque type d'élément. C'est la
+`selfCheck.completeness` du document de partie compte ce qu'est devenu chaque type d'élément. C'est la
 règle que partagent tous les convertisseurs de 3DHeat :
 [Les convertisseurs gardent tout](https://holdi601.github.io/3DHeat/converters.html).
 
@@ -46,7 +46,7 @@ joueur qui enregistre et lesquels sont les navires. Un type que personne ne conn
 | `entityType`, `packet`, `method` | les numéros |
 
 Les lignes sont triées par paquet, méthode, entité et temps. Quelle entité correspond à quel joueur :
-les `entities` et `players` du document de match.
+les `entities` et `players` du document de partie.
 
 ## Ce qui est lu, et comment cela a été vérifié {#what-is-read-and-how-it-was-checked}
 
@@ -61,7 +61,7 @@ les `entities` et `players` du document de match.
 - **La version dans le flux** (`streamVersion`) : la même que celle de l'en-tête.
 
 Tout le reste lu (naufrages, dégâts, points de vie, obus, torpilles, lieux où les obus se sont arrêtés, chat,
-appels pickle, fiches des joueurs, positions) est `partial` : dans la table ou le document de match, et conservé
+appels pickle, fiches des joueurs, positions) est `partial` : dans la table ou le document de partie, et conservé
 en entier dans le fichier annexe.
 
 **Conservé mais non lu** (`raw`), les plus gros types : les mises à jour de position qui ne sont pas dans la
@@ -71,7 +71,7 @@ lecteur, les propriétés des créations d'entités, et tout autre paquet sans l
 ## Non disponible {#not-available}
 
 - Ce que le serveur n'a jamais envoyé au client qui enregistre : la visée, la caméra et les commandes des
-  autres joueurs, les ennemis tant qu'ils ne sont pas repérés. Un replay est ce qu'un client a été informé.
+  autres joueurs, les ennemis tant qu'ils ne sont pas repérés. Un replay ne montre que ce que le client a reçu.
 - Les noms des types d'entités, des méthodes, des propriétés et les clés des statistiques : ils se trouvent
   dans les fichiers de définition du jeu, non dans le replay. Les numéros sont conservés.
 - Les noms des navires pour les numéros de navire (utiliser `--ship-names`), et tout ce qui demande les fichiers

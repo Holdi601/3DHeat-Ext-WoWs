@@ -15,7 +15,7 @@ Un replay est un en-tête de blocs JSON et le flux de paquets du jeu (notes sur 
 - Le premier bloc, en clair : la carte, la version du client, le joueur qui enregistre et son navire, et la
   liste des joueurs - le nom de chacun, allié ou ennemi, et son numéro de navire. Les clients récents (15.x)
   ajoutent deux blocs : un vide, et le compte du joueur qui enregistre et l'identifiant de la bataille en texte,
-  lus dans `blockIds`. Les résultats ne sont pas dans le JSON ; la 15.x les garde dans le flux.
+  lus dans `blockIds`. Les résultats ne sont pas dans le JSON ; la version 15.x les garde dans le flux.
 - Le flux de paquets, compressé en zlib et chiffré en Blowfish avec une clé que le jeu contient, et que les
   outils communautaires qui lisent ces fichiers ont publiée. Une fois déchiffré, il contient :
   - les mises à jour de position du moteur de chaque navire que le client pouvait voir (celui de sa propre
@@ -39,14 +39,14 @@ Un replay est un en-tête de blocs JSON et le flux de paquets du jeu (notes sur 
   - les appels pickle destinés au joueur qui enregistre : ses statistiques de dégâts, les mises à jour des fiches
     des joueurs, l'état de la bataille ;
   - sur les clients 15.x, les résultats de la bataille à la fin : un paquet à part, un objet JSON avec l'identifiant
-    de la bataille, lu en entier dans `results` du document de match (les listes propres au jeu, sans nom :
+    de la bataille, lu en entier dans `results` du document de partie (les listes propres au jeu, sans nom :
     `commonList`, `privateDataList`, `playersPublicInfo` par compte, ...).
 
 Les numéros de paquets et de méthodes qui diffèrent selon les versions contrôlées (le paquet du navire propre
 est 43 ou 44, l'appel de naufrage 76 ou 83, les obus 101, 102, 126 ou 127) sont tous trouvés par leur forme - voir
 [`heat3d_ext_wows/stream.py`](https://github.com/Holdi601/3DHeat-Ext-WoWs/blob/main/heat3d_ext_wows/stream.py) -
 de sorte qu'un patch qui les renumérote ne vide pas la table. Les numéros trouvés figurent dans le `decoded` du
-document de match.
+document de partie.
 
 **Le pickle n'est pas une donnée de confiance.** Un replay est un fichier venu de n'importe où, et un pickle peut
 nommer du code à exécuter. Il est chargé avec un dépickleur qui remet à chaque classe ou fonction que le pickle
@@ -57,7 +57,7 @@ fournit un pickle qui appelle `os.system`.
 lorsque c'était moins de cinq secondes avant. **Le début de la bataille** est le premier instant où un navire
 bouge (les navires restent immobiles pendant le compte à rebours).
 
-Tout ce qui n'est pas une ligne de table se trouve dans [le document de match](match-document.md).
+Tout ce qui n'est pas une ligne de table se trouve dans [le document de partie](match-document.md).
 
 **Ce que le client a reçu** est complet pour sa propre équipe, et partiel pour les ennemis : leurs tirs, impacts
 et points de vie y sont lorsqu'ils étaient à portée.
@@ -69,12 +69,12 @@ et points de vie y sont lorsqu'ils étaient à portée.
   propres (leurs dégâts sont dans les impacts), les consommables, les points de capture et les scores d'équipe
   (propriétés d'entités sans définition, non distinguées par leur forme), le reste des propriétés d'un navire
   (visée, gouvernail, réglage de vitesse...).
-- Les numéros des clés des fiches des joueurs et des statistiques de dégâts en noms : le jeu les numérote, et les
+- Les numéros des clés des fiches des joueurs et des statistiques de dégâts, convertis en noms : le jeu les numérote, et les
   numéros changent ; ils sont conservés comme des numéros.
 - Les données supplémentaires d'un obus à son point d'impact (15.x) et les octets qui suivent le départ et la
   vitesse d'un obus ou d'une torpille.
 - Les résultats des clients antérieurs à 15.x : leurs replays n'en contiennent aucun.
-- Le numéro de navire en nom : les noms sont dans les fichiers de paramètres du jeu, non dans le replay.
+- Le numéro de navire converti en nom : les noms sont dans les fichiers de paramètres du jeu, non dans le replay.
 
 ## Comment la lecture a été vérifiée {#how-the-reading-was-checked}
 

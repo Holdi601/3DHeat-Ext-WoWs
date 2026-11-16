@@ -39,13 +39,13 @@ Pour celui qui publie une nouvelle version. Faites les étapes dans cet ordre.
 5. **Traductions.** Chaque page sous `docs/<langue>/` enregistre l'empreinte de la page anglaise à partir de
    laquelle elle a été traduite. Retraduisez chaque page dont la source anglaise a changé, étiquettes des
    schémas comprises. Puis relisez chaque langue : claire pour les trois lecteurs, étiquettes justes, et les
-   mêmes mots que ceux qu'utilise la visionneuse 3DHeat dans cette langue.
+   mêmes mots que ceux qu'utilise le visualiseur 3DHeat dans cette langue.
 6. **Publication :** augmentez `VERSION` et créez l'étiquette `v<VERSION>`. **Ne poussez qu'après le feu
    vert du propriétaire.**
 
 ## Traductions : les commandes {#translations-the-commands}
 
-Le site est traduit dans les 40 langues de la visionneuse 3DHeat : l'anglais dans `docs/`, chaque autre langue
+Le site est traduit dans les 40 langues du visualiseur 3DHeat : l'anglais dans `docs/`, chaque autre langue
 dans `docs/<lang>/` avec les mêmes noms de fichiers. `tools/docs_i18n.py` tient les comptes :
 
 ```bash
@@ -59,8 +59,8 @@ python tools/docs_i18n.py check              # code 1 lorsque des empreintes ou 
 ```
 
 Ne traduisez que ce que `todo` liste : gardez le Markdown, les liens, le code, les noms de fichiers et de
-colonnes tels quels, traduisez les titres et les descriptions d'images, et utilisez les mots propres à la
-visionneuse 3DHeat pour ses boutons et panneaux (dans son `src/i18n/locales/<lang>/`). Les pages de référence
+colonnes tels quels, traduisez les titres et les descriptions d'images, et utilisez les mots propres au
+visualiseur 3DHeat pour ses boutons et panneaux (dans son `src/i18n/locales/<lang>/`). Les pages de référence
 générées et les images de terminal restent en anglais. Sur le site, une traduction périmée le dit et renvoie
 vers la page anglaise ; une traduction manquante revient à l'anglais. Le menu de langue de l'en-tête et la
 redirection de la page d'accueil selon la langue du navigateur viennent de `docs/_includes/`.

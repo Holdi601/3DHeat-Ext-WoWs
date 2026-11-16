@@ -1,5 +1,5 @@
 ---
-title: Le document de match
+title: Le document de partie
 nav_order: 6
 lang: "fr"
 source: match-document.md
@@ -7,12 +7,12 @@ source_hash: "6e925c5effd7"
 nav_exclude: true
 search_exclude: true
 ---
-# Le document de match {#the-match-document}
+# Le document de partie {#the-match-document}
 
 `<match>.match.json` contient tout ce que dit le replay et qui n'est pas une ligne de la table.
-L'onglet Match de la visionneuse le lit. (Le code l'appelle le résumé.)
+L'onglet Match du visualiseur le lit. (Le code l'appelle le résumé.)
 
-![Le début d'un document de match synthétique, et ses clés](../assets/img/match-document.svg)
+![Le début d'un document de partie synthétique, et ses clés](../assets/img/match-document.svg)
 
 ## La bataille {#the-battle}
 

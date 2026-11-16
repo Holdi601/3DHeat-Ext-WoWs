@@ -3,7 +3,7 @@ title: Start
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "b9f393050306"
+source_hash: "ed297a81b477"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -49,7 +49,7 @@ Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
 | [Die Tabelle](table.md) | jede Spalte und jedes Ereignis von `<match>.parquet` |
 | [Das Match-Dokument](match-document.md) | jeder Schlüssel von `<match>.match.json` |
 | [So liest es ein Replay](how-it-reads.md) | das Format und wie das Lesen geprüft wurde |
-| [Vollständigkeit](completeness.md) | der Sidecar und die Selbstprüfung |
+| [Vollständigkeit](completeness.md) | die Begleitdateien und die Selbstprüfung |
 | [Begriffe und Lizenz](terms.md) | Bedingungen von Wargaming, Lizenz, Quellen |
 | [Befehlsreferenz](../cli-reference.md), [Spaltenliste](../columns.md) | aus dem Code erzeugt |
 
@@ -57,7 +57,7 @@ Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
 
 Dieser Umwandler ist eines der Werkzeuge von [3DHeat](https://github.com/Holdi601/3DHeat),
 eines Viewers für 3D-Telemetrie und Replays in Echtzeit ([Dokumentation](https://holdi601.github.io/3DHeat/)).
-Der Viewer öffnet die Tabelle im Reiter Heatmap und das Match-Dokument im Reiter Match. Er kann die
+Der Viewer öffnet die Tabelle im Heatmap-Tab und das Match-Dokument im Match-Tab. Er kann die
 Dateien eines Matches in eine einzige Datei packen:
 [Eine Datei pro Match](https://holdi601.github.io/3DHeat/container.html). Was jeder
 Umwandler behalten muss: [Umwandler behalten alles](https://holdi601.github.io/3DHeat/converters.html).
@@ -81,6 +81,15 @@ installiert ist, und arbeitet auch ohne ihn.
 | Squad-Demos | Demos von Squad-Servern | [3DHeat-Ext-Squad](https://github.com/Holdi601/3DHeat-Ext-Squad) | [Seite](https://holdi601.github.io/3DHeat-Ext-Squad/) |
 | DCS-Karten | Karten von DCS World als 3D-Level | [3DHeat-Ext-DCS](https://github.com/Holdi601/3DHeat-Ext-DCS) | [Seite](https://holdi601.github.io/3DHeat-Ext-DCS/) |
 | IL-2-Karten | Karten von IL-2 Great Battles als 3D-Level | [3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2) | [Seite](https://holdi601.github.io/3DHeat-Ext-IL2/) |
+| Dota-2-Karte | die Dota-2-Karte aus deiner eigenen Installation als 3D-Level | [3DHeat-Ext-Dota](https://github.com/Holdi601/3DHeat-Ext-Dota) | [Seite](https://holdi601.github.io/3DHeat-Ext-Dota/) |
+| Dota-2-Replays | Replays von Dota 2 | [3DHeat-Ext-DotaReplay](https://github.com/Holdi601/3DHeat-Ext-DotaReplay) | [Seite](https://holdi601.github.io/3DHeat-Ext-DotaReplay/) |
+| Riot-Replays | Replays von League of Legends und VALORANT (was sie unverschlüsselt enthalten) | [3DHeat-Ext-Riot](https://github.com/Holdi601/3DHeat-Ext-Riot) | [Seite](https://holdi601.github.io/3DHeat-Ext-Riot/) |
+| Forza-Karten | Forza-Strecken, Rennen und Autos aus deiner eigenen Installation | [3DHeat-Ext-Forza](https://github.com/Holdi601/3DHeat-Ext-Forza) | [Seite](https://holdi601.github.io/3DHeat-Ext-Forza/) |
+| Battlefield-Karten | Battlefield-Level (Frostbite) als 3D-Level | [3DHeat-Ext-Battlefield](https://github.com/Holdi601/3DHeat-Ext-Battlefield) | [Seite](https://holdi601.github.io/3DHeat-Ext-Battlefield/) |
+| BeamNG-Karten | Strecken von BeamNG.drive | [3DHeat-Ext-BeamNG](https://github.com/Holdi601/3DHeat-Ext-BeamNG) | [Seite](https://holdi601.github.io/3DHeat-Ext-BeamNG/) |
+| AC-Rally-Karten | Etappen von Assetto Corsa Rally als Strecken | [3DHeat-Ext-ACRally](https://github.com/Holdi601/3DHeat-Ext-ACRally) | [Seite](https://holdi601.github.io/3DHeat-Ext-ACRally/) |
+| Reforger-Karten | Welten von Arma Reforger (Enfusion) als 3D-Level | [3DHeat-Ext-Reforger](https://github.com/Holdi601/3DHeat-Ext-Reforger) | [Seite](https://holdi601.github.io/3DHeat-Ext-Reforger/) |
+| R6-Replays | Replays von Rainbow Six Siege | [3DHeat-Ext-R6](https://github.com/Holdi601/3DHeat-Ext-R6) | [Seite](https://holdi601.github.io/3DHeat-Ext-R6/) |
 
 ---
 

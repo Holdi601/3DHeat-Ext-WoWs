@@ -30,7 +30,7 @@ Per ogni tipo di elemento, `selfCheck.completeness.types` dà:
 I tipi sono quelli del replay stesso: `block <n>` (i blocchi JSON), i byte propri del contenitore,
 `packet <type>`, e per le chiamate alle entità `method <entity type>.<number>`
 e `property <entity type>.<number>`.
-`selfCheck.entities.roles` dice quale tipo di entità è l'avatar del giocatore che registra e quale sono le navi. Un tipo che nessuno conosceva compare con il suo conteggio.
+`selfCheck.entities.roles` dice quale tipo di entità è l'avatar del giocatore che registra e quali sono le navi. Un tipo che nessuno conosceva compare con il suo conteggio.
 
 ## Il file accessorio {#the-sidecar}
 

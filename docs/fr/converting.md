@@ -26,7 +26,7 @@ search_exclude: true
    `out` est créé dans le dossier où se trouve votre terminal.
 4. **Lire ce que la commande affiche.** Vous devez voir une ligne par replay, qui se termine par la
    table écrite.
-5. **Ouvrir le résultat** dans la visionneuse 3DHeat : `out/<map>/<match>.parquet` dans l'onglet Carte de
+5. **Ouvrir le résultat** dans le visualiseur 3DHeat : `out/<map>/<match>.parquet` dans l'onglet Carte de
    chaleur, `<match>.match.json` dans l'onglet Match. Ou lisez-les avec n'importe quel lecteur Parquet ou JSON.
 
 ![Un essai sur un replay synthétique : conversion, nouvelle exécution, un fichier cassé, un dossier vide](../assets/img/convert.svg)
@@ -54,17 +54,17 @@ Les options telles que le programme les affiche : [Référence des commandes](..
 
 ## Ce qui est écrit {#what-is-written}
 
-Uniquement des fichiers séparés : ce convertisseur n'écrit aucun fichier `.3dheat` (la visionneuse peut les
+Uniquement des fichiers séparés : ce convertisseur n'écrit aucun fichier `.3dheat` (le visualiseur peut les
 regrouper en un seul : [Un fichier par match](https://holdi601.github.io/3DHeat/container.html)).
 Par replay, dans `out/<map>/` (le nom de la carte sans son `spaces/`) :
 
 | Fichier | Contenu |
 |---|---|
 | `<match>.parquet` | la table : la position de chaque navire au fil du temps et chaque événement à son endroit ([La table](table.md)) |
-| `<match>.match.json` | le document de match : carte, version du client, joueurs, naufrages, chat et tout le reste ([Le document de match](match-document.md)) |
+| `<match>.match.json` | le document de partie : carte, version du client, joueurs, naufrages, chat et tout le reste ([Le document de partie](match-document.md)) |
 | `<match>.messages.parquet` | le fichier annexe : chaque élément du replay que les deux fichiers ci-dessus ne contiennent pas en entier ([Exhaustivité](completeness.md)) |
 
-`<match>` est l'identifiant propre de la bataille, ou le nom du fichier lorsque l'enregistrement s'est
+`<match>` est l'identifiant de la bataille, ou le nom du fichier lorsque l'enregistrement s'est
 arrêté avant les résultats.
 
 ## Code de sortie {#exit-status}

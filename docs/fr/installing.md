@@ -35,7 +35,7 @@ Chaque démarrage consulte d'abord les versions publiées du projet sur GitHub (
 requête toutes les quelques heures ; cela n'arrête jamais une conversion, en ligne ou non).
 Lorsqu'une version plus récente est disponible, la commande demande avant de l'installer : un
 `git clone` est mis à jour avec `git pull --ff-only` (refusé tant que vous avez des modifications
-locales), une copie téléchargée depuis l'archive de la version. `HEAT3D_NO_UPDATE=1` désactive
+locales), une copie téléchargée est remplacée par l'archive de la version. `HEAT3D_NO_UPDATE=1` désactive
 la vérification et la mise à jour.
 
 ---

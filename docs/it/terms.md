@@ -31,7 +31,7 @@ Lette il 2026-11-07, EULA di Wargaming versione 14 (in vigore dal 10 aprile 2024
   "Circumventing or bypassing enforcement and security measures
   implemented by Wargaming".
 
-Cosa fa questo convertitore: legge un file che il gioco ha scritto, dopo la battaglia, fuori dal gioco. Non cambia nulla nel gioco, non parla con nessun server e non mostra nulla durante una battaglia. Decifra però il flusso con la chiave del gioco, cosa che 5.3 (b) e 12.1 (p) potrebbero coprire. Usarlo è una decisione dell'utente; per questo è un pacchetto separato.
+Cosa fa questo convertitore: legge un file che il gioco ha scritto, dopo la battaglia, fuori dal gioco. Non cambia nulla nel gioco, non parla con nessun server e non mostra nulla durante una battaglia. Decifra però il flusso con la chiave del gioco, cosa che 5.3 (b) e 12.1 (p) possono essere letti come se la coprissero. Usarlo è una decisione dell'utente; per questo è un pacchetto separato.
 
 ## Licenza e fonti {#licence-and-sources}
 

@@ -1,9 +1,9 @@
 ---
-title: Inicio
+title: "Inicio"
 nav_order: 1
 lang: "es"
 source: index.md
-source_hash: "b9f393050306"
+source_hash: "ed297a81b477"
 nav_exclude: true
 search_exclude: true
 permalink: /es/
@@ -82,6 +82,15 @@ cuando está instalado y funciona sin él.
 | Demos de Squad | demos de servidor de Squad | [3DHeat-Ext-Squad](https://github.com/Holdi601/3DHeat-Ext-Squad) | [sitio](https://holdi601.github.io/3DHeat-Ext-Squad/) |
 | Mapas de DCS | mapas del mundo de DCS como niveles 3D | [3DHeat-Ext-DCS](https://github.com/Holdi601/3DHeat-Ext-DCS) | [sitio](https://holdi601.github.io/3DHeat-Ext-DCS/) |
 | Mapas de IL-2 | mapas de IL-2 Great Battles como niveles 3D | [3DHeat-Ext-IL2](https://github.com/Holdi601/3DHeat-Ext-IL2) | [sitio](https://holdi601.github.io/3DHeat-Ext-IL2/) |
+| Mapa de Dota 2 | el mapa de Dota 2 de tu propia instalación como nivel 3D | [3DHeat-Ext-Dota](https://github.com/Holdi601/3DHeat-Ext-Dota) | [sitio](https://holdi601.github.io/3DHeat-Ext-Dota/) |
+| Repeticiones de Dota 2 | repeticiones de Dota 2 | [3DHeat-Ext-DotaReplay](https://github.com/Holdi601/3DHeat-Ext-DotaReplay) | [sitio](https://holdi601.github.io/3DHeat-Ext-DotaReplay/) |
+| Repeticiones de Riot | repeticiones de League of Legends y VALORANT (lo que contienen sin cifrar) | [3DHeat-Ext-Riot](https://github.com/Holdi601/3DHeat-Ext-Riot) | [sitio](https://holdi601.github.io/3DHeat-Ext-Riot/) |
+| Mapas de Forza | recorridos, carreras y coches de Forza de tu propia instalación | [3DHeat-Ext-Forza](https://github.com/Holdi601/3DHeat-Ext-Forza) | [sitio](https://holdi601.github.io/3DHeat-Ext-Forza/) |
+| Mapas de Battlefield | niveles de Battlefield (Frostbite) como niveles 3D | [3DHeat-Ext-Battlefield](https://github.com/Holdi601/3DHeat-Ext-Battlefield) | [sitio](https://holdi601.github.io/3DHeat-Ext-Battlefield/) |
+| Mapas de BeamNG | recorridos de BeamNG.drive | [3DHeat-Ext-BeamNG](https://github.com/Holdi601/3DHeat-Ext-BeamNG) | [sitio](https://holdi601.github.io/3DHeat-Ext-BeamNG/) |
+| Mapas de AC Rally | etapas de Assetto Corsa Rally como recorridos | [3DHeat-Ext-ACRally](https://github.com/Holdi601/3DHeat-Ext-ACRally) | [sitio](https://holdi601.github.io/3DHeat-Ext-ACRally/) |
+| Mapas de Reforger | mundos de Arma Reforger (Enfusion) como niveles 3D | [3DHeat-Ext-Reforger](https://github.com/Holdi601/3DHeat-Ext-Reforger) | [sitio](https://holdi601.github.io/3DHeat-Ext-Reforger/) |
+| Repeticiones de R6 | repeticiones de partidas de Rainbow Six Siege | [3DHeat-Ext-R6](https://github.com/Holdi601/3DHeat-Ext-R6) | [sitio](https://holdi601.github.io/3DHeat-Ext-R6/) |
 
 ---
 
