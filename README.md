@@ -28,7 +28,45 @@ and issue tracker, so it can be installed, updated, maintained - or withdrawn
 on a rights holder's request - on its own, without affecting the viewer or the
 other tools.
 
-## Install
+## Quick start for new users
+
+You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
+("Add python.exe to PATH" ticked in its installer), and World of Warships with
+replay recording switched on (`isReplayEnabled` in the game's
+`preferences.xml`, or the game's own setting where it has one; the game then
+saves each battle in the `replays` folder of its install). No Git is needed.
+
+1. Install the tool (one line, in PowerShell or a command prompt):
+
+   ```bash
+   python -m pip install https://github.com/Holdi601/3DHeat-Ext-WoWs/archive/refs/tags/v0.1.0.zip
+   ```
+
+2. Convert the replays (the folder of your install, or single `.wowsreplay`
+   files; run it again later and only the new ones are converted):
+
+   ```bash
+   heat3d-wows-replay "C:\Games\World_of_Warships_EU\replays" -o out
+   ```
+
+   Replays name only your own ship; `--ship-names names.json` (a JSON file
+   `{"<shipId>": "<name>", ...}`) names the others.
+3. The output is a folder per map in `out`: per battle `<match>.parquet`
+   (the table), `<match>.match.json` (the match document) and
+   `<match>.messages.parquet`. It prints one line per replay, ending in
+   `-> out/<map>/<match>.parquet`.
+4. Open it in the [3DHeat viewer](https://github.com/Holdi601/3DHeat#quick-start):
+   download the viewer (**Code -> Download ZIP**, unpack) and double-click
+   `start.bat`; it offers to install [Node.js](https://nodejs.org/) when it is
+   missing and opens Chrome or Edge at `http://127.0.0.1:5273`. There,
+   **Source -> Files...** and pick the `<match>.parquet` files (or drop them
+   on the Source panel) for the Heatmap tab; for the battle itself, the
+   **Match** tab's **Load match files...** and the `<match>.match.json`.
+
+When a new release is out, the tool says so when it starts and offers to
+update itself (`python -m heat3d_ext_wows.update` does the same).
+
+## Install from a checkout
 
 New to the command line? Read
 [Before you start](https://holdi601.github.io/3DHeat-Ext-WoWs/before-you-start.html)

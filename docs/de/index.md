@@ -3,7 +3,7 @@ title: Start
 nav_order: 1
 lang: "de"
 source: index.md
-source_hash: "bbc8dc6aaeeb"
+source_hash: "833e00fa8116"
 nav_exclude: true
 search_exclude: true
 permalink: /de/
@@ -26,18 +26,35 @@ Replay mit eigenen Skripten zu lesen, denn die Ausgabe ist einfaches Parquet und
 
 ## Schnellstart {#quick-start}
 
+Du brauchst Windows, Python 3.10 oder neuer (im Installer "Add python.exe to PATH"
+ankreuzen) und World of Warships mit eingeschalteter Replay-Aufzeichnung: `isReplayEnabled`
+in der `preferences.xml` des Spiels, oder die eigene Einstellung des Spiels, wo es eine
+hat (das Spiel speichert dann jedes Gefecht im Ordner `replays` seiner Installation); Git ist nicht nötig.
 Neu auf der Kommandozeile? Lies zuerst [Bevor du anfängst](before-you-start.md).
 
 ```bash
-git clone https://github.com/Holdi601/3DHeat-Ext-WoWs.git
-cd 3DHeat-Ext-WoWs
-pip install -e .
-heat3d-wows-replay "<World of Warships>/replays" -o out
+python -m pip install https://github.com/Holdi601/3DHeat-Ext-WoWs/archive/refs/tags/v0.1.0.zip
+heat3d-wows-replay "C:\Games\World_of_Warships_EU\replays" -o out
 ```
 
 Du solltest pro Replay eine Zeile sehen, die mit der geschriebenen Datei endet:
-`... -> out/<map>/<match>.parquet`. Öffne diese Datei und die daneben liegende
-`<match>.match.json` im 3DHeat-Viewer.
+`... -> out/<map>/<match>.parquet`. Daneben liegen `<match>.match.json` (das
+Match-Dokument) und `<match>.messages.parquet`. Läuft es später noch einmal, werden
+nur die neuen Replays umgewandelt.
+Replays nennen nur dein eigenes Schiff; `--ship-names names.json` (eine JSON-Datei
+`{"<shipId>": "<name>", ...}`) benennt die anderen.
+
+Dann öffne die Dateien im [3DHeat-Viewer](https://github.com/Holdi601/3DHeat#quick-start):
+herunterladen (**Code -> Download ZIP**, entpacken), `start.bat` doppelklicken (es bietet
+an, Node.js zu installieren, wenn es fehlt, und öffnet `http://127.0.0.1:5273`), dann
+**Quelle -> Dateien...** und die `<match>.parquet`-Dateien wählen (oder sie auf das
+Quelle-Panel ziehen) für den Heatmap-Tab; für das Gefecht selbst im **Match**-Tab
+**Match-Dateien laden...** und die `<match>.match.json`
+([Match-Analyse](https://holdi601.github.io/3DHeat/match-analysis.html)).
+Alles bleibt auf deinem Rechner.
+
+Wenn ein neues Release erscheint, sagt das Werkzeug es beim Start und bietet an, sich
+selbst zu aktualisieren.
 
 ## Diese Dokumentation {#this-documentation}
 

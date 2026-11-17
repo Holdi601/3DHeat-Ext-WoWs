@@ -1,13 +1,11 @@
 # Changelog
 
-## Unreleased
+## 0.1.0
 
 - `--version` prints the command's name with the version
   (`heat3d-wows-replay 0.1.0`), as the other 3DHeat converters do.
 - Documentation: a page for beginners, a key table for the match document,
   generated reference pages, no real map names or replay figures.
-
-## 0.1.0
 
 - Every ship's position, heading, pitch and roll while the client saw it;
   every sinking where it happened.
@@ -17,6 +15,8 @@
 - Ship names from a JSON file (`--ship-names`).
 - Nothing lost: the sidecar keeps every item not read whole, and the
   self-check counts each kind.
+- Installs with one pip line from the release zip, no Git needed; a pip install knows its version and updates itself with pip when a newer release is out.
+- README: a quick start for new users.
 
 ## Docs
 
