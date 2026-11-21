@@ -13,6 +13,11 @@ to no server and shows nothing during a battle. Nothing from the game is
 shipped or redistributed with it: no game assets, no game code, no DLLs. What
 it writes stays on your computer.
 
+`catalog` and `models` read the files of the copy of the game you installed,
+read-only: the package index, the parameter table, the English names and the
+ships' armour models. The catalogue and the model pack they write are for your
+machine, not to be passed on.
+
 3DHeat is not affiliated with or endorsed by Wargaming. World of Warships and
 related names and trademarks belong to their owners.
 

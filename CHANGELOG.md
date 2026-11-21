@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- `catalog`: every ship, shell, torpedo and bomb of the installed game with
+  names and numbers (`catalog.json`, format `3dheat-catalog`).
+- `models`: each ship's armour model as a local model pack for the viewer:
+  the hull at three levels of detail and the plates by thickness.
+- Replays name every ship from the catalogue when it is there and no
+  `--ship-names` is given.
+
 ## 0.1.0
 
 - `--version` prints the command's name with the version

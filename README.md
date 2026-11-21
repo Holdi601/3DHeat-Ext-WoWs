@@ -114,6 +114,13 @@ for a newer release and asks before installing it; `HEAT3D_NO_UPDATE=1`
 switches that off. All options, as the program prints them:
 [Command reference](https://holdi601.github.io/3DHeat-Ext-WoWs/cli-reference.html).
 
+## Catalogue and model pack
+
+With the game installed, `heat3d-wows-replay catalog` writes every ship, shell
+and torpedo with names and numbers, and `heat3d-wows-replay models` writes each
+ship's armour model (hull and plates by thickness) for the viewer; both stay on
+your machine. See [Catalogue and models](docs/catalog-models.md).
+
 ## Output
 
 Loose files only (this converter writes no `.3dheat`; the viewer can pack

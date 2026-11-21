@@ -24,6 +24,7 @@ options:
   -o, --out OUT      folder to write into (a folder per map inside)
   --force            convert again what is already written
   --ship-names JSON  a JSON object of shipId -> ship name; replays carry only the
-                     number for every ship but the recording player's
+                     number for every ship but the recording player's (default: the
+                     ship catalogue, `catalog`, when it is under HEAT3D_LEVELS)
   --version          show program's version number and exit
 ```
