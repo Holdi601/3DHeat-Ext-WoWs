@@ -60,11 +60,12 @@ def build_catalog(gp: dict, texts: dict[str, str], *, game_build: str = "", sour
                                      ("beam", size[1] if len(size) > 1 else None), ("draft", hull.get("draft")),
                                      ("tonnage", hull.get("tonnage"))) if isinstance(v, (int, float))}
         items.append({
-            "id": key, "key": name, "kind": "vehicle", "name": name,
+            # The id as replays name a ship ("PJSB010-Nagato-1944"); `param` is the parameter table's own name.
+            "id": key.replace("_", "-"), "param": key, "key": name, "kind": "vehicle", "name": name,
             "longName": texts.get(f"IDS_{index}_FULL", name),
             "class": SPECIES.get(info.get("species"), str(info.get("species", "")).lower()),
             "group": s.get("group", ""), "nation": info.get("nation", ""),
-            "aliases": [index, key.replace("_", "-"), str(s.get("id", ""))],
+            "aliases": [index, key, str(s.get("id", ""))],
             "model": f"model-packs/{GAME}/{key.lower()}.glb", "numbers": numbers,
         })
     for key, p in gp.items():

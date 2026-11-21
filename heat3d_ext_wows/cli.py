@@ -86,7 +86,7 @@ def _catalog_names() -> dict[str, str] | None:
         items = json.loads(path.read_text(encoding="utf-8")).get("items", [])
     except (OSError, ValueError):
         return None
-    return {i["aliases"][-1]: i["id"].replace("_", "-") for i in items
+    return {i["aliases"][-1]: i["id"] for i in items
             if i.get("kind") == "vehicle" and i.get("aliases") and i["aliases"][-1]}
 
 

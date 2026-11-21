@@ -33,7 +33,8 @@ def test_catalog_ships_and_shells():
     c = shippack.build_catalog(gp, {"IDS_PJSB010": "Nagato"})
     ship, shell = c["items"]
     assert (ship["name"], ship["class"], ship["numbers"]["tier"], ship["numbers"]["length"]) == ("Nagato", "battleship", 7, 225.0)
-    assert ship["aliases"] == ["PJSB010", "PJSB010-Nagato-1944", "42"]
+    assert (ship["id"], ship["param"]) == ("PJSB010-Nagato-1944", "PJSB010_Nagato_1944")
+    assert ship["aliases"] == ["PJSB010", "PJSB010_Nagato_1944", "42"]
     assert (shell["kind"], shell["group"], shell["numbers"]["calibre"]) == ("weapon", "AP", 410)
 
 
