@@ -1,7 +1,15 @@
 # Changelog
 
-## Unreleased
+## 0.2.0
 
+- A standalone program for Windows, Linux (also Steam Deck) and macOS (no Python needed), built by CI with a `SHA256SUMS` file.
+  Without arguments it opens a window: what is found and what is missing, and the conversions as buttons.
+- `status --json` and `--check --json` for the 3DHeat app's Extractors panel; a replay reader has no maps, so
+  `extract` has nothing to do.
+- Updates ask first (update now / later / skip this version) unless automatic updates were chosen
+  (`--auto-update`, the window's checkbox, or `HEAT3D_AUTO_UPDATE=1`).
+- The install is found in Steam libraries on Windows, Linux (native, flatpak, Steam Deck) and macOS, in
+  the launcher's `Games` folders, and in `~/Games` and Wine/Lutris prefixes on Linux.
 - `catalog`: every ship, shell, torpedo and bomb of the installed game with
   names and numbers (`catalog.json`, format `3dheat-catalog`).
 - `models`: each ship's armour model as a local model pack for the viewer:

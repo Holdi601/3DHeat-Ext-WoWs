@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "heat3d-ext-wows"
-version = "0.1.0"
+version = "0.2.0"
 description = "World of Warships replays (.wowsreplay) into 3DHeat tables: every position over time, every kill where it happened"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -18,4 +18,4 @@ test = ["pytest>=8.0"]
 heat3d-wows-replay = "heat3d_ext_wows.cli:main"
 
 [tool.setuptools]
-packages = ["heat3d_ext_wows"]
+packages = ["heat3d_ext_wows", "heat3d_ext_wows.app"]

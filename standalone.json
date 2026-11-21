@@ -1,0 +1,9 @@
+{
+  "spec": "heat3d_ext_wows.standalone_spec",
+  "collect_submodules": ["numpy", "pyarrow", "fast_simplification"],
+  "platforms": {
+    "windows-x64": {"build": true, "tested": true, "note": "CI builds, tests and smoke-runs; install found and a replay converted on a real install; Steam and the launcher's Games folders are searched"},
+    "linux-x64": {"build": true, "tested": false, "note": "CI builds and smoke-runs; Steam (Proton, flatpak, Steam Deck) libraries and ~/Games incl. Wine/Lutris prefixes are searched, or choose the folder"},
+    "macos-arm64": {"build": true, "tested": false, "note": "CI builds and smoke-runs; Steam libraries are searched, or choose the folder"}
+  }
+}

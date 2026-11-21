@@ -28,7 +28,16 @@ and issue tracker, so it can be installed, updated, maintained - or withdrawn
 on a rights holder's request - on its own, without affecting the viewer or the
 other tools.
 
-## Quick start for new users
+## The standalone program
+
+No Python needed: download the file for your system (Windows, Linux (also Steam Deck) and macOS) from the
+[latest release](https://github.com/Holdi601/3DHeat-Ext-WoWs/releases/latest), check it against `SHA256SUMS`, unpack it and start `heat3d-wows`. Its window
+finds your install, converts the battles in its `replays` folder (or any folder you pick),
+writes the ship catalogue and model pack from your install, and asks before it updates itself. `heat3d-wows --help` lists its commands (`heat3d-wows heat3d-wows-replay ...` runs every command below).
+The 3DHeat app's Extractors panel can install and update it for you. See
+[the install page](https://holdi601.github.io/3DHeat-Ext-WoWs/installing.html).
+
+## Quick start for new users (Python)
 
 You need: Windows, [Python](https://www.python.org/downloads/) 3.10 or later
 ("Add python.exe to PATH" ticked in its installer), and World of Warships with

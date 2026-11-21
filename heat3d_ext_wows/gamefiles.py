@@ -14,7 +14,6 @@ table and the English names. Read-only; nothing in the install is changed.
 from __future__ import annotations
 
 import io
-import os
 import pickle
 import struct
 import zlib
@@ -34,16 +33,24 @@ class PackedFile:
     size: int
 
 
-def _steam_libraries() -> list[Path]:
-    roots = [Path(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)")) / "Steam"]
-    out: list[Path] = []
-    for root in roots:
-        vdf = root / "steamapps" / "libraryfolders.vdf"
-        if vdf.is_file():
-            import re
+def _candidates() -> list[Path]:
+    """Where installs usually are: every Steam library (Windows, Linux incl. flatpak and Steam Deck, macOS),
+    the Wargaming launcher's `<drive>:/Games` on Windows, and `~/Games` (also inside Wine/Lutris prefixes)."""
+    import sys
 
-            out += [Path(p.replace("\\\\", "\\")) for p in re.findall(r'"path"\s+"([^"]+)"', vdf.read_text("utf-8", "replace"))]
-        out.append(root)
+    from .app import paths
+
+    out = [d for name in FOLDER_NAMES for d in paths.steam_game_dirs(name)]
+    if sys.platform == "win32":
+        out += [Path(f"{drive}:/Games") / name for drive in "CDEFGH" for name in FOLDER_NAMES]
+    else:
+        games = Path.home() / "Games"
+        out += [games / name for name in FOLDER_NAMES]
+        try:
+            prefixes = [p for p in games.iterdir() if (p / "drive_c").is_dir()] if games.is_dir() else []
+        except OSError:
+            prefixes = []
+        out += [p / "drive_c" / "Games" / name for p in prefixes for name in FOLDER_NAMES]
     return out
 
 
@@ -55,19 +62,18 @@ def builds(game: Path) -> list[Path]:
 
 
 def find_install(given: str | None = None) -> Path:
-    """The game's folder (the one holding `bin` and `res_packages`): `given`, else the Steam libraries and `X:\\Games`."""
+    """The game's folder (the one holding `bin` and `res_packages`): `given`, else the usual places (`_candidates`)."""
     if given:
         g = Path(given)
         if builds(g):
             return g
         raise FileNotFoundError(f"{given} is not a World of Warships folder (no bin/<build>/idx under it)")
-    candidates = [lib / "steamapps" / "common" / name for lib in _steam_libraries() for name in FOLDER_NAMES]
-    for drive in "CDEFGH":
-        candidates += [Path(f"{drive}:/Games") / name for name in FOLDER_NAMES]
+    candidates = _candidates()
     for c in candidates:
         if c.is_dir() and builds(c):
             return c
-    raise FileNotFoundError("World of Warships not found (Steam libraries, X:\\Games); name its folder with --game")
+    raise FileNotFoundError("World of Warships not found (Steam libraries, the launcher's Games folders); "
+                            "name its folder with --game")
 
 
 class Packages:
