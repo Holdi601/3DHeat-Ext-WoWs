@@ -13,7 +13,7 @@ from pathlib import Path
 
 from . import __version__
 from .app import paths
-from .app.spec import GameSpec, Input, Spec, Task, game_folders
+from .app.spec import GameSpec, Input, Replays, Spec, Task, game_folders
 
 
 def _find(given: str | None) -> Path | None:
@@ -45,6 +45,12 @@ def _with_game(argv: list[str]) -> list[str]:
     game = _game()
     return argv + (["--game", str(game)] if game else [])
 
+def _replay_info(path: Path) -> dict:
+    """`info <replay> --json`: the header only (replay_info.py)."""
+    from .replay_info import info
+
+    return info(path)
+
 
 SPEC = Spec(
     id="heat3d-wows",
@@ -75,6 +81,7 @@ SPEC = Spec(
              help="each ship's armour model as a local model pack; it stays on your machine"),
     ],
     min_free_gb=2.0,
+    replays=Replays("wows", (".wowsreplay",), lambda r, out: ["heat3d-wows-replay", str(r), "-o", str(out)], info=_replay_info),
     notice="Not affiliated with or endorsed by Wargaming.",
 )
 
